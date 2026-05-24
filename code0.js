@@ -1184,7 +1184,7 @@ isConditionTrue_0 = false;
 }
 }
 if (isConditionTrue_0) {
-{gdjs.evtTools.window.openURL("https://zelda-like-my-life-0-0.vercel.app", runtimeScene);
+{gdjs.evtTools.window.openURL("https://zelda-like-my-life-archive1.vercel.app", runtimeScene);
 }
 }
 
