@@ -1,84 +1,84 @@
 {
-  "name": "zelda-like_my-life_on-desktop-sur-le-cloud_0.0",
-  "short_name": "zelda-like_my-life_on-desktop-sur-le-cloud_0.0",
+  "name": "zelda-like_my-life_on-cloud_v0.2",
+  "short_name": "zelda-like_my-life_on-cloud_v0.2",
   "id": "com.example.isometricworld",
   "description": "",
-  "orientation": "any",
+  "orientation": "landscape",
   "start_url": "./index.html",
   "display": "standalone",
   "background_color": "black",
   "categories": ["games", "entertainment"],
   "icons": [{
-        "src": "f28da82d4943804574c50fa8693f1907f6f0aef7d428c20bd6d68394c9aa057f-ios-icon-20.png.png",
+        "src": "0376f11f81cb8af2c6bd1a09f8b1ce2f7add9b6c17b8935b80e5070f1b8d4076-ios-icon-20.png",
         "sizes": "20x20"
       },{
-        "src": "98390a7b3f3cbbc6b4b84732ccd28aa0dc2c8c881de6d5fd17897111b66bd5a9-ios-icon-29.png.png",
+        "src": "98390a7b3f3cbbc6b4b84732ccd28aa0dc2c8c881de6d5fd17897111b66bd5a9-ios-icon-29.png",
         "sizes": "29x29"
       },{
-        "src": "58c42f415d5514c802ce70b263d5ddee2b8524b85ee2b17dcce564c9b0a584b6-android-icon-36.png.png",
+        "src": "586c9ea13daad2320018e5e1ff2a471d8330e3c4c2b8030f4c97c318f95b5c2a-android-icon-36.png",
         "sizes": "36x36"
       },{
-        "src": "684bba8752a9f0c6fe044fc5a553d18b23c93ffd8efe2782bf37eba425d93a12-ios-icon-40.png.png",
+        "src": "bb5aa1d60e2d8f2662dbdb0e512df7381ae774d5cfc36454590e35192a96cd47-ios-icon-40.png",
         "sizes": "40x40"
       },{
-        "src": "73173ccae575460e1079f4dfac6a0ce232b15aefd1faa2c493bed67df99ab239-android-icon-48.png.png",
+        "src": "73173ccae575460e1079f4dfac6a0ce232b15aefd1faa2c493bed67df99ab239-android-icon-48.png",
         "sizes": "48x48"
       },{
-        "src": "27276c745ecf3a697071a4f352ff55ca45d079204a86cdd4da5a7a44e8f82afa-ios-icon-50.png.png",
+        "src": "ef09d780701783427aaf9b082b2d55a19b76aa7515f616259f80f1c077d65afb-ios-icon-50.png",
         "sizes": "50x50"
       },{
-        "src": "a0c54fcd1d1b9a1cbf99054373c60e87f1e57c8fbd81e152c4c7f2e711e5c280-ios-icon-57.png.png",
+        "src": "a231bdcea2713f6d8939cba0ae0727a560ea1b3474c7cffd91338627cc141cc6-ios-icon-57.png",
         "sizes": "57x57"
       },{
-        "src": "0616f7ace8861019da622c86ecfa1f2bc46a1e50894e98e244ad4d5a60ea5851-ios-icon-58.png.png",
+        "src": "42d1843a4094a010eb55178347f7e2bbc7967ddeb8863484c47a4f4ac8933317-ios-icon-58.png",
         "sizes": "58x58"
       },{
-        "src": "3a088a5be904bca2fb9642479a0626588911e7fb3b9b470fc47f1070a040d86c-ios-icon-60.png.png",
+        "src": "3a088a5be904bca2fb9642479a0626588911e7fb3b9b470fc47f1070a040d86c-ios-icon-60.png",
         "sizes": "60x60"
       },{
-        "src": "b9e163eb3fa7331a0905b021ec10f552576d3881ca99b2db7d4e9d7b4066ebb5-android-icon-72.png.png",
+        "src": "c05ce89e3a667ac387a80961229fb8d689f4fde8116901ea941fc9f4ae4825c6-android-icon-72.png",
         "sizes": "72x72"
       },{
-        "src": "6c63565ff8698aa2a8c5025f5fc232b62c0b666b21b865c5980b1897bb956e63-ios-icon-76.png.png",
+        "src": "6c63565ff8698aa2a8c5025f5fc232b62c0b666b21b865c5980b1897bb956e63-ios-icon-76.png",
         "sizes": "76x76"
       },{
-        "src": "8d16d428bccdc044f07afd25a8a26c72c69f4b5ad4930de525eea8548676f725-ios-icon-80.png.png",
+        "src": "1ba9cefdb8fb66c0046ba8a03e68b9632a0688dde0a2f468a693bc15df67db00-ios-icon-80.png",
         "sizes": "80x80"
       },{
-        "src": "39440911a5f845efaf3575603c765f266d0cd0395c1c6298669a26161d49c7dd-ios-icon-87.png.png",
+        "src": "39440911a5f845efaf3575603c765f266d0cd0395c1c6298669a26161d49c7dd-ios-icon-87.png",
         "sizes": "87x87"
       },{
-        "src": "7897d8e49123974348c55922b91fdc02a16cdd294250bbe871d8dd0514ed03ed-android-icon-96.png.png",
+        "src": "7897d8e49123974348c55922b91fdc02a16cdd294250bbe871d8dd0514ed03ed-android-icon-96.png",
         "sizes": "96x96"
       },{
-        "src": "73fa22797a6d3c90f26d6951a566abaf46c2dfff9dfd178bdef45b482025653f-ios-icon-100.png.png",
+        "src": "8d8bddc32dbbf60930b664e30e0574591fa06522bac131fcd5b402a5b6b500ff-ios-icon-100.png",
         "sizes": "100x100"
       },{
-        "src": "aa7b0472a2230cec3b0554a130c59e3b38b51d48b846bc01178558126d8d3190-ios-icon-114.png.png",
+        "src": "aa7b0472a2230cec3b0554a130c59e3b38b51d48b846bc01178558126d8d3190-ios-icon-114.png",
         "sizes": "114x114"
       },{
-        "src": "73dcb3f2e8f71243564b4eb3f8ed0e6879cebc96f2f809d0b9fb591080aa45b0-ios-icon-120.png.png",
+        "src": "73dcb3f2e8f71243564b4eb3f8ed0e6879cebc96f2f809d0b9fb591080aa45b0-ios-icon-120.png",
         "sizes": "120x120"
       },{
-        "src": "f9ebf2892a3e955677bdc643879a2aece73df6e898dbd3b635fbebccfc5014b3-android-icon-144.png.png",
+        "src": "0ffbb60cfe1d27c3edf4fe2f9209c2138f063e1a6af01ca8f6b1a7fb37e10349-android-icon-144.png",
         "sizes": "144x144"
       },{
-        "src": "63486f3742f0cb77d280f1f2d43c6b1bf7cc0847ea412408567f8f28e922212c-ios-icon-152.png.png",
+        "src": "63486f3742f0cb77d280f1f2d43c6b1bf7cc0847ea412408567f8f28e922212c-ios-icon-152.png",
         "sizes": "152x152"
       },{
-        "src": "3a3a2c3bf3b93410926e83a476a131cdd45b04209ffa6b39ec75c89ef5d8ed73-ios-icon-167.png.png",
+        "src": "f849762af7b34d80d91c15fd0b62382b3c67a8ae2bb1369c0f4418077fbc8cbc-ios-icon-167.png",
         "sizes": "167x167"
       },{
-        "src": "e70d29f42f299b93dab660244433769f2ed6b89ef86df99c62fba84e4092f8a6-ios-icon-180.png.png",
+        "src": "2c17f3754cab7d1fc9bea5a04771c703cfd6e89dfd8ac25d442373b8e34f668b-ios-icon-180.png",
         "sizes": "180x180"
       },{
-        "src": "e3cb38763fd5cdeb131fcd961afd6affca84010cc1717c2b55b30d45f7c4abd3-android-icon-192.png.png",
+        "src": "e3cb38763fd5cdeb131fcd961afd6affca84010cc1717c2b55b30d45f7c4abd3-android-icon-192.png",
         "sizes": "192x192"
       },{
-        "src": "b0514cc963376018a3770e5eb15db5e5ee44c2472215686b24d4365b2d24a1bc-desktop-icon-512.png.png",
+        "src": "b0514cc963376018a3770e5eb15db5e5ee44c2472215686b24d4365b2d24a1bc-desktop-icon-512.png",
         "sizes": "512x512"
       },{
-        "src": "543969d8565a88b033e1cd3753007c653fca5f3b212cd58acd002e48d0e62615-ios-icon-1024.png.png",
+        "src": "543969d8565a88b033e1cd3753007c653fca5f3b212cd58acd002e48d0e62615-ios-icon-1024.png",
         "sizes": "1024x1024"
       }]
 }
