@@ -1,385 +1,320 @@
-gdjs.Level_320riginalCode = {};
-gdjs.Level_320riginalCode.localVariables = [];
-gdjs.Level_320riginalCode.idToCallbackMap = new Map();
-gdjs.Level_320riginalCode.GDFloorObjects1_1final = [];
+gdjs.Level1Code = {};
+gdjs.Level1Code.localVariables = [];
+gdjs.Level1Code.idToCallbackMap = new Map();
+gdjs.Level1Code.GDMindyObjects1= [];
+gdjs.Level1Code.GDMindyObjects2= [];
+gdjs.Level1Code.GDMindyObjects3= [];
+gdjs.Level1Code.GDMindyObjects4= [];
+gdjs.Level1Code.GDMindyObjects5= [];
+gdjs.Level1Code.GDMindyObjects6= [];
+gdjs.Level1Code.GDMindyObjects7= [];
+gdjs.Level1Code.GDBatObjects1= [];
+gdjs.Level1Code.GDBatObjects2= [];
+gdjs.Level1Code.GDBatObjects3= [];
+gdjs.Level1Code.GDBatObjects4= [];
+gdjs.Level1Code.GDBatObjects5= [];
+gdjs.Level1Code.GDBatObjects6= [];
+gdjs.Level1Code.GDBatObjects7= [];
+gdjs.Level1Code.GDTopBlockObjects1= [];
+gdjs.Level1Code.GDTopBlockObjects2= [];
+gdjs.Level1Code.GDTopBlockObjects3= [];
+gdjs.Level1Code.GDTopBlockObjects4= [];
+gdjs.Level1Code.GDTopBlockObjects5= [];
+gdjs.Level1Code.GDTopBlockObjects6= [];
+gdjs.Level1Code.GDTopBlockObjects7= [];
+gdjs.Level1Code.GDBlockGrassObjects1= [];
+gdjs.Level1Code.GDBlockGrassObjects2= [];
+gdjs.Level1Code.GDBlockGrassObjects3= [];
+gdjs.Level1Code.GDBlockGrassObjects4= [];
+gdjs.Level1Code.GDBlockGrassObjects5= [];
+gdjs.Level1Code.GDBlockGrassObjects6= [];
+gdjs.Level1Code.GDBlockGrassObjects7= [];
+gdjs.Level1Code.GDBlockObjects1= [];
+gdjs.Level1Code.GDBlockObjects2= [];
+gdjs.Level1Code.GDBlockObjects3= [];
+gdjs.Level1Code.GDBlockObjects4= [];
+gdjs.Level1Code.GDBlockObjects5= [];
+gdjs.Level1Code.GDBlockObjects6= [];
+gdjs.Level1Code.GDBlockObjects7= [];
+gdjs.Level1Code.GDBridgeObjects1= [];
+gdjs.Level1Code.GDBridgeObjects2= [];
+gdjs.Level1Code.GDBridgeObjects3= [];
+gdjs.Level1Code.GDBridgeObjects4= [];
+gdjs.Level1Code.GDBridgeObjects5= [];
+gdjs.Level1Code.GDBridgeObjects6= [];
+gdjs.Level1Code.GDBridgeObjects7= [];
+gdjs.Level1Code.GDFloorGrassObjects1= [];
+gdjs.Level1Code.GDFloorGrassObjects2= [];
+gdjs.Level1Code.GDFloorGrassObjects3= [];
+gdjs.Level1Code.GDFloorGrassObjects4= [];
+gdjs.Level1Code.GDFloorGrassObjects5= [];
+gdjs.Level1Code.GDFloorGrassObjects6= [];
+gdjs.Level1Code.GDFloorGrassObjects7= [];
+gdjs.Level1Code.GDFloorObjects1= [];
+gdjs.Level1Code.GDFloorObjects2= [];
+gdjs.Level1Code.GDFloorObjects3= [];
+gdjs.Level1Code.GDFloorObjects4= [];
+gdjs.Level1Code.GDFloorObjects5= [];
+gdjs.Level1Code.GDFloorObjects6= [];
+gdjs.Level1Code.GDFloorObjects7= [];
+gdjs.Level1Code.GDTreeObjects1= [];
+gdjs.Level1Code.GDTreeObjects2= [];
+gdjs.Level1Code.GDTreeObjects3= [];
+gdjs.Level1Code.GDTreeObjects4= [];
+gdjs.Level1Code.GDTreeObjects5= [];
+gdjs.Level1Code.GDTreeObjects6= [];
+gdjs.Level1Code.GDTreeObjects7= [];
+gdjs.Level1Code.GDRockObjects1= [];
+gdjs.Level1Code.GDRockObjects2= [];
+gdjs.Level1Code.GDRockObjects3= [];
+gdjs.Level1Code.GDRockObjects4= [];
+gdjs.Level1Code.GDRockObjects5= [];
+gdjs.Level1Code.GDRockObjects6= [];
+gdjs.Level1Code.GDRockObjects7= [];
+gdjs.Level1Code.GDWoodSignObjects1= [];
+gdjs.Level1Code.GDWoodSignObjects2= [];
+gdjs.Level1Code.GDWoodSignObjects3= [];
+gdjs.Level1Code.GDWoodSignObjects4= [];
+gdjs.Level1Code.GDWoodSignObjects5= [];
+gdjs.Level1Code.GDWoodSignObjects6= [];
+gdjs.Level1Code.GDWoodSignObjects7= [];
+gdjs.Level1Code.GDSmallObstacleObjects1= [];
+gdjs.Level1Code.GDSmallObstacleObjects2= [];
+gdjs.Level1Code.GDSmallObstacleObjects3= [];
+gdjs.Level1Code.GDSmallObstacleObjects4= [];
+gdjs.Level1Code.GDSmallObstacleObjects5= [];
+gdjs.Level1Code.GDSmallObstacleObjects6= [];
+gdjs.Level1Code.GDSmallObstacleObjects7= [];
+gdjs.Level1Code.GDTileRowObstacleObjects1= [];
+gdjs.Level1Code.GDTileRowObstacleObjects2= [];
+gdjs.Level1Code.GDTileRowObstacleObjects3= [];
+gdjs.Level1Code.GDTileRowObstacleObjects4= [];
+gdjs.Level1Code.GDTileRowObstacleObjects5= [];
+gdjs.Level1Code.GDTileRowObstacleObjects6= [];
+gdjs.Level1Code.GDTileRowObstacleObjects7= [];
+gdjs.Level1Code.GDTileColumnObstacleObjects1= [];
+gdjs.Level1Code.GDTileColumnObstacleObjects2= [];
+gdjs.Level1Code.GDTileColumnObstacleObjects3= [];
+gdjs.Level1Code.GDTileColumnObstacleObjects4= [];
+gdjs.Level1Code.GDTileColumnObstacleObjects5= [];
+gdjs.Level1Code.GDTileColumnObstacleObjects6= [];
+gdjs.Level1Code.GDTileColumnObstacleObjects7= [];
+gdjs.Level1Code.GDTileObstacleObjects1= [];
+gdjs.Level1Code.GDTileObstacleObjects2= [];
+gdjs.Level1Code.GDTileObstacleObjects3= [];
+gdjs.Level1Code.GDTileObstacleObjects4= [];
+gdjs.Level1Code.GDTileObstacleObjects5= [];
+gdjs.Level1Code.GDTileObstacleObjects6= [];
+gdjs.Level1Code.GDTileObstacleObjects7= [];
+gdjs.Level1Code.GDNavMeshObjects1= [];
+gdjs.Level1Code.GDNavMeshObjects2= [];
+gdjs.Level1Code.GDNavMeshObjects3= [];
+gdjs.Level1Code.GDNavMeshObjects4= [];
+gdjs.Level1Code.GDNavMeshObjects5= [];
+gdjs.Level1Code.GDNavMeshObjects6= [];
+gdjs.Level1Code.GDNavMeshObjects7= [];
+gdjs.Level1Code.GDtest_9595background_9595_9595_9595map_9595Objects1= [];
+gdjs.Level1Code.GDtest_9595background_9595_9595_9595map_9595Objects2= [];
+gdjs.Level1Code.GDtest_9595background_9595_9595_9595map_9595Objects3= [];
+gdjs.Level1Code.GDtest_9595background_9595_9595_9595map_9595Objects4= [];
+gdjs.Level1Code.GDtest_9595background_9595_9595_9595map_9595Objects5= [];
+gdjs.Level1Code.GDtest_9595background_9595_9595_9595map_9595Objects6= [];
+gdjs.Level1Code.GDtest_9595background_9595_9595_9595map_9595Objects7= [];
+gdjs.Level1Code.GDNewSpriteObjects1= [];
+gdjs.Level1Code.GDNewSpriteObjects2= [];
+gdjs.Level1Code.GDNewSpriteObjects3= [];
+gdjs.Level1Code.GDNewSpriteObjects4= [];
+gdjs.Level1Code.GDNewSpriteObjects5= [];
+gdjs.Level1Code.GDNewSpriteObjects6= [];
+gdjs.Level1Code.GDNewSpriteObjects7= [];
+gdjs.Level1Code.GDskyObjects1= [];
+gdjs.Level1Code.GDskyObjects2= [];
+gdjs.Level1Code.GDskyObjects3= [];
+gdjs.Level1Code.GDskyObjects4= [];
+gdjs.Level1Code.GDskyObjects5= [];
+gdjs.Level1Code.GDskyObjects6= [];
+gdjs.Level1Code.GDskyObjects7= [];
+gdjs.Level1Code.GDDebugTextWeatherObjects1= [];
+gdjs.Level1Code.GDDebugTextWeatherObjects2= [];
+gdjs.Level1Code.GDDebugTextWeatherObjects3= [];
+gdjs.Level1Code.GDDebugTextWeatherObjects4= [];
+gdjs.Level1Code.GDDebugTextWeatherObjects5= [];
+gdjs.Level1Code.GDDebugTextWeatherObjects6= [];
+gdjs.Level1Code.GDDebugTextWeatherObjects7= [];
+gdjs.Level1Code.GDcloud1Objects1= [];
+gdjs.Level1Code.GDcloud1Objects2= [];
+gdjs.Level1Code.GDcloud1Objects3= [];
+gdjs.Level1Code.GDcloud1Objects4= [];
+gdjs.Level1Code.GDcloud1Objects5= [];
+gdjs.Level1Code.GDcloud1Objects6= [];
+gdjs.Level1Code.GDcloud1Objects7= [];
+gdjs.Level1Code.GDvideo_9595clear_9595skyObjects1= [];
+gdjs.Level1Code.GDvideo_9595clear_9595skyObjects2= [];
+gdjs.Level1Code.GDvideo_9595clear_9595skyObjects3= [];
+gdjs.Level1Code.GDvideo_9595clear_9595skyObjects4= [];
+gdjs.Level1Code.GDvideo_9595clear_9595skyObjects5= [];
+gdjs.Level1Code.GDvideo_9595clear_9595skyObjects6= [];
+gdjs.Level1Code.GDvideo_9595clear_9595skyObjects7= [];
+gdjs.Level1Code.GDvideo_9595cloud_9595skyObjects1= [];
+gdjs.Level1Code.GDvideo_9595cloud_9595skyObjects2= [];
+gdjs.Level1Code.GDvideo_9595cloud_9595skyObjects3= [];
+gdjs.Level1Code.GDvideo_9595cloud_9595skyObjects4= [];
+gdjs.Level1Code.GDvideo_9595cloud_9595skyObjects5= [];
+gdjs.Level1Code.GDvideo_9595cloud_9595skyObjects6= [];
+gdjs.Level1Code.GDvideo_9595cloud_9595skyObjects7= [];
+gdjs.Level1Code.GDvideo_9595rain_9595skyObjects1= [];
+gdjs.Level1Code.GDvideo_9595rain_9595skyObjects2= [];
+gdjs.Level1Code.GDvideo_9595rain_9595skyObjects3= [];
+gdjs.Level1Code.GDvideo_9595rain_9595skyObjects4= [];
+gdjs.Level1Code.GDvideo_9595rain_9595skyObjects5= [];
+gdjs.Level1Code.GDvideo_9595rain_9595skyObjects6= [];
+gdjs.Level1Code.GDvideo_9595rain_9595skyObjects7= [];
+gdjs.Level1Code.GDvideo_9595sky_9595nightObjects1= [];
+gdjs.Level1Code.GDvideo_9595sky_9595nightObjects2= [];
+gdjs.Level1Code.GDvideo_9595sky_9595nightObjects3= [];
+gdjs.Level1Code.GDvideo_9595sky_9595nightObjects4= [];
+gdjs.Level1Code.GDvideo_9595sky_9595nightObjects5= [];
+gdjs.Level1Code.GDvideo_9595sky_9595nightObjects6= [];
+gdjs.Level1Code.GDvideo_9595sky_9595nightObjects7= [];
 
-gdjs.Level_320riginalCode.GDMindyObjects1_1final = [];
 
-gdjs.Level_320riginalCode.GDMindyObjects1= [];
-gdjs.Level_320riginalCode.GDMindyObjects2= [];
-gdjs.Level_320riginalCode.GDMindyObjects3= [];
-gdjs.Level_320riginalCode.GDMindyObjects4= [];
-gdjs.Level_320riginalCode.GDBatObjects1= [];
-gdjs.Level_320riginalCode.GDBatObjects2= [];
-gdjs.Level_320riginalCode.GDBatObjects3= [];
-gdjs.Level_320riginalCode.GDBatObjects4= [];
-gdjs.Level_320riginalCode.GDTopBlockObjects1= [];
-gdjs.Level_320riginalCode.GDTopBlockObjects2= [];
-gdjs.Level_320riginalCode.GDTopBlockObjects3= [];
-gdjs.Level_320riginalCode.GDTopBlockObjects4= [];
-gdjs.Level_320riginalCode.GDBlockGrassObjects1= [];
-gdjs.Level_320riginalCode.GDBlockGrassObjects2= [];
-gdjs.Level_320riginalCode.GDBlockGrassObjects3= [];
-gdjs.Level_320riginalCode.GDBlockGrassObjects4= [];
-gdjs.Level_320riginalCode.GDBlockObjects1= [];
-gdjs.Level_320riginalCode.GDBlockObjects2= [];
-gdjs.Level_320riginalCode.GDBlockObjects3= [];
-gdjs.Level_320riginalCode.GDBlockObjects4= [];
-gdjs.Level_320riginalCode.GDBridgeObjects1= [];
-gdjs.Level_320riginalCode.GDBridgeObjects2= [];
-gdjs.Level_320riginalCode.GDBridgeObjects3= [];
-gdjs.Level_320riginalCode.GDBridgeObjects4= [];
-gdjs.Level_320riginalCode.GDFloorGrassObjects1= [];
-gdjs.Level_320riginalCode.GDFloorGrassObjects2= [];
-gdjs.Level_320riginalCode.GDFloorGrassObjects3= [];
-gdjs.Level_320riginalCode.GDFloorGrassObjects4= [];
-gdjs.Level_320riginalCode.GDFloorObjects1= [];
-gdjs.Level_320riginalCode.GDFloorObjects2= [];
-gdjs.Level_320riginalCode.GDFloorObjects3= [];
-gdjs.Level_320riginalCode.GDFloorObjects4= [];
-gdjs.Level_320riginalCode.GDTreeObjects1= [];
-gdjs.Level_320riginalCode.GDTreeObjects2= [];
-gdjs.Level_320riginalCode.GDTreeObjects3= [];
-gdjs.Level_320riginalCode.GDTreeObjects4= [];
-gdjs.Level_320riginalCode.GDRockObjects1= [];
-gdjs.Level_320riginalCode.GDRockObjects2= [];
-gdjs.Level_320riginalCode.GDRockObjects3= [];
-gdjs.Level_320riginalCode.GDRockObjects4= [];
-gdjs.Level_320riginalCode.GDWoodSignObjects1= [];
-gdjs.Level_320riginalCode.GDWoodSignObjects2= [];
-gdjs.Level_320riginalCode.GDWoodSignObjects3= [];
-gdjs.Level_320riginalCode.GDWoodSignObjects4= [];
-gdjs.Level_320riginalCode.GDSmallObstacleObjects1= [];
-gdjs.Level_320riginalCode.GDSmallObstacleObjects2= [];
-gdjs.Level_320riginalCode.GDSmallObstacleObjects3= [];
-gdjs.Level_320riginalCode.GDSmallObstacleObjects4= [];
-gdjs.Level_320riginalCode.GDTileRowObstacleObjects1= [];
-gdjs.Level_320riginalCode.GDTileRowObstacleObjects2= [];
-gdjs.Level_320riginalCode.GDTileRowObstacleObjects3= [];
-gdjs.Level_320riginalCode.GDTileRowObstacleObjects4= [];
-gdjs.Level_320riginalCode.GDTileColumnObstacleObjects1= [];
-gdjs.Level_320riginalCode.GDTileColumnObstacleObjects2= [];
-gdjs.Level_320riginalCode.GDTileColumnObstacleObjects3= [];
-gdjs.Level_320riginalCode.GDTileColumnObstacleObjects4= [];
-gdjs.Level_320riginalCode.GDTileObstacleObjects1= [];
-gdjs.Level_320riginalCode.GDTileObstacleObjects2= [];
-gdjs.Level_320riginalCode.GDTileObstacleObjects3= [];
-gdjs.Level_320riginalCode.GDTileObstacleObjects4= [];
-gdjs.Level_320riginalCode.GDNavMeshObjects1= [];
-gdjs.Level_320riginalCode.GDNavMeshObjects2= [];
-gdjs.Level_320riginalCode.GDNavMeshObjects3= [];
-gdjs.Level_320riginalCode.GDNavMeshObjects4= [];
-gdjs.Level_320riginalCode.GDRainEmitterObjects1= [];
-gdjs.Level_320riginalCode.GDRainEmitterObjects2= [];
-gdjs.Level_320riginalCode.GDRainEmitterObjects3= [];
-gdjs.Level_320riginalCode.GDRainEmitterObjects4= [];
-gdjs.Level_320riginalCode.GDWeatherDebugTextObjects1= [];
-gdjs.Level_320riginalCode.GDWeatherDebugTextObjects2= [];
-gdjs.Level_320riginalCode.GDWeatherDebugTextObjects3= [];
-gdjs.Level_320riginalCode.GDWeatherDebugTextObjects4= [];
-gdjs.Level_320riginalCode.GDHeatDisplacementTextureObjects1= [];
-gdjs.Level_320riginalCode.GDHeatDisplacementTextureObjects2= [];
-gdjs.Level_320riginalCode.GDHeatDisplacementTextureObjects3= [];
-gdjs.Level_320riginalCode.GDHeatDisplacementTextureObjects4= [];
+gdjs.Level1Code.eventsList0 = function(runtimeScene, asyncObjectsList) {
+{
 
-
-gdjs.Level_320riginalCode.mapOfGDgdjs_9546Level_9595320riginalCode_9546GDNavMeshObjects1Objects = Hashtable.newFrom({"NavMesh": gdjs.Level_320riginalCode.GDNavMeshObjects1});
-gdjs.Level_320riginalCode.eventsList0 = function(runtimeScene) {
+let elseEventsChainSatisfied = false;
 
 {
 
 
-let isConditionTrue_0 = false;
-{
-/* Reuse gdjs.Level_320riginalCode.GDMindyObjects1 */
-gdjs.copyArray(runtimeScene.getObjects("NavMesh"), gdjs.Level_320riginalCode.GDNavMeshObjects1);
-{for(var i = 0, len = gdjs.Level_320riginalCode.GDMindyObjects1.length ;i < len;++i) {
-    gdjs.Level_320riginalCode.GDMindyObjects1[i].getBehavior("NavMeshPathfindingBehavior").SetDestination((gdjs.Level_320riginalCode.GDMindyObjects1[i].getPointX("")), (gdjs.Level_320riginalCode.GDMindyObjects1[i].getPointY("")), null);
-}
-}
-{for(var i = 0, len = gdjs.Level_320riginalCode.GDMindyObjects1.length ;i < len;++i) {
-    gdjs.Level_320riginalCode.GDMindyObjects1[i].getBehavior("NavMeshPathfindingBehavior").DrawNavMesh(gdjs.Level_320riginalCode.mapOfGDgdjs_9546Level_9595320riginalCode_9546GDNavMeshObjects1Objects, null);
-}
-}
-}
-
-}
-
-
-};gdjs.Level_320riginalCode.eventsList1 = function(runtimeScene) {
-
-{
-
-
-let isConditionTrue_0 = false;
-isConditionTrue_0 = false;
-isConditionTrue_0 = gdjs.evtTools.input.isMouseButtonPressed(runtimeScene, "Left");
-if (isConditionTrue_0) {
-gdjs.copyArray(runtimeScene.getObjects("Mindy"), gdjs.Level_320riginalCode.GDMindyObjects3);
-{for(var i = 0, len = gdjs.Level_320riginalCode.GDMindyObjects3.length ;i < len;++i) {
-    gdjs.Level_320riginalCode.GDMindyObjects3[i].activateBehavior("NavMeshPathfindingBehavior", true);
-}
-}
-{for(var i = 0, len = gdjs.Level_320riginalCode.GDMindyObjects3.length ;i < len;++i) {
-    gdjs.Level_320riginalCode.GDMindyObjects3[i].getBehavior("NavMeshPathfindingBehavior").SetDestination(gdjs.evtTools.input.getCursorX(runtimeScene, "", 0), gdjs.evtTools.input.getCursorY(runtimeScene, "", 0), null);
-}
-}
-}
-
-}
-
-
-{
-
-gdjs.copyArray(runtimeScene.getObjects("Mindy"), gdjs.Level_320riginalCode.GDMindyObjects2);
-
-let isConditionTrue_0 = false;
-isConditionTrue_0 = false;
-for (var i = 0, k = 0, l = gdjs.Level_320riginalCode.GDMindyObjects2.length;i<l;++i) {
-    if ( gdjs.Level_320riginalCode.GDMindyObjects2[i].getBehavior("TopDownMovement").isMoving() ) {
-        isConditionTrue_0 = true;
-        gdjs.Level_320riginalCode.GDMindyObjects2[k] = gdjs.Level_320riginalCode.GDMindyObjects2[i];
-        ++k;
-    }
-}
-gdjs.Level_320riginalCode.GDMindyObjects2.length = k;
-if (isConditionTrue_0) {
-/* Reuse gdjs.Level_320riginalCode.GDMindyObjects2 */
-{for(var i = 0, len = gdjs.Level_320riginalCode.GDMindyObjects2.length ;i < len;++i) {
-    gdjs.Level_320riginalCode.GDMindyObjects2[i].activateBehavior("NavMeshPathfindingBehavior", false);
-}
-}
-}
-
-}
-
-
-};gdjs.Level_320riginalCode.mapOfGDgdjs_9546Level_9595320riginalCode_9546GDMindyObjects1Objects = Hashtable.newFrom({"Mindy": gdjs.Level_320riginalCode.GDMindyObjects1});
-gdjs.Level_320riginalCode.eventsList2 = function(runtimeScene) {
-
-{
-
-
-let isConditionTrue_0 = false;
-{
-gdjs.copyArray(runtimeScene.getObjects("Mindy"), gdjs.Level_320riginalCode.GDMindyObjects1);
-{gdjs.evtsExt__CharacterMovement__ChooseAnimationDirection.func(runtimeScene, gdjs.Level_320riginalCode.mapOfGDgdjs_9546Level_9595320riginalCode_9546GDMindyObjects1Objects, "NavMeshPathfindingBehavior", "TopDownMovement", "TopDownMovementAnimator", "NavMeshPathfindingAnimator", null);
-}
-}
-
-}
-
-
-};gdjs.Level_320riginalCode.eventsList3 = function(runtimeScene) {
-
-{
-
-
-gdjs.Level_320riginalCode.eventsList1(runtimeScene);
-}
-
-
-{
-
-
-gdjs.Level_320riginalCode.eventsList2(runtimeScene);
-}
-
-
-};gdjs.Level_320riginalCode.mapOfGDgdjs_9546Level_9595320riginalCode_9546GDSmallObstacleObjects2ObjectsGDgdjs_9546Level_9595320riginalCode_9546GDTileRowObstacleObjects2ObjectsGDgdjs_9546Level_9595320riginalCode_9546GDTileColumnObstacleObjects2ObjectsGDgdjs_9546Level_9595320riginalCode_9546GDTileObstacleObjects2Objects = Hashtable.newFrom({"SmallObstacle": gdjs.Level_320riginalCode.GDSmallObstacleObjects2, "TileRowObstacle": gdjs.Level_320riginalCode.GDTileRowObstacleObjects2, "TileColumnObstacle": gdjs.Level_320riginalCode.GDTileColumnObstacleObjects2, "TileObstacle": gdjs.Level_320riginalCode.GDTileObstacleObjects2});
-gdjs.Level_320riginalCode.eventsList4 = function(runtimeScene) {
-
-{
-
-
-let isConditionTrue_0 = false;
-{
-gdjs.copyArray(runtimeScene.getObjects("Mindy"), gdjs.Level_320riginalCode.GDMindyObjects2);
-gdjs.copyArray(runtimeScene.getObjects("SmallObstacle"), gdjs.Level_320riginalCode.GDSmallObstacleObjects2);
-gdjs.copyArray(runtimeScene.getObjects("TileColumnObstacle"), gdjs.Level_320riginalCode.GDTileColumnObstacleObjects2);
-gdjs.copyArray(runtimeScene.getObjects("TileObstacle"), gdjs.Level_320riginalCode.GDTileObstacleObjects2);
-gdjs.copyArray(runtimeScene.getObjects("TileRowObstacle"), gdjs.Level_320riginalCode.GDTileRowObstacleObjects2);
-{for(var i = 0, len = gdjs.Level_320riginalCode.GDMindyObjects2.length ;i < len;++i) {
-    gdjs.Level_320riginalCode.GDMindyObjects2[i].separateFromObjectsList(gdjs.Level_320riginalCode.mapOfGDgdjs_9546Level_9595320riginalCode_9546GDSmallObstacleObjects2ObjectsGDgdjs_9546Level_9595320riginalCode_9546GDTileRowObstacleObjects2ObjectsGDgdjs_9546Level_9595320riginalCode_9546GDTileColumnObstacleObjects2ObjectsGDgdjs_9546Level_9595320riginalCode_9546GDTileObstacleObjects2Objects, false);
-}
-}
-}
-
-}
-
-
-{
-
-
-let isConditionTrue_0 = false;
-{
-gdjs.copyArray(runtimeScene.getObjects("Mindy"), gdjs.Level_320riginalCode.GDMindyObjects1);
-{for(var i = 0, len = gdjs.Level_320riginalCode.GDMindyObjects1.length ;i < len;++i) {
-    gdjs.Level_320riginalCode.GDMindyObjects1[i].getBehavior("SmoothCamera").MoveCameraCloser(null);
-}
-}
-{gdjs.evtsExt__CopyCameraSettings__CopyCameraSettings.func(runtimeScene, "", 0, "Level1", 0, true, true, false, false, null);
-}
-{gdjs.evtsExt__CopyCameraSettings__CopyCameraSettings.func(runtimeScene, "", 0, "Level2", 0, true, true, false, false, null);
-}
-}
-
-}
-
-
-};gdjs.Level_320riginalCode.mapOfGDgdjs_9546Level_9595320riginalCode_9546GDMindyObjects1Objects = Hashtable.newFrom({"Mindy": gdjs.Level_320riginalCode.GDMindyObjects1});
-gdjs.Level_320riginalCode.mapOfGDgdjs_9546Level_9595320riginalCode_9546GDBatObjects1Objects = Hashtable.newFrom({"Bat": gdjs.Level_320riginalCode.GDBatObjects1});
-gdjs.Level_320riginalCode.eventsList5 = function(runtimeScene) {
-
-{
-
-gdjs.copyArray(runtimeScene.getObjects("Bat"), gdjs.Level_320riginalCode.GDBatObjects1);
-gdjs.copyArray(runtimeScene.getObjects("Mindy"), gdjs.Level_320riginalCode.GDMindyObjects1);
-
+elseEventsChainSatisfied = false;
 let isConditionTrue_0 = false;
 isConditionTrue_0 = false;
-isConditionTrue_0 = gdjs.evtTools.object.distanceTest(gdjs.Level_320riginalCode.mapOfGDgdjs_9546Level_9595320riginalCode_9546GDMindyObjects1Objects, gdjs.Level_320riginalCode.mapOfGDgdjs_9546Level_9595320riginalCode_9546GDBatObjects1Objects, 100, true);
-if (isConditionTrue_0) {
-/* Reuse gdjs.Level_320riginalCode.GDBatObjects1 */
-/* Reuse gdjs.Level_320riginalCode.GDMindyObjects1 */
-{for(var i = 0, len = gdjs.Level_320riginalCode.GDBatObjects1.length ;i < len;++i) {
-    gdjs.Level_320riginalCode.GDBatObjects1[i].addForceTowardPosition((( gdjs.Level_320riginalCode.GDMindyObjects1.length === 0 ) ? 0 :gdjs.Level_320riginalCode.GDMindyObjects1[0].getPointX("Head")), (( gdjs.Level_320riginalCode.GDMindyObjects1.length === 0 ) ? 0 :gdjs.Level_320riginalCode.GDMindyObjects1[0].getPointY("Head")), 150, 0);
+{isConditionTrue_0 = (runtimeScene.getScene().getVariables().getFromIndex(10).getChild("weather").getChild(0).getChild("main").getAsString() == "Clear");
 }
-}
-}
-
-}
-
-
-};gdjs.Level_320riginalCode.mapOfGDgdjs_9546Level_9595320riginalCode_9546GDMindyObjects2Objects = Hashtable.newFrom({"Mindy": gdjs.Level_320riginalCode.GDMindyObjects2});
-gdjs.Level_320riginalCode.mapOfGDgdjs_9546Level_9595320riginalCode_9546GDMindyObjects2Objects = Hashtable.newFrom({"Mindy": gdjs.Level_320riginalCode.GDMindyObjects2});
-gdjs.Level_320riginalCode.eventsList6 = function(runtimeScene) {
-
-{
-
-gdjs.copyArray(runtimeScene.getObjects("FloorGrass"), gdjs.Level_320riginalCode.GDFloorGrassObjects2);
-gdjs.copyArray(runtimeScene.getObjects("Mindy"), gdjs.Level_320riginalCode.GDMindyObjects2);
-
-let isConditionTrue_0 = false;
-isConditionTrue_0 = false;
-isConditionTrue_0 = gdjs.evtsExt__CharacterMovement__IsMoving.func(runtimeScene, gdjs.Level_320riginalCode.mapOfGDgdjs_9546Level_9595320riginalCode_9546GDMindyObjects2Objects, "NavMeshPathfindingBehavior", "TopDownMovement", null);
 if (isConditionTrue_0) {
 isConditionTrue_0 = false;
-for (var i = 0, k = 0, l = gdjs.Level_320riginalCode.GDFloorGrassObjects2.length;i<l;++i) {
-    if ( gdjs.Level_320riginalCode.GDFloorGrassObjects2[i].isCollidingWithPoint((( gdjs.Level_320riginalCode.GDMindyObjects2.length === 0 ) ? 0 :gdjs.Level_320riginalCode.GDMindyObjects2[0].getPointX("Foot")), (( gdjs.Level_320riginalCode.GDMindyObjects2.length === 0 ) ? 0 :gdjs.Level_320riginalCode.GDMindyObjects2[0].getPointY("Foot"))) ) {
-        isConditionTrue_0 = true;
-        gdjs.Level_320riginalCode.GDFloorGrassObjects2[k] = gdjs.Level_320riginalCode.GDFloorGrassObjects2[i];
-        ++k;
-    }
-}
-gdjs.Level_320riginalCode.GDFloorGrassObjects2.length = k;
-if (isConditionTrue_0) {
-isConditionTrue_0 = false;
-{isConditionTrue_0 = runtimeScene.getOnceTriggers().triggerOnce(21167196);
-}
-}
-}
-if (isConditionTrue_0) {
-{gdjs.evtTools.sound.playSoundOnChannel(runtimeScene, "grass_light_steps.mp3", 1, true, 5, 1);
-}
-}
-
-}
-
-
-{
-
-gdjs.Level_320riginalCode.GDFloorObjects1.length = 0;
-
-gdjs.Level_320riginalCode.GDMindyObjects1.length = 0;
-
-
-let isConditionTrue_0 = false;
-isConditionTrue_0 = false;
-isConditionTrue_0 = gdjs.evtTools.sound.isSoundOnChannelPlaying(runtimeScene, 1);
-if (isConditionTrue_0) {
-isConditionTrue_0 = false;
-{gdjs.Level_320riginalCode.GDFloorObjects1_1final.length = 0;
-gdjs.Level_320riginalCode.GDMindyObjects1_1final.length = 0;
-let isConditionTrue_1 = false;
+{let isConditionTrue_1 = false;
 isConditionTrue_0 = false;
 {
-gdjs.copyArray(runtimeScene.getObjects("Floor"), gdjs.Level_320riginalCode.GDFloorObjects2);
-gdjs.copyArray(runtimeScene.getObjects("Mindy"), gdjs.Level_320riginalCode.GDMindyObjects2);
-for (var i = 0, k = 0, l = gdjs.Level_320riginalCode.GDFloorObjects2.length;i<l;++i) {
-    if ( gdjs.Level_320riginalCode.GDFloorObjects2[i].isCollidingWithPoint((( gdjs.Level_320riginalCode.GDMindyObjects2.length === 0 ) ? 0 :gdjs.Level_320riginalCode.GDMindyObjects2[0].getPointX("Foot")), (( gdjs.Level_320riginalCode.GDMindyObjects2.length === 0 ) ? 0 :gdjs.Level_320riginalCode.GDMindyObjects2[0].getPointY("Foot"))) ) {
-        isConditionTrue_1 = true;
-        gdjs.Level_320riginalCode.GDFloorObjects2[k] = gdjs.Level_320riginalCode.GDFloorObjects2[i];
-        ++k;
-    }
+{isConditionTrue_1 = (gdjs.evtTools.runtimeScene.getTime(runtimeScene, "hour") < 6);
 }
-gdjs.Level_320riginalCode.GDFloorObjects2.length = k;
 if(isConditionTrue_1) {
     isConditionTrue_0 = true;
-    for (let j = 0, jLen = gdjs.Level_320riginalCode.GDFloorObjects2.length; j < jLen ; ++j) {
-        if ( gdjs.Level_320riginalCode.GDFloorObjects1_1final.indexOf(gdjs.Level_320riginalCode.GDFloorObjects2[j]) === -1 )
-            gdjs.Level_320riginalCode.GDFloorObjects1_1final.push(gdjs.Level_320riginalCode.GDFloorObjects2[j]);
-    }
-    for (let j = 0, jLen = gdjs.Level_320riginalCode.GDMindyObjects2.length; j < jLen ; ++j) {
-        if ( gdjs.Level_320riginalCode.GDMindyObjects1_1final.indexOf(gdjs.Level_320riginalCode.GDMindyObjects2[j]) === -1 )
-            gdjs.Level_320riginalCode.GDMindyObjects1_1final.push(gdjs.Level_320riginalCode.GDMindyObjects2[j]);
-    }
 }
 }
 {
-gdjs.copyArray(runtimeScene.getObjects("Mindy"), gdjs.Level_320riginalCode.GDMindyObjects2);
-isConditionTrue_1 = !(gdjs.evtsExt__CharacterMovement__IsMoving.func(runtimeScene, gdjs.Level_320riginalCode.mapOfGDgdjs_9546Level_9595320riginalCode_9546GDMindyObjects2Objects, "NavMeshPathfindingBehavior", "TopDownMovement", null));
+{isConditionTrue_1 = (gdjs.evtTools.runtimeScene.getTime(runtimeScene, "hour") >= 18);
+}
 if(isConditionTrue_1) {
     isConditionTrue_0 = true;
-    for (let j = 0, jLen = gdjs.Level_320riginalCode.GDMindyObjects2.length; j < jLen ; ++j) {
-        if ( gdjs.Level_320riginalCode.GDMindyObjects1_1final.indexOf(gdjs.Level_320riginalCode.GDMindyObjects2[j]) === -1 )
-            gdjs.Level_320riginalCode.GDMindyObjects1_1final.push(gdjs.Level_320riginalCode.GDMindyObjects2[j]);
-    }
 }
 }
 {
-gdjs.copyArray(gdjs.Level_320riginalCode.GDFloorObjects1_1final, gdjs.Level_320riginalCode.GDFloorObjects1);
-gdjs.copyArray(gdjs.Level_320riginalCode.GDMindyObjects1_1final, gdjs.Level_320riginalCode.GDMindyObjects1);
 }
 }
 }
 if (isConditionTrue_0) {
-{gdjs.evtTools.sound.stopSoundOnChannel(runtimeScene, 1);
+gdjs.copyArray(runtimeScene.getObjects("sky"), gdjs.Level1Code.GDskyObjects6);
+{for(var i = 0, len = gdjs.Level1Code.GDskyObjects6.length ;i < len;++i) {
+    gdjs.Level1Code.GDskyObjects6[i].getBehavior("Animation").setAnimationName("Night");
 }
+}
+elseEventsChainSatisfied = true;
 }
 
 }
 
-
-};gdjs.Level_320riginalCode.asyncCallback21171228 = function (runtimeScene, asyncObjectsList) {
-asyncObjectsList.restoreLocalVariablesContainers(gdjs.Level_320riginalCode.localVariables);
-gdjs.Level_320riginalCode.localVariables.length = 0;
-}
-gdjs.Level_320riginalCode.idToCallbackMap.set(21171228, gdjs.Level_320riginalCode.asyncCallback21171228);
-gdjs.Level_320riginalCode.eventsList7 = function(runtimeScene) {
 
 {
 
 
+if (!elseEventsChainSatisfied) {
+let isConditionTrue_0 = false;
+if (!elseEventsChainSatisfied) {
+gdjs.copyArray(runtimeScene.getObjects("sky"), gdjs.Level1Code.GDskyObjects6);
+{for(var i = 0, len = gdjs.Level1Code.GDskyObjects6.length ;i < len;++i) {
+    gdjs.Level1Code.GDskyObjects6[i].getBehavior("Animation").setAnimationName(runtimeScene.getScene().getVariables().getFromIndex(10).getChild("weather").getChild(0).getChild("main").getAsString());
+}
+}
+elseEventsChainSatisfied = true;
+}
+}
+
+}
+
+
 {
+
+
+let isConditionTrue_0 = false;
+isConditionTrue_0 = false;
+{let isConditionTrue_1 = false;
+isConditionTrue_0 = false;
 {
-const asyncObjectsList = new gdjs.LongLivedObjectsList();
-asyncObjectsList.backupLocalVariablesContainers(gdjs.Level_320riginalCode.localVariables);
-runtimeScene.getAsyncTasksManager().addTask(gdjs.evtsExt__AdvancedHTTP__ExecuteRequest.func(runtimeScene, "WeatherReq", runtimeScene.getScene().getVariables().getFromIndex(9), null), (runtimeScene) => (gdjs.Level_320riginalCode.asyncCallback21171228(runtimeScene, asyncObjectsList)), 21171228, asyncObjectsList);
+{isConditionTrue_1 = (runtimeScene.getScene().getVariables().getFromIndex(10).getChild("weather").getChild(0).getChild("main").getAsString() == "Rain");
+}
+if(isConditionTrue_1) {
+    isConditionTrue_0 = true;
+}
+}
+{
+{isConditionTrue_1 = (runtimeScene.getScene().getVariables().getFromIndex(10).getChild("weather").getChild(0).getChild("main").getAsString() == "Drizzle");
+}
+if(isConditionTrue_1) {
+    isConditionTrue_0 = true;
+}
+}
+{
+}
+}
+if (isConditionTrue_0) {
+{runtimeScene.getScene().getVariables().getFromIndex(5).setString("rain");
 }
 }
 
 }
 
 
-};gdjs.Level_320riginalCode.asyncCallback21173252 = function (runtimeScene, asyncObjectsList) {
-asyncObjectsList.restoreLocalVariablesContainers(gdjs.Level_320riginalCode.localVariables);
-{runtimeScene.getScene().getVariables().getFromIndex(4).setString("");
+{
+
+
+let isConditionTrue_0 = false;
+isConditionTrue_0 = false;
+{isConditionTrue_0 = (runtimeScene.getScene().getVariables().getFromIndex(10).getChild("weather").getChild(0).getChild("main").getAsString() == "Clouds");
 }
-gdjs.Level_320riginalCode.localVariables.length = 0;
+if (isConditionTrue_0) {
+{runtimeScene.getScene().getVariables().getFromIndex(5).setString("cloud");
 }
-gdjs.Level_320riginalCode.idToCallbackMap.set(21173252, gdjs.Level_320riginalCode.asyncCallback21173252);
-gdjs.Level_320riginalCode.eventsList8 = function(runtimeScene, asyncObjectsList) {
+}
+
+}
+
+
+{
+
+
+let isConditionTrue_0 = false;
+isConditionTrue_0 = false;
+{isConditionTrue_0 = (runtimeScene.getScene().getVariables().getFromIndex(10).getChild("weather").getChild(0).getChild("main").getAsString() == "Clear");
+}
+if (isConditionTrue_0) {
+{runtimeScene.getScene().getVariables().getFromIndex(5).setString("clear");
+}
+}
+
+}
+
+}
+
+};gdjs.Level1Code.asyncCallback21513044 = function (runtimeScene, asyncObjectsList) {
+asyncObjectsList.restoreLocalVariablesContainers(gdjs.Level1Code.localVariables);
+
+{ //Subevents
+gdjs.Level1Code.eventsList0(runtimeScene, asyncObjectsList);} //End of subevents
+gdjs.Level1Code.localVariables.length = 0;
+}
+gdjs.Level1Code.idToCallbackMap.set(21513044, gdjs.Level1Code.asyncCallback21513044);
+gdjs.Level1Code.eventsList1 = function(runtimeScene, asyncObjectsList) {
 
 {
 
@@ -388,41 +323,23 @@ gdjs.Level_320riginalCode.eventsList8 = function(runtimeScene, asyncObjectsList)
 const parentAsyncObjectsList = asyncObjectsList;
 {
 const asyncObjectsList = gdjs.LongLivedObjectsList.from(parentAsyncObjectsList);
-asyncObjectsList.backupLocalVariablesContainers(gdjs.Level_320riginalCode.localVariables);
-runtimeScene.getAsyncTasksManager().addTask(gdjs.evtsExt__AdvancedHTTP__ReadResponseJSON.func(runtimeScene, runtimeScene.getScene().getVariables().getFromIndex(9), runtimeScene.getScene().getVariables().getFromIndex(8), null), (runtimeScene) => (gdjs.Level_320riginalCode.asyncCallback21173252(runtimeScene, asyncObjectsList)), 21173252, asyncObjectsList);
+asyncObjectsList.backupLocalVariablesContainers(gdjs.Level1Code.localVariables);
+runtimeScene.getAsyncTasksManager().addTask(gdjs.evtsExt__AdvancedHTTP__ReadResponseJSON.func(runtimeScene, runtimeScene.getScene().getVariables().getFromIndex(9), runtimeScene.getScene().getVariables().getFromIndex(10), null), (runtimeScene) => (gdjs.Level1Code.asyncCallback21513044(runtimeScene, asyncObjectsList)), 21513044, asyncObjectsList);
 }
 }
 
 }
 
 
-};gdjs.Level_320riginalCode.eventsList9 = function(runtimeScene, asyncObjectsList) {
-
-{
-
-
-let isConditionTrue_0 = false;
-isConditionTrue_0 = false;
-{isConditionTrue_0 = (gdjs.evtTools.string.strLen(runtimeScene.getScene().getVariables().getFromIndex(5).getAsString()) > 2);
-}
-if (isConditionTrue_0) {
+};gdjs.Level1Code.asyncCallback21512020 = function (runtimeScene, asyncObjectsList) {
+asyncObjectsList.restoreLocalVariablesContainers(gdjs.Level1Code.localVariables);
 
 { //Subevents
-gdjs.Level_320riginalCode.eventsList8(runtimeScene, asyncObjectsList);} //End of subevents
+gdjs.Level1Code.eventsList1(runtimeScene, asyncObjectsList);} //End of subevents
+gdjs.Level1Code.localVariables.length = 0;
 }
-
-}
-
-
-};gdjs.Level_320riginalCode.asyncCallback21172068 = function (runtimeScene, asyncObjectsList) {
-asyncObjectsList.restoreLocalVariablesContainers(gdjs.Level_320riginalCode.localVariables);
-
-{ //Subevents
-gdjs.Level_320riginalCode.eventsList9(runtimeScene, asyncObjectsList);} //End of subevents
-gdjs.Level_320riginalCode.localVariables.length = 0;
-}
-gdjs.Level_320riginalCode.idToCallbackMap.set(21172068, gdjs.Level_320riginalCode.asyncCallback21172068);
-gdjs.Level_320riginalCode.eventsList10 = function(runtimeScene) {
+gdjs.Level1Code.idToCallbackMap.set(21512020, gdjs.Level1Code.asyncCallback21512020);
+gdjs.Level1Code.eventsList2 = function(runtimeScene) {
 
 {
 
@@ -430,450 +347,15 @@ gdjs.Level_320riginalCode.eventsList10 = function(runtimeScene) {
 {
 {
 const asyncObjectsList = new gdjs.LongLivedObjectsList();
-asyncObjectsList.backupLocalVariablesContainers(gdjs.Level_320riginalCode.localVariables);
-runtimeScene.getAsyncTasksManager().addTask(gdjs.evtsExt__AdvancedHTTP__ReadResponseText.func(runtimeScene, runtimeScene.getScene().getVariables().getFromIndex(9), runtimeScene.getScene().getVariables().getFromIndex(5), null), (runtimeScene) => (gdjs.Level_320riginalCode.asyncCallback21172068(runtimeScene, asyncObjectsList)), 21172068, asyncObjectsList);
+asyncObjectsList.backupLocalVariablesContainers(gdjs.Level1Code.localVariables);
+runtimeScene.getAsyncTasksManager().addTask(gdjs.evtsExt__AdvancedHTTP__ExecuteRequest.func(runtimeScene, "meteo", runtimeScene.getScene().getVariables().getFromIndex(9), null), (runtimeScene) => (gdjs.Level1Code.asyncCallback21512020(runtimeScene, asyncObjectsList)), 21512020, asyncObjectsList);
 }
 }
 
 }
 
 
-};gdjs.Level_320riginalCode.eventsList11 = function(runtimeScene) {
-{
-
-let elseEventsChainSatisfied = false;
-
-{
-
-
-elseEventsChainSatisfied = false;
-let isConditionTrue_0 = false;
-isConditionTrue_0 = false;
-{let isConditionTrue_1 = false;
-isConditionTrue_0 = false;
-{
-{isConditionTrue_1 = (gdjs.evtTools.runtimeScene.getTime(runtimeScene, "hour") < 6);
-}
-if(isConditionTrue_1) {
-    isConditionTrue_0 = true;
-}
-}
-{
-{isConditionTrue_1 = (gdjs.evtTools.runtimeScene.getTime(runtimeScene, "hour") >= 21);
-}
-if(isConditionTrue_1) {
-    isConditionTrue_0 = true;
-}
-}
-{
-}
-}
-if (isConditionTrue_0) {
-{runtimeScene.getScene().getVariables().getFromIndex(7).setString("night");
-}
-elseEventsChainSatisfied = true;
-}
-
-}
-
-
-{
-
-
-if (!elseEventsChainSatisfied) {
-let isConditionTrue_0 = false;
-if (!elseEventsChainSatisfied) {
-{runtimeScene.getScene().getVariables().getFromIndex(7).setString("sun");
-}
-elseEventsChainSatisfied = true;
-}
-}
-
-}
-
-}
-
-};gdjs.Level_320riginalCode.eventsList12 = function(runtimeScene) {
-{
-
-let elseEventsChainSatisfied = false;
-
-{
-
-
-elseEventsChainSatisfied = false;
-let isConditionTrue_0 = false;
-isConditionTrue_0 = false;
-{let isConditionTrue_1 = false;
-isConditionTrue_0 = false;
-{
-{isConditionTrue_1 = (gdjs.evtTools.runtimeScene.getTime(runtimeScene, "hour") < 6);
-}
-if(isConditionTrue_1) {
-    isConditionTrue_0 = true;
-}
-}
-{
-{isConditionTrue_1 = (gdjs.evtTools.runtimeScene.getTime(runtimeScene, "hour") >= 21);
-}
-if(isConditionTrue_1) {
-    isConditionTrue_0 = true;
-}
-}
-{
-}
-}
-if (isConditionTrue_0) {
-{runtimeScene.getScene().getVariables().getFromIndex(7).setString("night");
-}
-elseEventsChainSatisfied = true;
-}
-
-}
-
-
-{
-
-
-if (!elseEventsChainSatisfied) {
-let isConditionTrue_0 = false;
-if (!elseEventsChainSatisfied) {
-{runtimeScene.getScene().getVariables().getFromIndex(7).setString("sun");
-}
-elseEventsChainSatisfied = true;
-}
-}
-
-}
-
-}
-
-};gdjs.Level_320riginalCode.eventsList13 = function(runtimeScene) {
-{
-
-let elseEventsChainSatisfied = false;
-
-{
-
-
-elseEventsChainSatisfied = false;
-let isConditionTrue_0 = false;
-isConditionTrue_0 = false;
-{let isConditionTrue_1 = false;
-isConditionTrue_0 = false;
-{
-{isConditionTrue_1 = (runtimeScene.getScene().getVariables().getFromIndex(1).getAsNumber() == 61);
-}
-if(isConditionTrue_1) {
-    isConditionTrue_0 = true;
-}
-}
-{
-{isConditionTrue_1 = (runtimeScene.getScene().getVariables().getFromIndex(1).getAsNumber() == 63);
-}
-if(isConditionTrue_1) {
-    isConditionTrue_0 = true;
-}
-}
-{
-{isConditionTrue_1 = (runtimeScene.getScene().getVariables().getFromIndex(1).getAsNumber() == 65);
-}
-if(isConditionTrue_1) {
-    isConditionTrue_0 = true;
-}
-}
-{
-{isConditionTrue_1 = (runtimeScene.getScene().getVariables().getFromIndex(1).getAsNumber() == 66);
-}
-if(isConditionTrue_1) {
-    isConditionTrue_0 = true;
-}
-}
-{
-{isConditionTrue_1 = (runtimeScene.getScene().getVariables().getFromIndex(1).getAsNumber() == 67);
-}
-if(isConditionTrue_1) {
-    isConditionTrue_0 = true;
-}
-}
-{
-{isConditionTrue_1 = (runtimeScene.getScene().getVariables().getFromIndex(1).getAsNumber() == 80);
-}
-if(isConditionTrue_1) {
-    isConditionTrue_0 = true;
-}
-}
-{
-{isConditionTrue_1 = (runtimeScene.getScene().getVariables().getFromIndex(1).getAsNumber() == 81);
-}
-if(isConditionTrue_1) {
-    isConditionTrue_0 = true;
-}
-}
-{
-{isConditionTrue_1 = (runtimeScene.getScene().getVariables().getFromIndex(1).getAsNumber() == 82);
-}
-if(isConditionTrue_1) {
-    isConditionTrue_0 = true;
-}
-}
-{
-}
-}
-if (isConditionTrue_0) {
-{runtimeScene.getScene().getVariables().getFromIndex(7).setString("rain");
-}
-elseEventsChainSatisfied = true;
-}
-
-}
-
-
-{
-
-
-if (!elseEventsChainSatisfied) {
-let isConditionTrue_0 = false;
-isConditionTrue_0 = false;
-{isConditionTrue_0 = (runtimeScene.getScene().getVariables().getFromIndex(6).getAsNumber() >= 32);
-}
-if (!elseEventsChainSatisfied && isConditionTrue_0) {
-{runtimeScene.getScene().getVariables().getFromIndex(7).setString("heatwave");
-}
-elseEventsChainSatisfied = true;
-}
-}
-
-}
-
-
-{
-
-
-if (!elseEventsChainSatisfied) {
-let isConditionTrue_0 = false;
-isConditionTrue_0 = false;
-{isConditionTrue_0 = (runtimeScene.getScene().getVariables().getFromIndex(1).getAsNumber() == 0);
-}
-if (!elseEventsChainSatisfied && isConditionTrue_0) {
-
-{ //Subevents
-gdjs.Level_320riginalCode.eventsList11(runtimeScene);} //End of subevents
-elseEventsChainSatisfied = true;
-}
-}
-
-}
-
-
-{
-
-
-if (!elseEventsChainSatisfied) {
-let isConditionTrue_0 = false;
-if (!elseEventsChainSatisfied) {
-
-{ //Subevents
-gdjs.Level_320riginalCode.eventsList12(runtimeScene);} //End of subevents
-elseEventsChainSatisfied = true;
-}
-}
-
-}
-
-}
-
-};gdjs.Level_320riginalCode.eventsList14 = function(runtimeScene) {
-{
-
-let elseEventsChainSatisfied = false;
-
-{
-
-
-elseEventsChainSatisfied = false;
-let isConditionTrue_0 = false;
-isConditionTrue_0 = false;
-{let isConditionTrue_1 = false;
-isConditionTrue_0 = false;
-{
-{isConditionTrue_1 = (0 < 6);
-}
-if(isConditionTrue_1) {
-    isConditionTrue_0 = true;
-}
-}
-{
-{isConditionTrue_1 = (0 >= 21);
-}
-if(isConditionTrue_1) {
-    isConditionTrue_0 = true;
-}
-}
-{
-}
-}
-if (isConditionTrue_0) {
-{runtimeScene.getScene().getVariables().getFromIndex(7).setString("night");
-}
-elseEventsChainSatisfied = true;
-}
-
-}
-
-
-{
-
-
-if (!elseEventsChainSatisfied) {
-let isConditionTrue_0 = false;
-if (!elseEventsChainSatisfied) {
-{runtimeScene.getScene().getVariables().getFromIndex(7).setString("sun");
-}
-elseEventsChainSatisfied = true;
-}
-}
-
-}
-
-}
-
-};gdjs.Level_320riginalCode.eventsList15 = function(runtimeScene) {
-{
-
-let elseEventsChainSatisfied = false;
-
-{
-
-
-elseEventsChainSatisfied = false;
-let isConditionTrue_0 = false;
-isConditionTrue_0 = false;
-{let isConditionTrue_1 = false;
-isConditionTrue_0 = false;
-{
-{isConditionTrue_1 = (runtimeScene.getScene().getVariables().getFromIndex(8).getChild("weather").getChild(0).getChild("main").getAsString() == "Rain");
-}
-if(isConditionTrue_1) {
-    isConditionTrue_0 = true;
-}
-}
-{
-{isConditionTrue_1 = (runtimeScene.getScene().getVariables().getFromIndex(8).getChild("weather").getChild(0).getChild("main").getAsString() == "Drizzle");
-}
-if(isConditionTrue_1) {
-    isConditionTrue_0 = true;
-}
-}
-{
-}
-}
-if (isConditionTrue_0) {
-{runtimeScene.getScene().getVariables().getFromIndex(7).setString("rain");
-}
-elseEventsChainSatisfied = true;
-}
-
-}
-
-
-{
-
-
-if (!elseEventsChainSatisfied) {
-let isConditionTrue_0 = false;
-isConditionTrue_0 = false;
-{isConditionTrue_0 = (runtimeScene.getScene().getVariables().getFromIndex(8).getChild("weather").getChild(0).getChild("main").getAsString() == "Clear");
-}
-if (!elseEventsChainSatisfied && isConditionTrue_0) {
-
-{ //Subevents
-gdjs.Level_320riginalCode.eventsList14(runtimeScene);} //End of subevents
-elseEventsChainSatisfied = true;
-}
-}
-
-}
-
-
-{
-
-
-if (!elseEventsChainSatisfied) {
-let isConditionTrue_0 = false;
-isConditionTrue_0 = false;
-{isConditionTrue_0 = (runtimeScene.getScene().getVariables().getFromIndex(6).getAsNumber() >= 32);
-}
-if (!elseEventsChainSatisfied && isConditionTrue_0) {
-{runtimeScene.getScene().getVariables().getFromIndex(7).setString("heatwave");
-}
-elseEventsChainSatisfied = true;
-}
-}
-
-}
-
-
-{
-
-
-if (!elseEventsChainSatisfied) {
-let isConditionTrue_0 = false;
-if (!elseEventsChainSatisfied) {
-{runtimeScene.getScene().getVariables().getFromIndex(7).setString("unknown");
-}
-elseEventsChainSatisfied = true;
-}
-}
-
-}
-
-}
-
-};gdjs.Level_320riginalCode.eventsList16 = function(runtimeScene, asyncObjectsList) {
-
-{
-
-
-let isConditionTrue_0 = false;
-isConditionTrue_0 = false;
-{isConditionTrue_0 = (runtimeScene.getScene().getVariables().getFromIndex(4).getAsString() == "0");
-}
-if (isConditionTrue_0) {
-{runtimeScene.getScene().getVariables().getFromIndex(4).setString("REQUEST_FAILED");
-}
-}
-
-}
-
-
-};gdjs.Level_320riginalCode.asyncCallback21197588 = function (runtimeScene, asyncObjectsList) {
-asyncObjectsList.restoreLocalVariablesContainers(gdjs.Level_320riginalCode.localVariables);
-{runtimeScene.getScene().getVariables().getFromIndex(4).setString(gdjs.evtTools.common.toString(gdjs.evtsExt__AdvancedHTTP__ResponseStatusCode.func(runtimeScene, runtimeScene.getScene().getVariables().getFromIndex(9), null)));
-}
-
-{ //Subevents
-gdjs.Level_320riginalCode.eventsList16(runtimeScene, asyncObjectsList);} //End of subevents
-gdjs.Level_320riginalCode.localVariables.length = 0;
-}
-gdjs.Level_320riginalCode.idToCallbackMap.set(21197588, gdjs.Level_320riginalCode.asyncCallback21197588);
-gdjs.Level_320riginalCode.eventsList17 = function(runtimeScene) {
-
-{
-
-
-{
-{
-const asyncObjectsList = new gdjs.LongLivedObjectsList();
-asyncObjectsList.backupLocalVariablesContainers(gdjs.Level_320riginalCode.localVariables);
-runtimeScene.getAsyncTasksManager().addTask(gdjs.evtsExt__AdvancedHTTP__ReadResponseText.func(runtimeScene, runtimeScene.getScene().getVariables().getFromIndex(9), runtimeScene.getScene().getVariables().getFromIndex(5), null), (runtimeScene) => (gdjs.Level_320riginalCode.asyncCallback21197588(runtimeScene, asyncObjectsList)), 21197588, asyncObjectsList);
-}
-}
-
-}
-
-
-};gdjs.Level_320riginalCode.eventsList18 = function(runtimeScene) {
+};gdjs.Level1Code.eventsList3 = function(runtimeScene) {
 {
 
 let elseEventsChainSatisfied = false;
@@ -885,120 +367,522 @@ let isConditionTrue_0 = false;
 isConditionTrue_0 = false;
 isConditionTrue_0 = gdjs.evtTools.runtimeScene.sceneJustBegins(runtimeScene);
 if (isConditionTrue_0) {
-gdjs.copyArray(runtimeScene.getObjects("Mindy"), gdjs.Level_320riginalCode.GDMindyObjects1);
-{gdjs.evtTools.camera.centerCamera(runtimeScene, (gdjs.Level_320riginalCode.GDMindyObjects1.length !== 0 ? gdjs.Level_320riginalCode.GDMindyObjects1[0] : null), true, "", 0);
+gdjs.copyArray(runtimeScene.getObjects("cloud1"), gdjs.Level1Code.GDcloud1Objects3);
+{for(var i = 0, len = gdjs.Level1Code.GDcloud1Objects3.length ;i < len;++i) {
+    gdjs.Level1Code.GDcloud1Objects3[i].addForce(5, 0, 1);
+}
+}
+}
+
+}
+
+
+{
+
+
+let isConditionTrue_0 = false;
+isConditionTrue_0 = false;
+{let isConditionTrue_1 = false;
+isConditionTrue_0 = false;
+{
+isConditionTrue_1 = gdjs.evtTools.runtimeScene.sceneJustBegins(runtimeScene);
+if(isConditionTrue_1) {
+    isConditionTrue_0 = true;
+}
+}
+{
+isConditionTrue_1 = gdjs.evtTools.runtimeScene.getTimerElapsedTimeInSecondsOrNaN(runtimeScene, "WeatherRefreshTimer") > 300;
+if(isConditionTrue_1) {
+    isConditionTrue_0 = true;
+}
+}
+{
+}
+}
+if (isConditionTrue_0) {
+{gdjs.evtTools.runtimeScene.resetTimer(runtimeScene, "WeatherRefreshTimer");
+}
+{gdjs.evtsExt__AdvancedHTTP__CreateRequest.func(runtimeScene, "meteo", "https://api.openweathermap.org/data/2.5/weather?q=Romainville,FR&appid=acb61289cde2bd70cb797d2eb8c8f29d", null);
+}
+
+{ //Subevents
+gdjs.Level1Code.eventsList2(runtimeScene);} //End of subevents
+}
+
+}
+
+
+{
+
+
+let isConditionTrue_0 = false;
+{
+gdjs.copyArray(runtimeScene.getObjects("DebugTextWeather"), gdjs.Level1Code.GDDebugTextWeatherObjects3);
+gdjs.copyArray(runtimeScene.getObjects("sky"), gdjs.Level1Code.GDskyObjects3);
+{for(var i = 0, len = gdjs.Level1Code.GDDebugTextWeatherObjects3.length ;i < len;++i) {
+    gdjs.Level1Code.GDDebugTextWeatherObjects3[i].getBehavior("Text").setText("Hour: " + gdjs.evtTools.common.toString(gdjs.evtTools.runtimeScene.getTime(runtimeScene, "hour")) + gdjs.evtTools.string.newLine() + "Weather State: " + runtimeScene.getScene().getVariables().getFromIndex(5).getAsString() + gdjs.evtTools.string.newLine() + "Animation: " + (( gdjs.Level1Code.GDskyObjects3.length === 0 ) ? "" :gdjs.Level1Code.GDskyObjects3[0].getBehavior("Animation").getAnimationName()));
+}
+}
+}
+
+}
+
+
+{
+
+
+elseEventsChainSatisfied = false;
+let isConditionTrue_0 = false;
+isConditionTrue_0 = false;
+{let isConditionTrue_1 = false;
+isConditionTrue_0 = false;
+{
+{isConditionTrue_1 = (gdjs.evtTools.runtimeScene.getTime(runtimeScene, "hour") < 6);
+}
+if(isConditionTrue_1) {
+    isConditionTrue_0 = true;
+}
+}
+{
+{isConditionTrue_1 = (gdjs.evtTools.runtimeScene.getTime(runtimeScene, "hour") >= 21);
+}
+if(isConditionTrue_1) {
+    isConditionTrue_0 = true;
+}
+}
+{
+}
+}
+if (isConditionTrue_0) {
+gdjs.copyArray(runtimeScene.getObjects("sky"), gdjs.Level1Code.GDskyObjects3);
+{for(var i = 0, len = gdjs.Level1Code.GDskyObjects3.length ;i < len;++i) {
+    gdjs.Level1Code.GDskyObjects3[i].getBehavior("Animation").setAnimationName("Night");
+}
+}
+{runtimeScene.getScene().getVariables().getFromIndex(5).setString("night");
+}
+elseEventsChainSatisfied = true;
+}
+
+}
+
+
+{
+
+
+if (!elseEventsChainSatisfied) {
+let isConditionTrue_0 = false;
+isConditionTrue_0 = false;
+{isConditionTrue_0 = (runtimeScene.getScene().getVariables().getFromIndex(5).getAsString() == "rain");
+}
+if (!elseEventsChainSatisfied && isConditionTrue_0) {
+gdjs.copyArray(runtimeScene.getObjects("sky"), gdjs.Level1Code.GDskyObjects3);
+{for(var i = 0, len = gdjs.Level1Code.GDskyObjects3.length ;i < len;++i) {
+    gdjs.Level1Code.GDskyObjects3[i].getBehavior("Animation").setAnimationName("Rain");
+}
+}
+elseEventsChainSatisfied = true;
+}
+}
+
+}
+
+
+{
+
+
+if (!elseEventsChainSatisfied) {
+let isConditionTrue_0 = false;
+isConditionTrue_0 = false;
+{isConditionTrue_0 = (runtimeScene.getScene().getVariables().getFromIndex(5).getAsString() == "cloud");
+}
+if (!elseEventsChainSatisfied && isConditionTrue_0) {
+gdjs.copyArray(runtimeScene.getObjects("cloud1"), gdjs.Level1Code.GDcloud1Objects3);
+gdjs.copyArray(runtimeScene.getObjects("sky"), gdjs.Level1Code.GDskyObjects3);
+{for(var i = 0, len = gdjs.Level1Code.GDskyObjects3.length ;i < len;++i) {
+    gdjs.Level1Code.GDskyObjects3[i].getBehavior("Animation").setAnimationName("Clouds");
+}
+}
+{for(var i = 0, len = gdjs.Level1Code.GDcloud1Objects3.length ;i < len;++i) {
+    gdjs.Level1Code.GDcloud1Objects3[i].hide(false);
+}
+}
+elseEventsChainSatisfied = true;
+}
+}
+
+}
+
+
+{
+
+
+if (!elseEventsChainSatisfied) {
+let isConditionTrue_0 = false;
+if (!elseEventsChainSatisfied) {
+gdjs.copyArray(runtimeScene.getObjects("sky"), gdjs.Level1Code.GDskyObjects3);
+{for(var i = 0, len = gdjs.Level1Code.GDskyObjects3.length ;i < len;++i) {
+    gdjs.Level1Code.GDskyObjects3[i].getBehavior("Animation").setAnimationName("Clear");
+}
+}
+elseEventsChainSatisfied = true;
+}
+}
+
+}
+
+
+{
+
+gdjs.copyArray(runtimeScene.getObjects("cloud1"), gdjs.Level1Code.GDcloud1Objects2);
+
+let isConditionTrue_0 = false;
+isConditionTrue_0 = false;
+for (var i = 0, k = 0, l = gdjs.Level1Code.GDcloud1Objects2.length;i<l;++i) {
+    if ( gdjs.Level1Code.GDcloud1Objects2[i].getX() > gdjs.evtTools.window.getGameResolutionWidth(runtimeScene) ) {
+        isConditionTrue_0 = true;
+        gdjs.Level1Code.GDcloud1Objects2[k] = gdjs.Level1Code.GDcloud1Objects2[i];
+        ++k;
+    }
+}
+gdjs.Level1Code.GDcloud1Objects2.length = k;
+if (isConditionTrue_0) {
+/* Reuse gdjs.Level1Code.GDcloud1Objects2 */
+{for(var i = 0, len = gdjs.Level1Code.GDcloud1Objects2.length ;i < len;++i) {
+    gdjs.Level1Code.GDcloud1Objects2[i].setX(-((gdjs.Level1Code.GDcloud1Objects2[i].getWidth())));
+}
+}
+}
+
+}
+
+}
+
+};gdjs.Level1Code.eventsList4 = function(runtimeScene) {
+
+{
+
+
+let isConditionTrue_0 = false;
+isConditionTrue_0 = false;
+isConditionTrue_0 = gdjs.evtTools.runtimeScene.sceneJustBegins(runtimeScene);
+if (isConditionTrue_0) {
+gdjs.copyArray(runtimeScene.getObjects("cloud1"), gdjs.Level1Code.GDcloud1Objects1);
+gdjs.copyArray(runtimeScene.getObjects("video_clear_sky"), gdjs.Level1Code.GDvideo_9595clear_9595skyObjects1);
+gdjs.copyArray(runtimeScene.getObjects("video_cloud_sky"), gdjs.Level1Code.GDvideo_9595cloud_9595skyObjects1);
+gdjs.copyArray(runtimeScene.getObjects("video_rain_sky"), gdjs.Level1Code.GDvideo_9595rain_9595skyObjects1);
+gdjs.copyArray(runtimeScene.getObjects("video_sky_night"), gdjs.Level1Code.GDvideo_9595sky_9595nightObjects1);
+{gdjs.evtTools.camera.hideLayer(runtimeScene, "layer video sky clear");
+}
+{gdjs.evtTools.camera.hideLayer(runtimeScene, "layer video sky cloud");
+}
+{gdjs.evtTools.camera.hideLayer(runtimeScene, "layer video sky rain");
+}
+{gdjs.evtTools.camera.hideLayer(runtimeScene, "layer video sky night");
 }
 {gdjs.evtTools.camera.hideLayer(runtimeScene, "Obstacle");
 }
-
-{ //Subevents
-gdjs.Level_320riginalCode.eventsList0(runtimeScene);} //End of subevents
+{for(var i = 0, len = gdjs.Level1Code.GDvideo_9595clear_9595skyObjects1.length ;i < len;++i) {
+    gdjs.Level1Code.GDvideo_9595clear_9595skyObjects1[i].pause();
+}
+}
+{for(var i = 0, len = gdjs.Level1Code.GDvideo_9595cloud_9595skyObjects1.length ;i < len;++i) {
+    gdjs.Level1Code.GDvideo_9595cloud_9595skyObjects1[i].pause();
+}
+}
+{for(var i = 0, len = gdjs.Level1Code.GDvideo_9595rain_9595skyObjects1.length ;i < len;++i) {
+    gdjs.Level1Code.GDvideo_9595rain_9595skyObjects1[i].pause();
+}
+}
+{for(var i = 0, len = gdjs.Level1Code.GDvideo_9595sky_9595nightObjects1.length ;i < len;++i) {
+    gdjs.Level1Code.GDvideo_9595sky_9595nightObjects1[i].pause();
+}
+}
+{gdjs.evtTools.camera.showLayer(runtimeScene, "nuage qui bouge");
+}
+{for(var i = 0, len = gdjs.Level1Code.GDcloud1Objects1.length ;i < len;++i) {
+    gdjs.Level1Code.GDcloud1Objects1[i].getBehavior("Effect").enableEffect("nb", false);
+}
+}
 }
 
+}
+
+
+};gdjs.Level1Code.eventsList5 = function(runtimeScene) {
+
+{
+
+
+gdjs.Level1Code.eventsList3(runtimeScene);
 }
 
 
 {
 
 
-let isConditionTrue_0 = false;
-isConditionTrue_0 = false;
-isConditionTrue_0 = gdjs.evtTools.runtimeScene.sceneJustBegins(runtimeScene);
-if (isConditionTrue_0) {
-{gdjs.evtTools.camera.enableLayerEffect(runtimeScene, "Night", "false", false);
-}
-{gdjs.evtTools.camera.enableLayerEffect(runtimeScene, "Godray", "false", false);
-}
-{gdjs.evtTools.camera.enableLayerEffect(runtimeScene, "Night", "false", false);
-}
-{gdjs.evtTools.camera.enableLayerEffect(runtimeScene, "Godray", "false", false);
-}
+gdjs.Level1Code.eventsList4(runtimeScene);
 }
 
-}
 
+};gdjs.Level1Code.asyncCallback21527900 = function (runtimeScene, asyncObjectsList) {
+asyncObjectsList.restoreLocalVariablesContainers(gdjs.Level1Code.localVariables);
+gdjs.Level1Code.localVariables.length = 0;
+}
+gdjs.Level1Code.idToCallbackMap.set(21527900, gdjs.Level1Code.asyncCallback21527900);
+gdjs.Level1Code.eventsList6 = function(runtimeScene, asyncObjectsList) {
 
 {
 
 
-let isConditionTrue_0 = false;
-isConditionTrue_0 = false;
-isConditionTrue_0 = gdjs.evtTools.runtimeScene.sceneJustBegins(runtimeScene);
-if (isConditionTrue_0) {
-{gdjs.evtTools.camera.enableLayerEffect(runtimeScene, "HeatDistortion", "false", false);
-}
-{runtimeScene.getScene().getVariables().getFromIndex(3).setBoolean(false);
-}
-}
-
-}
-
-
 {
-
-
-gdjs.Level_320riginalCode.eventsList3(runtimeScene);
-}
-
-
+const parentAsyncObjectsList = asyncObjectsList;
 {
+const asyncObjectsList = gdjs.LongLivedObjectsList.from(parentAsyncObjectsList);
+asyncObjectsList.backupLocalVariablesContainers(gdjs.Level1Code.localVariables);
+runtimeScene.getAsyncTasksManager().addTask(gdjs.evtTools.runtimeScene.wait(4.6), (runtimeScene) => (gdjs.Level1Code.asyncCallback21527900(runtimeScene, asyncObjectsList)), 21527900, asyncObjectsList);
+}
+}
 
-
-gdjs.Level_320riginalCode.eventsList4(runtimeScene);
 }
 
 
-{
-
-
-gdjs.Level_320riginalCode.eventsList5(runtimeScene);
+};gdjs.Level1Code.asyncCallback21527268 = function (runtimeScene, asyncObjectsList) {
+asyncObjectsList.restoreLocalVariablesContainers(gdjs.Level1Code.localVariables);
+gdjs.copyArray(runtimeScene.getObjects("video_clear_sky"), gdjs.Level1Code.GDvideo_9595clear_9595skyObjects4);
+{gdjs.evtTools.camera.showLayer(runtimeScene, "layer video sky clear");
 }
-
-
-{
-
-
-gdjs.Level_320riginalCode.eventsList6(runtimeScene);
+{for(var i = 0, len = gdjs.Level1Code.GDvideo_9595clear_9595skyObjects4.length ;i < len;++i) {
+    gdjs.Level1Code.GDvideo_9595clear_9595skyObjects4[i].play();
 }
-
-
-{
-
-
-let isConditionTrue_0 = false;
-isConditionTrue_0 = false;
-isConditionTrue_0 = gdjs.evtTools.runtimeScene.sceneJustBegins(runtimeScene);
-if (isConditionTrue_0) {
-{gdjs.evtsExt__AdvancedHTTP__SetRequestURL.func(runtimeScene, "https://api.open-meteo.com/v1/forecast?latitude=48.8566&longitude=2.3522&current_weather=true&timezone=Europe%2FParis", "WeatherReq", null);
 }
-{gdjs.evtsExt__AdvancedHTTP__SetRequestMethod.func(runtimeScene, "WeatherReq", "GET", null);
+{for(var i = 0, len = gdjs.Level1Code.GDvideo_9595clear_9595skyObjects4.length ;i < len;++i) {
+    gdjs.Level1Code.GDvideo_9595clear_9595skyObjects4[i].setPlaybackSpeed(-(1.3));
 }
-{gdjs.evtsExt__AdvancedHTTP__UseCORSBypass.func(runtimeScene, "WeatherReq", false, null);
-}
-{gdjs.evtTools.runtimeScene.resetTimer(runtimeScene, "WeatherUpdateTimer");
 }
 
 { //Subevents
-gdjs.Level_320riginalCode.eventsList7(runtimeScene);} //End of subevents
+gdjs.Level1Code.eventsList6(runtimeScene, asyncObjectsList);} //End of subevents
+gdjs.Level1Code.localVariables.length = 0;
 }
-
-}
-
+gdjs.Level1Code.idToCallbackMap.set(21527268, gdjs.Level1Code.asyncCallback21527268);
+gdjs.Level1Code.eventsList7 = function(runtimeScene) {
 
 {
 
 
+{
+{
+const asyncObjectsList = new gdjs.LongLivedObjectsList();
+asyncObjectsList.backupLocalVariablesContainers(gdjs.Level1Code.localVariables);
+runtimeScene.getAsyncTasksManager().addTask(gdjs.evtTools.runtimeScene.wait(7), (runtimeScene) => (gdjs.Level1Code.asyncCallback21527268(runtimeScene, asyncObjectsList)), 21527268, asyncObjectsList);
+}
+}
+
+}
+
+
+};gdjs.Level1Code.asyncCallback21530276 = function (runtimeScene, asyncObjectsList) {
+asyncObjectsList.restoreLocalVariablesContainers(gdjs.Level1Code.localVariables);
+gdjs.Level1Code.localVariables.length = 0;
+}
+gdjs.Level1Code.idToCallbackMap.set(21530276, gdjs.Level1Code.asyncCallback21530276);
+gdjs.Level1Code.eventsList8 = function(runtimeScene, asyncObjectsList) {
+
+{
+
+
+{
+const parentAsyncObjectsList = asyncObjectsList;
+{
+const asyncObjectsList = gdjs.LongLivedObjectsList.from(parentAsyncObjectsList);
+asyncObjectsList.backupLocalVariablesContainers(gdjs.Level1Code.localVariables);
+runtimeScene.getAsyncTasksManager().addTask(gdjs.evtTools.runtimeScene.wait(4.6), (runtimeScene) => (gdjs.Level1Code.asyncCallback21530276(runtimeScene, asyncObjectsList)), 21530276, asyncObjectsList);
+}
+}
+
+}
+
+
+};gdjs.Level1Code.asyncCallback21529644 = function (runtimeScene, asyncObjectsList) {
+asyncObjectsList.restoreLocalVariablesContainers(gdjs.Level1Code.localVariables);
+gdjs.copyArray(runtimeScene.getObjects("video_cloud_sky"), gdjs.Level1Code.GDvideo_9595cloud_9595skyObjects4);
+{gdjs.evtTools.camera.showLayer(runtimeScene, "layer video sky cloud");
+}
+{for(var i = 0, len = gdjs.Level1Code.GDvideo_9595cloud_9595skyObjects4.length ;i < len;++i) {
+    gdjs.Level1Code.GDvideo_9595cloud_9595skyObjects4[i].play();
+}
+}
+{for(var i = 0, len = gdjs.Level1Code.GDvideo_9595cloud_9595skyObjects4.length ;i < len;++i) {
+    gdjs.Level1Code.GDvideo_9595cloud_9595skyObjects4[i].setPlaybackSpeed(-(1.3));
+}
+}
+
+{ //Subevents
+gdjs.Level1Code.eventsList8(runtimeScene, asyncObjectsList);} //End of subevents
+gdjs.Level1Code.localVariables.length = 0;
+}
+gdjs.Level1Code.idToCallbackMap.set(21529644, gdjs.Level1Code.asyncCallback21529644);
+gdjs.Level1Code.eventsList9 = function(runtimeScene) {
+
+{
+
+
+{
+{
+const asyncObjectsList = new gdjs.LongLivedObjectsList();
+asyncObjectsList.backupLocalVariablesContainers(gdjs.Level1Code.localVariables);
+runtimeScene.getAsyncTasksManager().addTask(gdjs.evtTools.runtimeScene.wait(7), (runtimeScene) => (gdjs.Level1Code.asyncCallback21529644(runtimeScene, asyncObjectsList)), 21529644, asyncObjectsList);
+}
+}
+
+}
+
+
+};gdjs.Level1Code.asyncCallback21532604 = function (runtimeScene, asyncObjectsList) {
+asyncObjectsList.restoreLocalVariablesContainers(gdjs.Level1Code.localVariables);
+gdjs.Level1Code.localVariables.length = 0;
+}
+gdjs.Level1Code.idToCallbackMap.set(21532604, gdjs.Level1Code.asyncCallback21532604);
+gdjs.Level1Code.eventsList10 = function(runtimeScene, asyncObjectsList) {
+
+{
+
+
+{
+const parentAsyncObjectsList = asyncObjectsList;
+{
+const asyncObjectsList = gdjs.LongLivedObjectsList.from(parentAsyncObjectsList);
+asyncObjectsList.backupLocalVariablesContainers(gdjs.Level1Code.localVariables);
+runtimeScene.getAsyncTasksManager().addTask(gdjs.evtTools.runtimeScene.wait(4.6), (runtimeScene) => (gdjs.Level1Code.asyncCallback21532604(runtimeScene, asyncObjectsList)), 21532604, asyncObjectsList);
+}
+}
+
+}
+
+
+};gdjs.Level1Code.asyncCallback21531996 = function (runtimeScene, asyncObjectsList) {
+asyncObjectsList.restoreLocalVariablesContainers(gdjs.Level1Code.localVariables);
+gdjs.copyArray(runtimeScene.getObjects("video_rain_sky"), gdjs.Level1Code.GDvideo_9595rain_9595skyObjects4);
+{gdjs.evtTools.camera.showLayer(runtimeScene, "layer video sky rain");
+}
+{for(var i = 0, len = gdjs.Level1Code.GDvideo_9595rain_9595skyObjects4.length ;i < len;++i) {
+    gdjs.Level1Code.GDvideo_9595rain_9595skyObjects4[i].play();
+}
+}
+{for(var i = 0, len = gdjs.Level1Code.GDvideo_9595rain_9595skyObjects4.length ;i < len;++i) {
+    gdjs.Level1Code.GDvideo_9595rain_9595skyObjects4[i].setPlaybackSpeed(-(1.3));
+}
+}
+
+{ //Subevents
+gdjs.Level1Code.eventsList10(runtimeScene, asyncObjectsList);} //End of subevents
+gdjs.Level1Code.localVariables.length = 0;
+}
+gdjs.Level1Code.idToCallbackMap.set(21531996, gdjs.Level1Code.asyncCallback21531996);
+gdjs.Level1Code.eventsList11 = function(runtimeScene) {
+
+{
+
+
+{
+{
+const asyncObjectsList = new gdjs.LongLivedObjectsList();
+asyncObjectsList.backupLocalVariablesContainers(gdjs.Level1Code.localVariables);
+runtimeScene.getAsyncTasksManager().addTask(gdjs.evtTools.runtimeScene.wait(7), (runtimeScene) => (gdjs.Level1Code.asyncCallback21531996(runtimeScene, asyncObjectsList)), 21531996, asyncObjectsList);
+}
+}
+
+}
+
+
+};gdjs.Level1Code.asyncCallback21534948 = function (runtimeScene, asyncObjectsList) {
+asyncObjectsList.restoreLocalVariablesContainers(gdjs.Level1Code.localVariables);
+gdjs.Level1Code.localVariables.length = 0;
+}
+gdjs.Level1Code.idToCallbackMap.set(21534948, gdjs.Level1Code.asyncCallback21534948);
+gdjs.Level1Code.eventsList12 = function(runtimeScene, asyncObjectsList) {
+
+{
+
+
+{
+const parentAsyncObjectsList = asyncObjectsList;
+{
+const asyncObjectsList = gdjs.LongLivedObjectsList.from(parentAsyncObjectsList);
+asyncObjectsList.backupLocalVariablesContainers(gdjs.Level1Code.localVariables);
+runtimeScene.getAsyncTasksManager().addTask(gdjs.evtTools.runtimeScene.wait(4.6), (runtimeScene) => (gdjs.Level1Code.asyncCallback21534948(runtimeScene, asyncObjectsList)), 21534948, asyncObjectsList);
+}
+}
+
+}
+
+
+};gdjs.Level1Code.asyncCallback21534340 = function (runtimeScene, asyncObjectsList) {
+asyncObjectsList.restoreLocalVariablesContainers(gdjs.Level1Code.localVariables);
+gdjs.copyArray(runtimeScene.getObjects("video_sky_night"), gdjs.Level1Code.GDvideo_9595sky_9595nightObjects4);
+{gdjs.evtTools.camera.showLayer(runtimeScene, "layer video sky night");
+}
+{for(var i = 0, len = gdjs.Level1Code.GDvideo_9595sky_9595nightObjects4.length ;i < len;++i) {
+    gdjs.Level1Code.GDvideo_9595sky_9595nightObjects4[i].play();
+}
+}
+{for(var i = 0, len = gdjs.Level1Code.GDvideo_9595sky_9595nightObjects4.length ;i < len;++i) {
+    gdjs.Level1Code.GDvideo_9595sky_9595nightObjects4[i].setPlaybackSpeed(-(1.3));
+}
+}
+
+{ //Subevents
+gdjs.Level1Code.eventsList12(runtimeScene, asyncObjectsList);} //End of subevents
+gdjs.Level1Code.localVariables.length = 0;
+}
+gdjs.Level1Code.idToCallbackMap.set(21534340, gdjs.Level1Code.asyncCallback21534340);
+gdjs.Level1Code.eventsList13 = function(runtimeScene) {
+
+{
+
+
+{
+{
+const asyncObjectsList = new gdjs.LongLivedObjectsList();
+asyncObjectsList.backupLocalVariablesContainers(gdjs.Level1Code.localVariables);
+runtimeScene.getAsyncTasksManager().addTask(gdjs.evtTools.runtimeScene.wait(7), (runtimeScene) => (gdjs.Level1Code.asyncCallback21534340(runtimeScene, asyncObjectsList)), 21534340, asyncObjectsList);
+}
+}
+
+}
+
+
+};gdjs.Level1Code.eventsList14 = function(runtimeScene) {
+
+{
+
+gdjs.copyArray(runtimeScene.getObjects("sky"), gdjs.Level1Code.GDskyObjects3);
+
 let isConditionTrue_0 = false;
 isConditionTrue_0 = false;
-isConditionTrue_0 = gdjs.evtsExt__AdvancedHTTP__ResponseSuccess.func(runtimeScene, runtimeScene.getScene().getVariables().getFromIndex(9), null);
+for (var i = 0, k = 0, l = gdjs.Level1Code.GDskyObjects3.length;i<l;++i) {
+    if ( gdjs.Level1Code.GDskyObjects3[i].getBehavior("Animation").getAnimationName() == "Clear" ) {
+        isConditionTrue_0 = true;
+        gdjs.Level1Code.GDskyObjects3[k] = gdjs.Level1Code.GDskyObjects3[i];
+        ++k;
+    }
+}
+gdjs.Level1Code.GDskyObjects3.length = k;
 if (isConditionTrue_0) {
 isConditionTrue_0 = false;
-isConditionTrue_0 = gdjs.evtsExt__AdvancedHTTP__ResponseStatusCode.func(runtimeScene, runtimeScene.getScene().getVariables().getFromIndex(9), null) == 200;
+{isConditionTrue_0 = runtimeScene.getOnceTriggers().triggerOnce(21114564);
+}
+if (isConditionTrue_0) {
+isConditionTrue_0 = false;
+{isConditionTrue_0 = runtimeScene.getOnceTriggers().triggerOnce(21526940);
+}
+}
 }
 if (isConditionTrue_0) {
 
 { //Subevents
-gdjs.Level_320riginalCode.eventsList10(runtimeScene);} //End of subevents
+gdjs.Level1Code.eventsList7(runtimeScene);} //End of subevents
 }
 
 }
@@ -1006,18 +890,52 @@ gdjs.Level_320riginalCode.eventsList10(runtimeScene);} //End of subevents
 
 {
 
+gdjs.copyArray(runtimeScene.getObjects("video_clear_sky"), gdjs.Level1Code.GDvideo_9595clear_9595skyObjects3);
 
 let isConditionTrue_0 = false;
 isConditionTrue_0 = false;
-isConditionTrue_0 = gdjs.evtTools.variable.variableChildExists(runtimeScene.getScene().getVariables().getFromIndex(8), "current_weather");
+for (var i = 0, k = 0, l = gdjs.Level1Code.GDvideo_9595clear_9595skyObjects3.length;i<l;++i) {
+    if ( gdjs.Level1Code.GDvideo_9595clear_9595skyObjects3[i].isEnded() ) {
+        isConditionTrue_0 = true;
+        gdjs.Level1Code.GDvideo_9595clear_9595skyObjects3[k] = gdjs.Level1Code.GDvideo_9595clear_9595skyObjects3[i];
+        ++k;
+    }
+}
+gdjs.Level1Code.GDvideo_9595clear_9595skyObjects3.length = k;
 if (isConditionTrue_0) {
-{runtimeScene.getScene().getVariables().getFromIndex(6).setNumber(runtimeScene.getScene().getVariables().getFromIndex(8).getChild("current_weather").getChild("temperature").getAsNumber());
+/* Reuse gdjs.Level1Code.GDvideo_9595clear_9595skyObjects3 */
+{for(var i = 0, len = gdjs.Level1Code.GDvideo_9595clear_9595skyObjects3.length ;i < len;++i) {
+    gdjs.Level1Code.GDvideo_9595clear_9595skyObjects3[i].getBehavior("Tween").addObjectOpacityTween2("FadeOutSkyClear", 0, "linear", 1.3, false);
 }
-{runtimeScene.getScene().getVariables().getFromIndex(1).setNumber(runtimeScene.getScene().getVariables().getFromIndex(8).getChild("current_weather").getChild("weathercode").getAsNumber());
 }
+}
+
+}
+
+
+{
+
+gdjs.copyArray(runtimeScene.getObjects("sky"), gdjs.Level1Code.GDskyObjects3);
+
+let isConditionTrue_0 = false;
+isConditionTrue_0 = false;
+for (var i = 0, k = 0, l = gdjs.Level1Code.GDskyObjects3.length;i<l;++i) {
+    if ( gdjs.Level1Code.GDskyObjects3[i].getBehavior("Animation").getAnimationName() == "Clouds" ) {
+        isConditionTrue_0 = true;
+        gdjs.Level1Code.GDskyObjects3[k] = gdjs.Level1Code.GDskyObjects3[i];
+        ++k;
+    }
+}
+gdjs.Level1Code.GDskyObjects3.length = k;
+if (isConditionTrue_0) {
+isConditionTrue_0 = false;
+{isConditionTrue_0 = runtimeScene.getOnceTriggers().triggerOnce(21528932);
+}
+}
+if (isConditionTrue_0) {
 
 { //Subevents
-gdjs.Level_320riginalCode.eventsList13(runtimeScene);} //End of subevents
+gdjs.Level1Code.eventsList9(runtimeScene);} //End of subevents
 }
 
 }
@@ -1025,16 +943,52 @@ gdjs.Level_320riginalCode.eventsList13(runtimeScene);} //End of subevents
 
 {
 
+gdjs.copyArray(runtimeScene.getObjects("video_cloud_sky"), gdjs.Level1Code.GDvideo_9595cloud_9595skyObjects3);
 
 let isConditionTrue_0 = false;
 isConditionTrue_0 = false;
-isConditionTrue_0 = gdjs.evtTools.variable.variableChildExists(runtimeScene.getScene().getVariables().getFromIndex(8), "weather");
-if (isConditionTrue_0) {
-{runtimeScene.getScene().getVariables().getFromIndex(6).setNumber(runtimeScene.getScene().getVariables().getFromIndex(8).getChild("main").getChild("temp").getAsNumber());
+for (var i = 0, k = 0, l = gdjs.Level1Code.GDvideo_9595cloud_9595skyObjects3.length;i<l;++i) {
+    if ( gdjs.Level1Code.GDvideo_9595cloud_9595skyObjects3[i].isEnded() ) {
+        isConditionTrue_0 = true;
+        gdjs.Level1Code.GDvideo_9595cloud_9595skyObjects3[k] = gdjs.Level1Code.GDvideo_9595cloud_9595skyObjects3[i];
+        ++k;
+    }
 }
+gdjs.Level1Code.GDvideo_9595cloud_9595skyObjects3.length = k;
+if (isConditionTrue_0) {
+/* Reuse gdjs.Level1Code.GDvideo_9595cloud_9595skyObjects3 */
+{for(var i = 0, len = gdjs.Level1Code.GDvideo_9595cloud_9595skyObjects3.length ;i < len;++i) {
+    gdjs.Level1Code.GDvideo_9595cloud_9595skyObjects3[i].getBehavior("Tween").addObjectOpacityTween2("FadeOutSkyCloud", 0, "linear", 1.3, false);
+}
+}
+}
+
+}
+
+
+{
+
+gdjs.copyArray(runtimeScene.getObjects("sky"), gdjs.Level1Code.GDskyObjects3);
+
+let isConditionTrue_0 = false;
+isConditionTrue_0 = false;
+for (var i = 0, k = 0, l = gdjs.Level1Code.GDskyObjects3.length;i<l;++i) {
+    if ( gdjs.Level1Code.GDskyObjects3[i].getBehavior("Animation").getAnimationName() == "Rain" ) {
+        isConditionTrue_0 = true;
+        gdjs.Level1Code.GDskyObjects3[k] = gdjs.Level1Code.GDskyObjects3[i];
+        ++k;
+    }
+}
+gdjs.Level1Code.GDskyObjects3.length = k;
+if (isConditionTrue_0) {
+isConditionTrue_0 = false;
+{isConditionTrue_0 = runtimeScene.getOnceTriggers().triggerOnce(21531668);
+}
+}
+if (isConditionTrue_0) {
 
 { //Subevents
-gdjs.Level_320riginalCode.eventsList15(runtimeScene);} //End of subevents
+gdjs.Level1Code.eventsList11(runtimeScene);} //End of subevents
 }
 
 }
@@ -1042,147 +996,23 @@ gdjs.Level_320riginalCode.eventsList15(runtimeScene);} //End of subevents
 
 {
 
-
-elseEventsChainSatisfied = false;
-let isConditionTrue_0 = false;
-isConditionTrue_0 = false;
-{isConditionTrue_0 = (runtimeScene.getScene().getVariables().getFromIndex(7).getAsString() == "rain");
-}
-if (isConditionTrue_0) {
-gdjs.copyArray(runtimeScene.getObjects("RainEmitter"), gdjs.Level_320riginalCode.GDRainEmitterObjects1);
-{for(var i = 0, len = gdjs.Level_320riginalCode.GDRainEmitterObjects1.length ;i < len;++i) {
-    gdjs.Level_320riginalCode.GDRainEmitterObjects1[i].setFlow(400);
-}
-}
-{for(var i = 0, len = gdjs.Level_320riginalCode.GDRainEmitterObjects1.length ;i < len;++i) {
-    gdjs.Level_320riginalCode.GDRainEmitterObjects1[i].startEmission();
-}
-}
-elseEventsChainSatisfied = true;
-}
-
-}
-
-
-{
-
-
-if (!elseEventsChainSatisfied) {
-let isConditionTrue_0 = false;
-if (!elseEventsChainSatisfied) {
-gdjs.copyArray(runtimeScene.getObjects("RainEmitter"), gdjs.Level_320riginalCode.GDRainEmitterObjects1);
-{for(var i = 0, len = gdjs.Level_320riginalCode.GDRainEmitterObjects1.length ;i < len;++i) {
-    gdjs.Level_320riginalCode.GDRainEmitterObjects1[i].stopEmission();
-}
-}
-{for(var i = 0, len = gdjs.Level_320riginalCode.GDRainEmitterObjects1.length ;i < len;++i) {
-    gdjs.Level_320riginalCode.GDRainEmitterObjects1[i].setFlow(0);
-}
-}
-elseEventsChainSatisfied = true;
-}
-}
-
-}
-
-
-{
-
+gdjs.copyArray(runtimeScene.getObjects("video_rain_sky"), gdjs.Level1Code.GDvideo_9595rain_9595skyObjects3);
 
 let isConditionTrue_0 = false;
 isConditionTrue_0 = false;
-{isConditionTrue_0 = (runtimeScene.getScene().getVariables().getFromIndex(7).getAsString() == "sun");
+for (var i = 0, k = 0, l = gdjs.Level1Code.GDvideo_9595rain_9595skyObjects3.length;i<l;++i) {
+    if ( gdjs.Level1Code.GDvideo_9595rain_9595skyObjects3[i].isEnded() ) {
+        isConditionTrue_0 = true;
+        gdjs.Level1Code.GDvideo_9595rain_9595skyObjects3[k] = gdjs.Level1Code.GDvideo_9595rain_9595skyObjects3[i];
+        ++k;
+    }
 }
+gdjs.Level1Code.GDvideo_9595rain_9595skyObjects3.length = k;
 if (isConditionTrue_0) {
-{gdjs.evtTools.camera.enableLayerEffect(runtimeScene, "Night", "false", false);
+/* Reuse gdjs.Level1Code.GDvideo_9595rain_9595skyObjects3 */
+{for(var i = 0, len = gdjs.Level1Code.GDvideo_9595rain_9595skyObjects3.length ;i < len;++i) {
+    gdjs.Level1Code.GDvideo_9595rain_9595skyObjects3[i].getBehavior("Tween").addObjectOpacityTween2("FadeOutSkyRain", 0, "linear", 1.3, false);
 }
-{gdjs.evtTools.camera.enableLayerEffect(runtimeScene, "Godray", "true", false);
-}
-{gdjs.evtTools.camera.setLayerEffectDoubleParameter(runtimeScene, "", "Godray", "gain", 0.6);
-}
-}
-
-}
-
-
-{
-
-
-elseEventsChainSatisfied = false;
-let isConditionTrue_0 = false;
-isConditionTrue_0 = false;
-{isConditionTrue_0 = (runtimeScene.getScene().getVariables().getFromIndex(7).getAsString() == "heatwave");
-}
-if (isConditionTrue_0) {
-gdjs.copyArray(runtimeScene.getObjects("Block"), gdjs.Level_320riginalCode.GDBlockObjects1);
-gdjs.copyArray(runtimeScene.getObjects("Rock"), gdjs.Level_320riginalCode.GDRockObjects1);
-gdjs.copyArray(runtimeScene.getObjects("TopBlock"), gdjs.Level_320riginalCode.GDTopBlockObjects1);
-gdjs.copyArray(runtimeScene.getObjects("Tree"), gdjs.Level_320riginalCode.GDTreeObjects1);
-gdjs.copyArray(runtimeScene.getObjects("WoodSign"), gdjs.Level_320riginalCode.GDWoodSignObjects1);
-{gdjs.evtTools.camera.enableLayerEffect(runtimeScene, "Night", "no", false);
-}
-{gdjs.evtTools.camera.enableLayerEffect(runtimeScene, "Godray", "yes", false);
-}
-{/* Mismatched object type - skipped. */}
-{for(var i = 0, len = gdjs.Level_320riginalCode.GDBlockObjects1.length ;i < len;++i) {
-    gdjs.Level_320riginalCode.GDBlockObjects1[i].setColor("255;150;100");
-}
-}
-{for(var i = 0, len = gdjs.Level_320riginalCode.GDTopBlockObjects1.length ;i < len;++i) {
-    gdjs.Level_320riginalCode.GDTopBlockObjects1[i].setColor("255;150;100");
-}
-}
-{for(var i = 0, len = gdjs.Level_320riginalCode.GDTreeObjects1.length ;i < len;++i) {
-    gdjs.Level_320riginalCode.GDTreeObjects1[i].setColor("255;150;100");
-}
-}
-{for(var i = 0, len = gdjs.Level_320riginalCode.GDRockObjects1.length ;i < len;++i) {
-    gdjs.Level_320riginalCode.GDRockObjects1[i].setColor("255;150;100");
-}
-}
-{for(var i = 0, len = gdjs.Level_320riginalCode.GDWoodSignObjects1.length ;i < len;++i) {
-    gdjs.Level_320riginalCode.GDWoodSignObjects1[i].setColor("255;150;100");
-}
-}
-elseEventsChainSatisfied = true;
-}
-
-}
-
-
-{
-
-
-if (!elseEventsChainSatisfied) {
-let isConditionTrue_0 = false;
-if (!elseEventsChainSatisfied) {
-gdjs.copyArray(runtimeScene.getObjects("Block"), gdjs.Level_320riginalCode.GDBlockObjects1);
-gdjs.copyArray(runtimeScene.getObjects("Rock"), gdjs.Level_320riginalCode.GDRockObjects1);
-gdjs.copyArray(runtimeScene.getObjects("TopBlock"), gdjs.Level_320riginalCode.GDTopBlockObjects1);
-gdjs.copyArray(runtimeScene.getObjects("Tree"), gdjs.Level_320riginalCode.GDTreeObjects1);
-gdjs.copyArray(runtimeScene.getObjects("WoodSign"), gdjs.Level_320riginalCode.GDWoodSignObjects1);
-{/* Mismatched object type - skipped. */}
-{for(var i = 0, len = gdjs.Level_320riginalCode.GDBlockObjects1.length ;i < len;++i) {
-    gdjs.Level_320riginalCode.GDBlockObjects1[i].setColor("255;255;255");
-}
-}
-{for(var i = 0, len = gdjs.Level_320riginalCode.GDTopBlockObjects1.length ;i < len;++i) {
-    gdjs.Level_320riginalCode.GDTopBlockObjects1[i].setColor("255;255;255");
-}
-}
-{for(var i = 0, len = gdjs.Level_320riginalCode.GDTreeObjects1.length ;i < len;++i) {
-    gdjs.Level_320riginalCode.GDTreeObjects1[i].setColor("255;255;255");
-}
-}
-{for(var i = 0, len = gdjs.Level_320riginalCode.GDRockObjects1.length ;i < len;++i) {
-    gdjs.Level_320riginalCode.GDRockObjects1[i].setColor("255;255;255");
-}
-}
-{for(var i = 0, len = gdjs.Level_320riginalCode.GDWoodSignObjects1.length ;i < len;++i) {
-    gdjs.Level_320riginalCode.GDWoodSignObjects1[i].setColor("255;255;255");
-}
-}
-elseEventsChainSatisfied = true;
 }
 }
 
@@ -1191,18 +1021,27 @@ elseEventsChainSatisfied = true;
 
 {
 
+gdjs.copyArray(runtimeScene.getObjects("sky"), gdjs.Level1Code.GDskyObjects3);
 
 let isConditionTrue_0 = false;
 isConditionTrue_0 = false;
-{isConditionTrue_0 = (runtimeScene.getScene().getVariables().getFromIndex(7).getAsString() == "rain");
+for (var i = 0, k = 0, l = gdjs.Level1Code.GDskyObjects3.length;i<l;++i) {
+    if ( gdjs.Level1Code.GDskyObjects3[i].getBehavior("Animation").getAnimationName() == "Night" ) {
+        isConditionTrue_0 = true;
+        gdjs.Level1Code.GDskyObjects3[k] = gdjs.Level1Code.GDskyObjects3[i];
+        ++k;
+    }
+}
+gdjs.Level1Code.GDskyObjects3.length = k;
+if (isConditionTrue_0) {
+isConditionTrue_0 = false;
+{isConditionTrue_0 = runtimeScene.getOnceTriggers().triggerOnce(21534012);
+}
 }
 if (isConditionTrue_0) {
-{gdjs.evtTools.camera.enableLayerEffect(runtimeScene, "Night", "false", false);
-}
-{gdjs.evtTools.camera.enableLayerEffect(runtimeScene, "HeatDistortion", "false", false);
-}
-{gdjs.evtTools.camera.enableLayerEffect(runtimeScene, "Godray", "false", false);
-}
+
+{ //Subevents
+gdjs.Level1Code.eventsList13(runtimeScene);} //End of subevents
 }
 
 }
@@ -1210,17 +1049,54 @@ if (isConditionTrue_0) {
 
 {
 
+gdjs.copyArray(runtimeScene.getObjects("video_sky_night"), gdjs.Level1Code.GDvideo_9595sky_9595nightObjects2);
 
 let isConditionTrue_0 = false;
 isConditionTrue_0 = false;
-{isConditionTrue_0 = (runtimeScene.getScene().getVariables().getFromIndex(7).getAsString() == "night");
+for (var i = 0, k = 0, l = gdjs.Level1Code.GDvideo_9595sky_9595nightObjects2.length;i<l;++i) {
+    if ( gdjs.Level1Code.GDvideo_9595sky_9595nightObjects2[i].isEnded() ) {
+        isConditionTrue_0 = true;
+        gdjs.Level1Code.GDvideo_9595sky_9595nightObjects2[k] = gdjs.Level1Code.GDvideo_9595sky_9595nightObjects2[i];
+        ++k;
+    }
 }
+gdjs.Level1Code.GDvideo_9595sky_9595nightObjects2.length = k;
 if (isConditionTrue_0) {
-{gdjs.evtTools.camera.enableLayerEffect(runtimeScene, "Night", "true", false);
+/* Reuse gdjs.Level1Code.GDvideo_9595sky_9595nightObjects2 */
+{for(var i = 0, len = gdjs.Level1Code.GDvideo_9595sky_9595nightObjects2.length ;i < len;++i) {
+    gdjs.Level1Code.GDvideo_9595sky_9595nightObjects2[i].getBehavior("Tween").addObjectOpacityTween2("FadeOutSkyNight", 0, "linear", 1.3, false);
 }
-{gdjs.evtTools.camera.enableLayerEffect(runtimeScene, "HeatDistortion", "false", false);
 }
-{gdjs.evtTools.camera.enableLayerEffect(runtimeScene, "Godray", "false", false);
+}
+
+}
+
+
+};gdjs.Level1Code.eventsList15 = function(runtimeScene) {
+
+{
+
+gdjs.copyArray(runtimeScene.getObjects("sky"), gdjs.Level1Code.GDskyObjects2);
+
+let isConditionTrue_0 = false;
+isConditionTrue_0 = false;
+for (var i = 0, k = 0, l = gdjs.Level1Code.GDskyObjects2.length;i<l;++i) {
+    if ( gdjs.Level1Code.GDskyObjects2[i].getBehavior("Animation").getAnimationName() == "Night" ) {
+        isConditionTrue_0 = true;
+        gdjs.Level1Code.GDskyObjects2[k] = gdjs.Level1Code.GDskyObjects2[i];
+        ++k;
+    }
+}
+gdjs.Level1Code.GDskyObjects2.length = k;
+if (isConditionTrue_0) {
+gdjs.copyArray(runtimeScene.getObjects("cloud1"), gdjs.Level1Code.GDcloud1Objects2);
+{for(var i = 0, len = gdjs.Level1Code.GDcloud1Objects2.length ;i < len;++i) {
+    gdjs.Level1Code.GDcloud1Objects2[i].getBehavior("Opacity").setOpacity(200);
+}
+}
+{for(var i = 0, len = gdjs.Level1Code.GDcloud1Objects2.length ;i < len;++i) {
+    gdjs.Level1Code.GDcloud1Objects2[i].getBehavior("Effect").enableEffect("nb", false);
+}
 }
 }
 
@@ -1229,142 +1105,68 @@ if (isConditionTrue_0) {
 
 {
 
+gdjs.copyArray(runtimeScene.getObjects("sky"), gdjs.Level1Code.GDskyObjects1);
+
+let isConditionTrue_0 = false;
+isConditionTrue_0 = false;
+for (var i = 0, k = 0, l = gdjs.Level1Code.GDskyObjects1.length;i<l;++i) {
+    if ( gdjs.Level1Code.GDskyObjects1[i].getBehavior("Animation").getAnimationName() == "Rain" ) {
+        isConditionTrue_0 = true;
+        gdjs.Level1Code.GDskyObjects1[k] = gdjs.Level1Code.GDskyObjects1[i];
+        ++k;
+    }
+}
+gdjs.Level1Code.GDskyObjects1.length = k;
+if (isConditionTrue_0) {
+gdjs.copyArray(runtimeScene.getObjects("cloud1"), gdjs.Level1Code.GDcloud1Objects1);
+{for(var i = 0, len = gdjs.Level1Code.GDcloud1Objects1.length ;i < len;++i) {
+    gdjs.Level1Code.GDcloud1Objects1[i].getBehavior("Opacity").setOpacity(150);
+}
+}
+{for(var i = 0, len = gdjs.Level1Code.GDcloud1Objects1.length ;i < len;++i) {
+    gdjs.Level1Code.GDcloud1Objects1[i].getBehavior("Effect").enableEffect("nb", true);
+}
+}
+}
+
+}
+
+
+};gdjs.Level1Code.eventsList16 = function(runtimeScene) {
+
+{
+
+
+gdjs.Level1Code.eventsList14(runtimeScene);
+}
+
+
+{
+
+
+gdjs.Level1Code.eventsList15(runtimeScene);
+}
+
+
+};gdjs.Level1Code.mapOfGDgdjs_9546Level1Code_9546GDcloud1Objects1Objects = Hashtable.newFrom({"cloud1": gdjs.Level1Code.GDcloud1Objects1});
+gdjs.Level1Code.eventsList17 = function(runtimeScene) {
+
+{
+
+gdjs.copyArray(runtimeScene.getObjects("cloud1"), gdjs.Level1Code.GDcloud1Objects1);
 
 let isConditionTrue_0 = false;
 isConditionTrue_0 = false;
 {let isConditionTrue_1 = false;
 isConditionTrue_0 = false;
 {
-isConditionTrue_1 = !(gdjs.evtsExt__AdvancedHTTP__ResponseSuccess.func(runtimeScene, runtimeScene.getScene().getVariables().getFromIndex(9), null));
+isConditionTrue_1 = gdjs.evtTools.input.isMouseButtonPressed(runtimeScene, "Left");
 if(isConditionTrue_1) {
     isConditionTrue_0 = true;
 }
 }
 {
-isConditionTrue_1 = gdjs.evtsExt__AdvancedHTTP__ResponseStatusCode.func(runtimeScene, runtimeScene.getScene().getVariables().getFromIndex(9), null) >= 400;
-if(isConditionTrue_1) {
-    isConditionTrue_0 = true;
-}
-}
-{
-}
-}
-if (isConditionTrue_0) {
-
-{ //Subevents
-gdjs.Level_320riginalCode.eventsList17(runtimeScene);} //End of subevents
-}
-
-}
-
-
-{
-
-
-let isConditionTrue_0 = false;
-{
-gdjs.copyArray(runtimeScene.getObjects("WeatherDebugText"), gdjs.Level_320riginalCode.GDWeatherDebugTextObjects1);
-{for(var i = 0, len = gdjs.Level_320riginalCode.GDWeatherDebugTextObjects1.length ;i < len;++i) {
-    gdjs.Level_320riginalCode.GDWeatherDebugTextObjects1[i].getBehavior("Text").setText("Météo: " + runtimeScene.getScene().getVariables().getFromIndex(7).getAsString() + gdjs.evtTools.string.newLine() + "Temp: " + gdjs.evtTools.common.toString(runtimeScene.getScene().getVariables().getFromIndex(6).getAsNumber()) + gdjs.evtTools.string.newLine() + "RespLen: " + gdjs.evtTools.common.toString(gdjs.evtTools.string.strLen(runtimeScene.getScene().getVariables().getFromIndex(5).getAsString())) + gdjs.evtTools.string.newLine() + "Err: " + runtimeScene.getScene().getVariables().getFromIndex(4).getAsString());
-}
-}
-}
-
-}
-
-
-{
-
-
-let isConditionTrue_0 = false;
-isConditionTrue_0 = false;
-{isConditionTrue_0 = runtimeScene.getScene().getVariables().getFromIndex(3).getAsBoolean();
-}
-if (isConditionTrue_0) {
-{gdjs.evtTools.camera.enableLayerEffect(runtimeScene, "HeatDistortion", "true", false);
-}
-}
-
-}
-
-
-{
-
-
-let isConditionTrue_0 = false;
-isConditionTrue_0 = false;
-isConditionTrue_0 = gdjs.evtTools.runtimeScene.sceneJustBegins(runtimeScene);
-if (isConditionTrue_0) {
-{runtimeScene.getScene().getVariables().getFromIndex(2).setString("heatwave");
-}
-{runtimeScene.getScene().getVariables().getFromIndex(6).setNumber(40);
-}
-{runtimeScene.getScene().getVariables().getFromIndex(7).setString(runtimeScene.getScene().getVariables().getFromIndex(2).getAsString());
-}
-}
-
-}
-
-
-{
-
-
-let isConditionTrue_0 = false;
-isConditionTrue_0 = false;
-{isConditionTrue_0 = (runtimeScene.getScene().getVariables().getFromIndex(2).getAsString() != "");
-}
-if (isConditionTrue_0) {
-gdjs.copyArray(runtimeScene.getObjects("RainEmitter"), gdjs.Level_320riginalCode.GDRainEmitterObjects1);
-{runtimeScene.getScene().getVariables().getFromIndex(7).setString(runtimeScene.getScene().getVariables().getFromIndex(2).getAsString());
-}
-{for(var i = 0, len = gdjs.Level_320riginalCode.GDRainEmitterObjects1.length ;i < len;++i) {
-    gdjs.Level_320riginalCode.GDRainEmitterObjects1[i].setFlow(0);
-}
-}
-{for(var i = 0, len = gdjs.Level_320riginalCode.GDRainEmitterObjects1.length ;i < len;++i) {
-    gdjs.Level_320riginalCode.GDRainEmitterObjects1[i].stopEmission();
-}
-}
-}
-
-}
-
-
-{
-
-
-let isConditionTrue_0 = false;
-isConditionTrue_0 = false;
-isConditionTrue_0 = gdjs.evtTools.runtimeScene.sceneJustBegins(runtimeScene);
-if (isConditionTrue_0) {
-gdjs.copyArray(runtimeScene.getObjects("Mindy"), gdjs.Level_320riginalCode.GDMindyObjects1);
-{for(var i = 0, len = gdjs.Level_320riginalCode.GDMindyObjects1.length ;i < len;++i) {
-    gdjs.Level_320riginalCode.GDMindyObjects1[i].getBehavior("Animation").setAnimationName("Idle");
-}
-}
-}
-
-}
-
-
-{
-
-
-elseEventsChainSatisfied = false;
-let isConditionTrue_0 = false;
-isConditionTrue_0 = false;
-{let isConditionTrue_1 = false;
-isConditionTrue_0 = false;
-{
-{isConditionTrue_1 = (gdjs.evtTools.runtimeScene.getTime(runtimeScene, "hour") < 6);
-}
-if(isConditionTrue_1) {
-    isConditionTrue_0 = true;
-}
-}
-{
-{isConditionTrue_1 = (gdjs.evtTools.runtimeScene.getTime(runtimeScene, "hour") >= 21);
-}
+isConditionTrue_1 = gdjs.evtTools.input.hasAnyTouchOrMouseStarted(runtimeScene);
 if(isConditionTrue_1) {
     isConditionTrue_0 = true;
 }
@@ -1373,225 +1175,416 @@ if(isConditionTrue_1) {
 }
 }
 if (isConditionTrue_0) {
-{/* Unknown object - skipped. */}
-elseEventsChainSatisfied = true;
-}
-
-}
-
-
-{
-
-
-if (!elseEventsChainSatisfied) {
-let isConditionTrue_0 = false;
 isConditionTrue_0 = false;
-{isConditionTrue_0 = (runtimeScene.getScene().getVariables().getFromIndex(7).getAsString() == "rain");
-}
-if (!elseEventsChainSatisfied && isConditionTrue_0) {
-{/* Unknown object - skipped. */}
-elseEventsChainSatisfied = true;
-}
-}
-
-}
-
-
-{
-
-
-if (!elseEventsChainSatisfied) {
-let isConditionTrue_0 = false;
+isConditionTrue_0 = gdjs.evtTools.input.cursorOnObject(gdjs.Level1Code.mapOfGDgdjs_9546Level1Code_9546GDcloud1Objects1Objects, runtimeScene, true, false);
+if (isConditionTrue_0) {
 isConditionTrue_0 = false;
-{isConditionTrue_0 = (runtimeScene.getScene().getVariables().getFromIndex(7).getAsString() == "unknown");
+{isConditionTrue_0 = runtimeScene.getOnceTriggers().triggerOnce(21107204);
 }
-if (!elseEventsChainSatisfied && isConditionTrue_0) {
-{/* Unknown object - skipped. */}
-elseEventsChainSatisfied = true;
+}
+}
+if (isConditionTrue_0) {
+{gdjs.evtTools.window.openURL("https://zelda-like-my-life-0-0.vercel.app", runtimeScene);
 }
 }
 
+}
+
+
+};gdjs.Level1Code.eventsList18 = function(runtimeScene) {
+
+{
+
+
+gdjs.Level1Code.eventsList5(runtimeScene);
 }
 
 
 {
 
 
-if (!elseEventsChainSatisfied) {
+gdjs.Level1Code.eventsList16(runtimeScene);
+}
+
+
+{
+
+
+gdjs.Level1Code.eventsList17(runtimeScene);
+}
+
+
+{
+
+
 let isConditionTrue_0 = false;
-if (!elseEventsChainSatisfied) {
-{/* Unknown object - skipped. */}
-elseEventsChainSatisfied = true;
-}
+{
 }
 
 }
 
-}
 
 };
 
-gdjs.Level_320riginalCode.func = function(runtimeScene) {
+gdjs.Level1Code.func = function(runtimeScene) {
 runtimeScene.getOnceTriggers().startNewFrame();
 
-gdjs.Level_320riginalCode.GDMindyObjects1.length = 0;
-gdjs.Level_320riginalCode.GDMindyObjects2.length = 0;
-gdjs.Level_320riginalCode.GDMindyObjects3.length = 0;
-gdjs.Level_320riginalCode.GDMindyObjects4.length = 0;
-gdjs.Level_320riginalCode.GDBatObjects1.length = 0;
-gdjs.Level_320riginalCode.GDBatObjects2.length = 0;
-gdjs.Level_320riginalCode.GDBatObjects3.length = 0;
-gdjs.Level_320riginalCode.GDBatObjects4.length = 0;
-gdjs.Level_320riginalCode.GDTopBlockObjects1.length = 0;
-gdjs.Level_320riginalCode.GDTopBlockObjects2.length = 0;
-gdjs.Level_320riginalCode.GDTopBlockObjects3.length = 0;
-gdjs.Level_320riginalCode.GDTopBlockObjects4.length = 0;
-gdjs.Level_320riginalCode.GDBlockGrassObjects1.length = 0;
-gdjs.Level_320riginalCode.GDBlockGrassObjects2.length = 0;
-gdjs.Level_320riginalCode.GDBlockGrassObjects3.length = 0;
-gdjs.Level_320riginalCode.GDBlockGrassObjects4.length = 0;
-gdjs.Level_320riginalCode.GDBlockObjects1.length = 0;
-gdjs.Level_320riginalCode.GDBlockObjects2.length = 0;
-gdjs.Level_320riginalCode.GDBlockObjects3.length = 0;
-gdjs.Level_320riginalCode.GDBlockObjects4.length = 0;
-gdjs.Level_320riginalCode.GDBridgeObjects1.length = 0;
-gdjs.Level_320riginalCode.GDBridgeObjects2.length = 0;
-gdjs.Level_320riginalCode.GDBridgeObjects3.length = 0;
-gdjs.Level_320riginalCode.GDBridgeObjects4.length = 0;
-gdjs.Level_320riginalCode.GDFloorGrassObjects1.length = 0;
-gdjs.Level_320riginalCode.GDFloorGrassObjects2.length = 0;
-gdjs.Level_320riginalCode.GDFloorGrassObjects3.length = 0;
-gdjs.Level_320riginalCode.GDFloorGrassObjects4.length = 0;
-gdjs.Level_320riginalCode.GDFloorObjects1.length = 0;
-gdjs.Level_320riginalCode.GDFloorObjects2.length = 0;
-gdjs.Level_320riginalCode.GDFloorObjects3.length = 0;
-gdjs.Level_320riginalCode.GDFloorObjects4.length = 0;
-gdjs.Level_320riginalCode.GDTreeObjects1.length = 0;
-gdjs.Level_320riginalCode.GDTreeObjects2.length = 0;
-gdjs.Level_320riginalCode.GDTreeObjects3.length = 0;
-gdjs.Level_320riginalCode.GDTreeObjects4.length = 0;
-gdjs.Level_320riginalCode.GDRockObjects1.length = 0;
-gdjs.Level_320riginalCode.GDRockObjects2.length = 0;
-gdjs.Level_320riginalCode.GDRockObjects3.length = 0;
-gdjs.Level_320riginalCode.GDRockObjects4.length = 0;
-gdjs.Level_320riginalCode.GDWoodSignObjects1.length = 0;
-gdjs.Level_320riginalCode.GDWoodSignObjects2.length = 0;
-gdjs.Level_320riginalCode.GDWoodSignObjects3.length = 0;
-gdjs.Level_320riginalCode.GDWoodSignObjects4.length = 0;
-gdjs.Level_320riginalCode.GDSmallObstacleObjects1.length = 0;
-gdjs.Level_320riginalCode.GDSmallObstacleObjects2.length = 0;
-gdjs.Level_320riginalCode.GDSmallObstacleObjects3.length = 0;
-gdjs.Level_320riginalCode.GDSmallObstacleObjects4.length = 0;
-gdjs.Level_320riginalCode.GDTileRowObstacleObjects1.length = 0;
-gdjs.Level_320riginalCode.GDTileRowObstacleObjects2.length = 0;
-gdjs.Level_320riginalCode.GDTileRowObstacleObjects3.length = 0;
-gdjs.Level_320riginalCode.GDTileRowObstacleObjects4.length = 0;
-gdjs.Level_320riginalCode.GDTileColumnObstacleObjects1.length = 0;
-gdjs.Level_320riginalCode.GDTileColumnObstacleObjects2.length = 0;
-gdjs.Level_320riginalCode.GDTileColumnObstacleObjects3.length = 0;
-gdjs.Level_320riginalCode.GDTileColumnObstacleObjects4.length = 0;
-gdjs.Level_320riginalCode.GDTileObstacleObjects1.length = 0;
-gdjs.Level_320riginalCode.GDTileObstacleObjects2.length = 0;
-gdjs.Level_320riginalCode.GDTileObstacleObjects3.length = 0;
-gdjs.Level_320riginalCode.GDTileObstacleObjects4.length = 0;
-gdjs.Level_320riginalCode.GDNavMeshObjects1.length = 0;
-gdjs.Level_320riginalCode.GDNavMeshObjects2.length = 0;
-gdjs.Level_320riginalCode.GDNavMeshObjects3.length = 0;
-gdjs.Level_320riginalCode.GDNavMeshObjects4.length = 0;
-gdjs.Level_320riginalCode.GDRainEmitterObjects1.length = 0;
-gdjs.Level_320riginalCode.GDRainEmitterObjects2.length = 0;
-gdjs.Level_320riginalCode.GDRainEmitterObjects3.length = 0;
-gdjs.Level_320riginalCode.GDRainEmitterObjects4.length = 0;
-gdjs.Level_320riginalCode.GDWeatherDebugTextObjects1.length = 0;
-gdjs.Level_320riginalCode.GDWeatherDebugTextObjects2.length = 0;
-gdjs.Level_320riginalCode.GDWeatherDebugTextObjects3.length = 0;
-gdjs.Level_320riginalCode.GDWeatherDebugTextObjects4.length = 0;
-gdjs.Level_320riginalCode.GDHeatDisplacementTextureObjects1.length = 0;
-gdjs.Level_320riginalCode.GDHeatDisplacementTextureObjects2.length = 0;
-gdjs.Level_320riginalCode.GDHeatDisplacementTextureObjects3.length = 0;
-gdjs.Level_320riginalCode.GDHeatDisplacementTextureObjects4.length = 0;
+gdjs.Level1Code.GDMindyObjects1.length = 0;
+gdjs.Level1Code.GDMindyObjects2.length = 0;
+gdjs.Level1Code.GDMindyObjects3.length = 0;
+gdjs.Level1Code.GDMindyObjects4.length = 0;
+gdjs.Level1Code.GDMindyObjects5.length = 0;
+gdjs.Level1Code.GDMindyObjects6.length = 0;
+gdjs.Level1Code.GDMindyObjects7.length = 0;
+gdjs.Level1Code.GDBatObjects1.length = 0;
+gdjs.Level1Code.GDBatObjects2.length = 0;
+gdjs.Level1Code.GDBatObjects3.length = 0;
+gdjs.Level1Code.GDBatObjects4.length = 0;
+gdjs.Level1Code.GDBatObjects5.length = 0;
+gdjs.Level1Code.GDBatObjects6.length = 0;
+gdjs.Level1Code.GDBatObjects7.length = 0;
+gdjs.Level1Code.GDTopBlockObjects1.length = 0;
+gdjs.Level1Code.GDTopBlockObjects2.length = 0;
+gdjs.Level1Code.GDTopBlockObjects3.length = 0;
+gdjs.Level1Code.GDTopBlockObjects4.length = 0;
+gdjs.Level1Code.GDTopBlockObjects5.length = 0;
+gdjs.Level1Code.GDTopBlockObjects6.length = 0;
+gdjs.Level1Code.GDTopBlockObjects7.length = 0;
+gdjs.Level1Code.GDBlockGrassObjects1.length = 0;
+gdjs.Level1Code.GDBlockGrassObjects2.length = 0;
+gdjs.Level1Code.GDBlockGrassObjects3.length = 0;
+gdjs.Level1Code.GDBlockGrassObjects4.length = 0;
+gdjs.Level1Code.GDBlockGrassObjects5.length = 0;
+gdjs.Level1Code.GDBlockGrassObjects6.length = 0;
+gdjs.Level1Code.GDBlockGrassObjects7.length = 0;
+gdjs.Level1Code.GDBlockObjects1.length = 0;
+gdjs.Level1Code.GDBlockObjects2.length = 0;
+gdjs.Level1Code.GDBlockObjects3.length = 0;
+gdjs.Level1Code.GDBlockObjects4.length = 0;
+gdjs.Level1Code.GDBlockObjects5.length = 0;
+gdjs.Level1Code.GDBlockObjects6.length = 0;
+gdjs.Level1Code.GDBlockObjects7.length = 0;
+gdjs.Level1Code.GDBridgeObjects1.length = 0;
+gdjs.Level1Code.GDBridgeObjects2.length = 0;
+gdjs.Level1Code.GDBridgeObjects3.length = 0;
+gdjs.Level1Code.GDBridgeObjects4.length = 0;
+gdjs.Level1Code.GDBridgeObjects5.length = 0;
+gdjs.Level1Code.GDBridgeObjects6.length = 0;
+gdjs.Level1Code.GDBridgeObjects7.length = 0;
+gdjs.Level1Code.GDFloorGrassObjects1.length = 0;
+gdjs.Level1Code.GDFloorGrassObjects2.length = 0;
+gdjs.Level1Code.GDFloorGrassObjects3.length = 0;
+gdjs.Level1Code.GDFloorGrassObjects4.length = 0;
+gdjs.Level1Code.GDFloorGrassObjects5.length = 0;
+gdjs.Level1Code.GDFloorGrassObjects6.length = 0;
+gdjs.Level1Code.GDFloorGrassObjects7.length = 0;
+gdjs.Level1Code.GDFloorObjects1.length = 0;
+gdjs.Level1Code.GDFloorObjects2.length = 0;
+gdjs.Level1Code.GDFloorObjects3.length = 0;
+gdjs.Level1Code.GDFloorObjects4.length = 0;
+gdjs.Level1Code.GDFloorObjects5.length = 0;
+gdjs.Level1Code.GDFloorObjects6.length = 0;
+gdjs.Level1Code.GDFloorObjects7.length = 0;
+gdjs.Level1Code.GDTreeObjects1.length = 0;
+gdjs.Level1Code.GDTreeObjects2.length = 0;
+gdjs.Level1Code.GDTreeObjects3.length = 0;
+gdjs.Level1Code.GDTreeObjects4.length = 0;
+gdjs.Level1Code.GDTreeObjects5.length = 0;
+gdjs.Level1Code.GDTreeObjects6.length = 0;
+gdjs.Level1Code.GDTreeObjects7.length = 0;
+gdjs.Level1Code.GDRockObjects1.length = 0;
+gdjs.Level1Code.GDRockObjects2.length = 0;
+gdjs.Level1Code.GDRockObjects3.length = 0;
+gdjs.Level1Code.GDRockObjects4.length = 0;
+gdjs.Level1Code.GDRockObjects5.length = 0;
+gdjs.Level1Code.GDRockObjects6.length = 0;
+gdjs.Level1Code.GDRockObjects7.length = 0;
+gdjs.Level1Code.GDWoodSignObjects1.length = 0;
+gdjs.Level1Code.GDWoodSignObjects2.length = 0;
+gdjs.Level1Code.GDWoodSignObjects3.length = 0;
+gdjs.Level1Code.GDWoodSignObjects4.length = 0;
+gdjs.Level1Code.GDWoodSignObjects5.length = 0;
+gdjs.Level1Code.GDWoodSignObjects6.length = 0;
+gdjs.Level1Code.GDWoodSignObjects7.length = 0;
+gdjs.Level1Code.GDSmallObstacleObjects1.length = 0;
+gdjs.Level1Code.GDSmallObstacleObjects2.length = 0;
+gdjs.Level1Code.GDSmallObstacleObjects3.length = 0;
+gdjs.Level1Code.GDSmallObstacleObjects4.length = 0;
+gdjs.Level1Code.GDSmallObstacleObjects5.length = 0;
+gdjs.Level1Code.GDSmallObstacleObjects6.length = 0;
+gdjs.Level1Code.GDSmallObstacleObjects7.length = 0;
+gdjs.Level1Code.GDTileRowObstacleObjects1.length = 0;
+gdjs.Level1Code.GDTileRowObstacleObjects2.length = 0;
+gdjs.Level1Code.GDTileRowObstacleObjects3.length = 0;
+gdjs.Level1Code.GDTileRowObstacleObjects4.length = 0;
+gdjs.Level1Code.GDTileRowObstacleObjects5.length = 0;
+gdjs.Level1Code.GDTileRowObstacleObjects6.length = 0;
+gdjs.Level1Code.GDTileRowObstacleObjects7.length = 0;
+gdjs.Level1Code.GDTileColumnObstacleObjects1.length = 0;
+gdjs.Level1Code.GDTileColumnObstacleObjects2.length = 0;
+gdjs.Level1Code.GDTileColumnObstacleObjects3.length = 0;
+gdjs.Level1Code.GDTileColumnObstacleObjects4.length = 0;
+gdjs.Level1Code.GDTileColumnObstacleObjects5.length = 0;
+gdjs.Level1Code.GDTileColumnObstacleObjects6.length = 0;
+gdjs.Level1Code.GDTileColumnObstacleObjects7.length = 0;
+gdjs.Level1Code.GDTileObstacleObjects1.length = 0;
+gdjs.Level1Code.GDTileObstacleObjects2.length = 0;
+gdjs.Level1Code.GDTileObstacleObjects3.length = 0;
+gdjs.Level1Code.GDTileObstacleObjects4.length = 0;
+gdjs.Level1Code.GDTileObstacleObjects5.length = 0;
+gdjs.Level1Code.GDTileObstacleObjects6.length = 0;
+gdjs.Level1Code.GDTileObstacleObjects7.length = 0;
+gdjs.Level1Code.GDNavMeshObjects1.length = 0;
+gdjs.Level1Code.GDNavMeshObjects2.length = 0;
+gdjs.Level1Code.GDNavMeshObjects3.length = 0;
+gdjs.Level1Code.GDNavMeshObjects4.length = 0;
+gdjs.Level1Code.GDNavMeshObjects5.length = 0;
+gdjs.Level1Code.GDNavMeshObjects6.length = 0;
+gdjs.Level1Code.GDNavMeshObjects7.length = 0;
+gdjs.Level1Code.GDtest_9595background_9595_9595_9595map_9595Objects1.length = 0;
+gdjs.Level1Code.GDtest_9595background_9595_9595_9595map_9595Objects2.length = 0;
+gdjs.Level1Code.GDtest_9595background_9595_9595_9595map_9595Objects3.length = 0;
+gdjs.Level1Code.GDtest_9595background_9595_9595_9595map_9595Objects4.length = 0;
+gdjs.Level1Code.GDtest_9595background_9595_9595_9595map_9595Objects5.length = 0;
+gdjs.Level1Code.GDtest_9595background_9595_9595_9595map_9595Objects6.length = 0;
+gdjs.Level1Code.GDtest_9595background_9595_9595_9595map_9595Objects7.length = 0;
+gdjs.Level1Code.GDNewSpriteObjects1.length = 0;
+gdjs.Level1Code.GDNewSpriteObjects2.length = 0;
+gdjs.Level1Code.GDNewSpriteObjects3.length = 0;
+gdjs.Level1Code.GDNewSpriteObjects4.length = 0;
+gdjs.Level1Code.GDNewSpriteObjects5.length = 0;
+gdjs.Level1Code.GDNewSpriteObjects6.length = 0;
+gdjs.Level1Code.GDNewSpriteObjects7.length = 0;
+gdjs.Level1Code.GDskyObjects1.length = 0;
+gdjs.Level1Code.GDskyObjects2.length = 0;
+gdjs.Level1Code.GDskyObjects3.length = 0;
+gdjs.Level1Code.GDskyObjects4.length = 0;
+gdjs.Level1Code.GDskyObjects5.length = 0;
+gdjs.Level1Code.GDskyObjects6.length = 0;
+gdjs.Level1Code.GDskyObjects7.length = 0;
+gdjs.Level1Code.GDDebugTextWeatherObjects1.length = 0;
+gdjs.Level1Code.GDDebugTextWeatherObjects2.length = 0;
+gdjs.Level1Code.GDDebugTextWeatherObjects3.length = 0;
+gdjs.Level1Code.GDDebugTextWeatherObjects4.length = 0;
+gdjs.Level1Code.GDDebugTextWeatherObjects5.length = 0;
+gdjs.Level1Code.GDDebugTextWeatherObjects6.length = 0;
+gdjs.Level1Code.GDDebugTextWeatherObjects7.length = 0;
+gdjs.Level1Code.GDcloud1Objects1.length = 0;
+gdjs.Level1Code.GDcloud1Objects2.length = 0;
+gdjs.Level1Code.GDcloud1Objects3.length = 0;
+gdjs.Level1Code.GDcloud1Objects4.length = 0;
+gdjs.Level1Code.GDcloud1Objects5.length = 0;
+gdjs.Level1Code.GDcloud1Objects6.length = 0;
+gdjs.Level1Code.GDcloud1Objects7.length = 0;
+gdjs.Level1Code.GDvideo_9595clear_9595skyObjects1.length = 0;
+gdjs.Level1Code.GDvideo_9595clear_9595skyObjects2.length = 0;
+gdjs.Level1Code.GDvideo_9595clear_9595skyObjects3.length = 0;
+gdjs.Level1Code.GDvideo_9595clear_9595skyObjects4.length = 0;
+gdjs.Level1Code.GDvideo_9595clear_9595skyObjects5.length = 0;
+gdjs.Level1Code.GDvideo_9595clear_9595skyObjects6.length = 0;
+gdjs.Level1Code.GDvideo_9595clear_9595skyObjects7.length = 0;
+gdjs.Level1Code.GDvideo_9595cloud_9595skyObjects1.length = 0;
+gdjs.Level1Code.GDvideo_9595cloud_9595skyObjects2.length = 0;
+gdjs.Level1Code.GDvideo_9595cloud_9595skyObjects3.length = 0;
+gdjs.Level1Code.GDvideo_9595cloud_9595skyObjects4.length = 0;
+gdjs.Level1Code.GDvideo_9595cloud_9595skyObjects5.length = 0;
+gdjs.Level1Code.GDvideo_9595cloud_9595skyObjects6.length = 0;
+gdjs.Level1Code.GDvideo_9595cloud_9595skyObjects7.length = 0;
+gdjs.Level1Code.GDvideo_9595rain_9595skyObjects1.length = 0;
+gdjs.Level1Code.GDvideo_9595rain_9595skyObjects2.length = 0;
+gdjs.Level1Code.GDvideo_9595rain_9595skyObjects3.length = 0;
+gdjs.Level1Code.GDvideo_9595rain_9595skyObjects4.length = 0;
+gdjs.Level1Code.GDvideo_9595rain_9595skyObjects5.length = 0;
+gdjs.Level1Code.GDvideo_9595rain_9595skyObjects6.length = 0;
+gdjs.Level1Code.GDvideo_9595rain_9595skyObjects7.length = 0;
+gdjs.Level1Code.GDvideo_9595sky_9595nightObjects1.length = 0;
+gdjs.Level1Code.GDvideo_9595sky_9595nightObjects2.length = 0;
+gdjs.Level1Code.GDvideo_9595sky_9595nightObjects3.length = 0;
+gdjs.Level1Code.GDvideo_9595sky_9595nightObjects4.length = 0;
+gdjs.Level1Code.GDvideo_9595sky_9595nightObjects5.length = 0;
+gdjs.Level1Code.GDvideo_9595sky_9595nightObjects6.length = 0;
+gdjs.Level1Code.GDvideo_9595sky_9595nightObjects7.length = 0;
 
-gdjs.Level_320riginalCode.eventsList18(runtimeScene);
-gdjs.Level_320riginalCode.GDMindyObjects1.length = 0;
-gdjs.Level_320riginalCode.GDMindyObjects2.length = 0;
-gdjs.Level_320riginalCode.GDMindyObjects3.length = 0;
-gdjs.Level_320riginalCode.GDMindyObjects4.length = 0;
-gdjs.Level_320riginalCode.GDBatObjects1.length = 0;
-gdjs.Level_320riginalCode.GDBatObjects2.length = 0;
-gdjs.Level_320riginalCode.GDBatObjects3.length = 0;
-gdjs.Level_320riginalCode.GDBatObjects4.length = 0;
-gdjs.Level_320riginalCode.GDTopBlockObjects1.length = 0;
-gdjs.Level_320riginalCode.GDTopBlockObjects2.length = 0;
-gdjs.Level_320riginalCode.GDTopBlockObjects3.length = 0;
-gdjs.Level_320riginalCode.GDTopBlockObjects4.length = 0;
-gdjs.Level_320riginalCode.GDBlockGrassObjects1.length = 0;
-gdjs.Level_320riginalCode.GDBlockGrassObjects2.length = 0;
-gdjs.Level_320riginalCode.GDBlockGrassObjects3.length = 0;
-gdjs.Level_320riginalCode.GDBlockGrassObjects4.length = 0;
-gdjs.Level_320riginalCode.GDBlockObjects1.length = 0;
-gdjs.Level_320riginalCode.GDBlockObjects2.length = 0;
-gdjs.Level_320riginalCode.GDBlockObjects3.length = 0;
-gdjs.Level_320riginalCode.GDBlockObjects4.length = 0;
-gdjs.Level_320riginalCode.GDBridgeObjects1.length = 0;
-gdjs.Level_320riginalCode.GDBridgeObjects2.length = 0;
-gdjs.Level_320riginalCode.GDBridgeObjects3.length = 0;
-gdjs.Level_320riginalCode.GDBridgeObjects4.length = 0;
-gdjs.Level_320riginalCode.GDFloorGrassObjects1.length = 0;
-gdjs.Level_320riginalCode.GDFloorGrassObjects2.length = 0;
-gdjs.Level_320riginalCode.GDFloorGrassObjects3.length = 0;
-gdjs.Level_320riginalCode.GDFloorGrassObjects4.length = 0;
-gdjs.Level_320riginalCode.GDFloorObjects1.length = 0;
-gdjs.Level_320riginalCode.GDFloorObjects2.length = 0;
-gdjs.Level_320riginalCode.GDFloorObjects3.length = 0;
-gdjs.Level_320riginalCode.GDFloorObjects4.length = 0;
-gdjs.Level_320riginalCode.GDTreeObjects1.length = 0;
-gdjs.Level_320riginalCode.GDTreeObjects2.length = 0;
-gdjs.Level_320riginalCode.GDTreeObjects3.length = 0;
-gdjs.Level_320riginalCode.GDTreeObjects4.length = 0;
-gdjs.Level_320riginalCode.GDRockObjects1.length = 0;
-gdjs.Level_320riginalCode.GDRockObjects2.length = 0;
-gdjs.Level_320riginalCode.GDRockObjects3.length = 0;
-gdjs.Level_320riginalCode.GDRockObjects4.length = 0;
-gdjs.Level_320riginalCode.GDWoodSignObjects1.length = 0;
-gdjs.Level_320riginalCode.GDWoodSignObjects2.length = 0;
-gdjs.Level_320riginalCode.GDWoodSignObjects3.length = 0;
-gdjs.Level_320riginalCode.GDWoodSignObjects4.length = 0;
-gdjs.Level_320riginalCode.GDSmallObstacleObjects1.length = 0;
-gdjs.Level_320riginalCode.GDSmallObstacleObjects2.length = 0;
-gdjs.Level_320riginalCode.GDSmallObstacleObjects3.length = 0;
-gdjs.Level_320riginalCode.GDSmallObstacleObjects4.length = 0;
-gdjs.Level_320riginalCode.GDTileRowObstacleObjects1.length = 0;
-gdjs.Level_320riginalCode.GDTileRowObstacleObjects2.length = 0;
-gdjs.Level_320riginalCode.GDTileRowObstacleObjects3.length = 0;
-gdjs.Level_320riginalCode.GDTileRowObstacleObjects4.length = 0;
-gdjs.Level_320riginalCode.GDTileColumnObstacleObjects1.length = 0;
-gdjs.Level_320riginalCode.GDTileColumnObstacleObjects2.length = 0;
-gdjs.Level_320riginalCode.GDTileColumnObstacleObjects3.length = 0;
-gdjs.Level_320riginalCode.GDTileColumnObstacleObjects4.length = 0;
-gdjs.Level_320riginalCode.GDTileObstacleObjects1.length = 0;
-gdjs.Level_320riginalCode.GDTileObstacleObjects2.length = 0;
-gdjs.Level_320riginalCode.GDTileObstacleObjects3.length = 0;
-gdjs.Level_320riginalCode.GDTileObstacleObjects4.length = 0;
-gdjs.Level_320riginalCode.GDNavMeshObjects1.length = 0;
-gdjs.Level_320riginalCode.GDNavMeshObjects2.length = 0;
-gdjs.Level_320riginalCode.GDNavMeshObjects3.length = 0;
-gdjs.Level_320riginalCode.GDNavMeshObjects4.length = 0;
-gdjs.Level_320riginalCode.GDRainEmitterObjects1.length = 0;
-gdjs.Level_320riginalCode.GDRainEmitterObjects2.length = 0;
-gdjs.Level_320riginalCode.GDRainEmitterObjects3.length = 0;
-gdjs.Level_320riginalCode.GDRainEmitterObjects4.length = 0;
-gdjs.Level_320riginalCode.GDWeatherDebugTextObjects1.length = 0;
-gdjs.Level_320riginalCode.GDWeatherDebugTextObjects2.length = 0;
-gdjs.Level_320riginalCode.GDWeatherDebugTextObjects3.length = 0;
-gdjs.Level_320riginalCode.GDWeatherDebugTextObjects4.length = 0;
-gdjs.Level_320riginalCode.GDHeatDisplacementTextureObjects1.length = 0;
-gdjs.Level_320riginalCode.GDHeatDisplacementTextureObjects2.length = 0;
-gdjs.Level_320riginalCode.GDHeatDisplacementTextureObjects3.length = 0;
-gdjs.Level_320riginalCode.GDHeatDisplacementTextureObjects4.length = 0;
+gdjs.Level1Code.eventsList18(runtimeScene);
+gdjs.Level1Code.GDMindyObjects1.length = 0;
+gdjs.Level1Code.GDMindyObjects2.length = 0;
+gdjs.Level1Code.GDMindyObjects3.length = 0;
+gdjs.Level1Code.GDMindyObjects4.length = 0;
+gdjs.Level1Code.GDMindyObjects5.length = 0;
+gdjs.Level1Code.GDMindyObjects6.length = 0;
+gdjs.Level1Code.GDMindyObjects7.length = 0;
+gdjs.Level1Code.GDBatObjects1.length = 0;
+gdjs.Level1Code.GDBatObjects2.length = 0;
+gdjs.Level1Code.GDBatObjects3.length = 0;
+gdjs.Level1Code.GDBatObjects4.length = 0;
+gdjs.Level1Code.GDBatObjects5.length = 0;
+gdjs.Level1Code.GDBatObjects6.length = 0;
+gdjs.Level1Code.GDBatObjects7.length = 0;
+gdjs.Level1Code.GDTopBlockObjects1.length = 0;
+gdjs.Level1Code.GDTopBlockObjects2.length = 0;
+gdjs.Level1Code.GDTopBlockObjects3.length = 0;
+gdjs.Level1Code.GDTopBlockObjects4.length = 0;
+gdjs.Level1Code.GDTopBlockObjects5.length = 0;
+gdjs.Level1Code.GDTopBlockObjects6.length = 0;
+gdjs.Level1Code.GDTopBlockObjects7.length = 0;
+gdjs.Level1Code.GDBlockGrassObjects1.length = 0;
+gdjs.Level1Code.GDBlockGrassObjects2.length = 0;
+gdjs.Level1Code.GDBlockGrassObjects3.length = 0;
+gdjs.Level1Code.GDBlockGrassObjects4.length = 0;
+gdjs.Level1Code.GDBlockGrassObjects5.length = 0;
+gdjs.Level1Code.GDBlockGrassObjects6.length = 0;
+gdjs.Level1Code.GDBlockGrassObjects7.length = 0;
+gdjs.Level1Code.GDBlockObjects1.length = 0;
+gdjs.Level1Code.GDBlockObjects2.length = 0;
+gdjs.Level1Code.GDBlockObjects3.length = 0;
+gdjs.Level1Code.GDBlockObjects4.length = 0;
+gdjs.Level1Code.GDBlockObjects5.length = 0;
+gdjs.Level1Code.GDBlockObjects6.length = 0;
+gdjs.Level1Code.GDBlockObjects7.length = 0;
+gdjs.Level1Code.GDBridgeObjects1.length = 0;
+gdjs.Level1Code.GDBridgeObjects2.length = 0;
+gdjs.Level1Code.GDBridgeObjects3.length = 0;
+gdjs.Level1Code.GDBridgeObjects4.length = 0;
+gdjs.Level1Code.GDBridgeObjects5.length = 0;
+gdjs.Level1Code.GDBridgeObjects6.length = 0;
+gdjs.Level1Code.GDBridgeObjects7.length = 0;
+gdjs.Level1Code.GDFloorGrassObjects1.length = 0;
+gdjs.Level1Code.GDFloorGrassObjects2.length = 0;
+gdjs.Level1Code.GDFloorGrassObjects3.length = 0;
+gdjs.Level1Code.GDFloorGrassObjects4.length = 0;
+gdjs.Level1Code.GDFloorGrassObjects5.length = 0;
+gdjs.Level1Code.GDFloorGrassObjects6.length = 0;
+gdjs.Level1Code.GDFloorGrassObjects7.length = 0;
+gdjs.Level1Code.GDFloorObjects1.length = 0;
+gdjs.Level1Code.GDFloorObjects2.length = 0;
+gdjs.Level1Code.GDFloorObjects3.length = 0;
+gdjs.Level1Code.GDFloorObjects4.length = 0;
+gdjs.Level1Code.GDFloorObjects5.length = 0;
+gdjs.Level1Code.GDFloorObjects6.length = 0;
+gdjs.Level1Code.GDFloorObjects7.length = 0;
+gdjs.Level1Code.GDTreeObjects1.length = 0;
+gdjs.Level1Code.GDTreeObjects2.length = 0;
+gdjs.Level1Code.GDTreeObjects3.length = 0;
+gdjs.Level1Code.GDTreeObjects4.length = 0;
+gdjs.Level1Code.GDTreeObjects5.length = 0;
+gdjs.Level1Code.GDTreeObjects6.length = 0;
+gdjs.Level1Code.GDTreeObjects7.length = 0;
+gdjs.Level1Code.GDRockObjects1.length = 0;
+gdjs.Level1Code.GDRockObjects2.length = 0;
+gdjs.Level1Code.GDRockObjects3.length = 0;
+gdjs.Level1Code.GDRockObjects4.length = 0;
+gdjs.Level1Code.GDRockObjects5.length = 0;
+gdjs.Level1Code.GDRockObjects6.length = 0;
+gdjs.Level1Code.GDRockObjects7.length = 0;
+gdjs.Level1Code.GDWoodSignObjects1.length = 0;
+gdjs.Level1Code.GDWoodSignObjects2.length = 0;
+gdjs.Level1Code.GDWoodSignObjects3.length = 0;
+gdjs.Level1Code.GDWoodSignObjects4.length = 0;
+gdjs.Level1Code.GDWoodSignObjects5.length = 0;
+gdjs.Level1Code.GDWoodSignObjects6.length = 0;
+gdjs.Level1Code.GDWoodSignObjects7.length = 0;
+gdjs.Level1Code.GDSmallObstacleObjects1.length = 0;
+gdjs.Level1Code.GDSmallObstacleObjects2.length = 0;
+gdjs.Level1Code.GDSmallObstacleObjects3.length = 0;
+gdjs.Level1Code.GDSmallObstacleObjects4.length = 0;
+gdjs.Level1Code.GDSmallObstacleObjects5.length = 0;
+gdjs.Level1Code.GDSmallObstacleObjects6.length = 0;
+gdjs.Level1Code.GDSmallObstacleObjects7.length = 0;
+gdjs.Level1Code.GDTileRowObstacleObjects1.length = 0;
+gdjs.Level1Code.GDTileRowObstacleObjects2.length = 0;
+gdjs.Level1Code.GDTileRowObstacleObjects3.length = 0;
+gdjs.Level1Code.GDTileRowObstacleObjects4.length = 0;
+gdjs.Level1Code.GDTileRowObstacleObjects5.length = 0;
+gdjs.Level1Code.GDTileRowObstacleObjects6.length = 0;
+gdjs.Level1Code.GDTileRowObstacleObjects7.length = 0;
+gdjs.Level1Code.GDTileColumnObstacleObjects1.length = 0;
+gdjs.Level1Code.GDTileColumnObstacleObjects2.length = 0;
+gdjs.Level1Code.GDTileColumnObstacleObjects3.length = 0;
+gdjs.Level1Code.GDTileColumnObstacleObjects4.length = 0;
+gdjs.Level1Code.GDTileColumnObstacleObjects5.length = 0;
+gdjs.Level1Code.GDTileColumnObstacleObjects6.length = 0;
+gdjs.Level1Code.GDTileColumnObstacleObjects7.length = 0;
+gdjs.Level1Code.GDTileObstacleObjects1.length = 0;
+gdjs.Level1Code.GDTileObstacleObjects2.length = 0;
+gdjs.Level1Code.GDTileObstacleObjects3.length = 0;
+gdjs.Level1Code.GDTileObstacleObjects4.length = 0;
+gdjs.Level1Code.GDTileObstacleObjects5.length = 0;
+gdjs.Level1Code.GDTileObstacleObjects6.length = 0;
+gdjs.Level1Code.GDTileObstacleObjects7.length = 0;
+gdjs.Level1Code.GDNavMeshObjects1.length = 0;
+gdjs.Level1Code.GDNavMeshObjects2.length = 0;
+gdjs.Level1Code.GDNavMeshObjects3.length = 0;
+gdjs.Level1Code.GDNavMeshObjects4.length = 0;
+gdjs.Level1Code.GDNavMeshObjects5.length = 0;
+gdjs.Level1Code.GDNavMeshObjects6.length = 0;
+gdjs.Level1Code.GDNavMeshObjects7.length = 0;
+gdjs.Level1Code.GDtest_9595background_9595_9595_9595map_9595Objects1.length = 0;
+gdjs.Level1Code.GDtest_9595background_9595_9595_9595map_9595Objects2.length = 0;
+gdjs.Level1Code.GDtest_9595background_9595_9595_9595map_9595Objects3.length = 0;
+gdjs.Level1Code.GDtest_9595background_9595_9595_9595map_9595Objects4.length = 0;
+gdjs.Level1Code.GDtest_9595background_9595_9595_9595map_9595Objects5.length = 0;
+gdjs.Level1Code.GDtest_9595background_9595_9595_9595map_9595Objects6.length = 0;
+gdjs.Level1Code.GDtest_9595background_9595_9595_9595map_9595Objects7.length = 0;
+gdjs.Level1Code.GDNewSpriteObjects1.length = 0;
+gdjs.Level1Code.GDNewSpriteObjects2.length = 0;
+gdjs.Level1Code.GDNewSpriteObjects3.length = 0;
+gdjs.Level1Code.GDNewSpriteObjects4.length = 0;
+gdjs.Level1Code.GDNewSpriteObjects5.length = 0;
+gdjs.Level1Code.GDNewSpriteObjects6.length = 0;
+gdjs.Level1Code.GDNewSpriteObjects7.length = 0;
+gdjs.Level1Code.GDskyObjects1.length = 0;
+gdjs.Level1Code.GDskyObjects2.length = 0;
+gdjs.Level1Code.GDskyObjects3.length = 0;
+gdjs.Level1Code.GDskyObjects4.length = 0;
+gdjs.Level1Code.GDskyObjects5.length = 0;
+gdjs.Level1Code.GDskyObjects6.length = 0;
+gdjs.Level1Code.GDskyObjects7.length = 0;
+gdjs.Level1Code.GDDebugTextWeatherObjects1.length = 0;
+gdjs.Level1Code.GDDebugTextWeatherObjects2.length = 0;
+gdjs.Level1Code.GDDebugTextWeatherObjects3.length = 0;
+gdjs.Level1Code.GDDebugTextWeatherObjects4.length = 0;
+gdjs.Level1Code.GDDebugTextWeatherObjects5.length = 0;
+gdjs.Level1Code.GDDebugTextWeatherObjects6.length = 0;
+gdjs.Level1Code.GDDebugTextWeatherObjects7.length = 0;
+gdjs.Level1Code.GDcloud1Objects1.length = 0;
+gdjs.Level1Code.GDcloud1Objects2.length = 0;
+gdjs.Level1Code.GDcloud1Objects3.length = 0;
+gdjs.Level1Code.GDcloud1Objects4.length = 0;
+gdjs.Level1Code.GDcloud1Objects5.length = 0;
+gdjs.Level1Code.GDcloud1Objects6.length = 0;
+gdjs.Level1Code.GDcloud1Objects7.length = 0;
+gdjs.Level1Code.GDvideo_9595clear_9595skyObjects1.length = 0;
+gdjs.Level1Code.GDvideo_9595clear_9595skyObjects2.length = 0;
+gdjs.Level1Code.GDvideo_9595clear_9595skyObjects3.length = 0;
+gdjs.Level1Code.GDvideo_9595clear_9595skyObjects4.length = 0;
+gdjs.Level1Code.GDvideo_9595clear_9595skyObjects5.length = 0;
+gdjs.Level1Code.GDvideo_9595clear_9595skyObjects6.length = 0;
+gdjs.Level1Code.GDvideo_9595clear_9595skyObjects7.length = 0;
+gdjs.Level1Code.GDvideo_9595cloud_9595skyObjects1.length = 0;
+gdjs.Level1Code.GDvideo_9595cloud_9595skyObjects2.length = 0;
+gdjs.Level1Code.GDvideo_9595cloud_9595skyObjects3.length = 0;
+gdjs.Level1Code.GDvideo_9595cloud_9595skyObjects4.length = 0;
+gdjs.Level1Code.GDvideo_9595cloud_9595skyObjects5.length = 0;
+gdjs.Level1Code.GDvideo_9595cloud_9595skyObjects6.length = 0;
+gdjs.Level1Code.GDvideo_9595cloud_9595skyObjects7.length = 0;
+gdjs.Level1Code.GDvideo_9595rain_9595skyObjects1.length = 0;
+gdjs.Level1Code.GDvideo_9595rain_9595skyObjects2.length = 0;
+gdjs.Level1Code.GDvideo_9595rain_9595skyObjects3.length = 0;
+gdjs.Level1Code.GDvideo_9595rain_9595skyObjects4.length = 0;
+gdjs.Level1Code.GDvideo_9595rain_9595skyObjects5.length = 0;
+gdjs.Level1Code.GDvideo_9595rain_9595skyObjects6.length = 0;
+gdjs.Level1Code.GDvideo_9595rain_9595skyObjects7.length = 0;
+gdjs.Level1Code.GDvideo_9595sky_9595nightObjects1.length = 0;
+gdjs.Level1Code.GDvideo_9595sky_9595nightObjects2.length = 0;
+gdjs.Level1Code.GDvideo_9595sky_9595nightObjects3.length = 0;
+gdjs.Level1Code.GDvideo_9595sky_9595nightObjects4.length = 0;
+gdjs.Level1Code.GDvideo_9595sky_9595nightObjects5.length = 0;
+gdjs.Level1Code.GDvideo_9595sky_9595nightObjects6.length = 0;
+gdjs.Level1Code.GDvideo_9595sky_9595nightObjects7.length = 0;
 
 
 return;
 
 }
 
-gdjs['Level_320riginalCode'] = gdjs.Level_320riginalCode;
+gdjs['Level1Code'] = gdjs.Level1Code;
