@@ -176,6 +176,41 @@ gdjs.Level1Code.GDvideo_9595sky_9595nightObjects4= [];
 gdjs.Level1Code.GDvideo_9595sky_9595nightObjects5= [];
 gdjs.Level1Code.GDvideo_9595sky_9595nightObjects6= [];
 gdjs.Level1Code.GDvideo_9595sky_9595nightObjects7= [];
+gdjs.Level1Code.GDlink_9595archive2_9595layer_9595sky_9595cloudObjects1= [];
+gdjs.Level1Code.GDlink_9595archive2_9595layer_9595sky_9595cloudObjects2= [];
+gdjs.Level1Code.GDlink_9595archive2_9595layer_9595sky_9595cloudObjects3= [];
+gdjs.Level1Code.GDlink_9595archive2_9595layer_9595sky_9595cloudObjects4= [];
+gdjs.Level1Code.GDlink_9595archive2_9595layer_9595sky_9595cloudObjects5= [];
+gdjs.Level1Code.GDlink_9595archive2_9595layer_9595sky_9595cloudObjects6= [];
+gdjs.Level1Code.GDlink_9595archive2_9595layer_9595sky_9595cloudObjects7= [];
+gdjs.Level1Code.GDlink_9595archive2_9595layer_9595sky_9595clearObjects1= [];
+gdjs.Level1Code.GDlink_9595archive2_9595layer_9595sky_9595clearObjects2= [];
+gdjs.Level1Code.GDlink_9595archive2_9595layer_9595sky_9595clearObjects3= [];
+gdjs.Level1Code.GDlink_9595archive2_9595layer_9595sky_9595clearObjects4= [];
+gdjs.Level1Code.GDlink_9595archive2_9595layer_9595sky_9595clearObjects5= [];
+gdjs.Level1Code.GDlink_9595archive2_9595layer_9595sky_9595clearObjects6= [];
+gdjs.Level1Code.GDlink_9595archive2_9595layer_9595sky_9595clearObjects7= [];
+gdjs.Level1Code.GDlink_9595archive2_9595layer_9595sky_9595nightObjects1= [];
+gdjs.Level1Code.GDlink_9595archive2_9595layer_9595sky_9595nightObjects2= [];
+gdjs.Level1Code.GDlink_9595archive2_9595layer_9595sky_9595nightObjects3= [];
+gdjs.Level1Code.GDlink_9595archive2_9595layer_9595sky_9595nightObjects4= [];
+gdjs.Level1Code.GDlink_9595archive2_9595layer_9595sky_9595nightObjects5= [];
+gdjs.Level1Code.GDlink_9595archive2_9595layer_9595sky_9595nightObjects6= [];
+gdjs.Level1Code.GDlink_9595archive2_9595layer_9595sky_9595nightObjects7= [];
+gdjs.Level1Code.GDlink_9595archive2_9595layer_9595sky_9595rainObjects1= [];
+gdjs.Level1Code.GDlink_9595archive2_9595layer_9595sky_9595rainObjects2= [];
+gdjs.Level1Code.GDlink_9595archive2_9595layer_9595sky_9595rainObjects3= [];
+gdjs.Level1Code.GDlink_9595archive2_9595layer_9595sky_9595rainObjects4= [];
+gdjs.Level1Code.GDlink_9595archive2_9595layer_9595sky_9595rainObjects5= [];
+gdjs.Level1Code.GDlink_9595archive2_9595layer_9595sky_9595rainObjects6= [];
+gdjs.Level1Code.GDlink_9595archive2_9595layer_9595sky_9595rainObjects7= [];
+gdjs.Level1Code.GDballonObjects1= [];
+gdjs.Level1Code.GDballonObjects2= [];
+gdjs.Level1Code.GDballonObjects3= [];
+gdjs.Level1Code.GDballonObjects4= [];
+gdjs.Level1Code.GDballonObjects5= [];
+gdjs.Level1Code.GDballonObjects6= [];
+gdjs.Level1Code.GDballonObjects7= [];
 
 
 gdjs.Level1Code.eventsList0 = function(runtimeScene, asyncObjectsList) {
@@ -189,7 +224,7 @@ let elseEventsChainSatisfied = false;
 elseEventsChainSatisfied = false;
 let isConditionTrue_0 = false;
 isConditionTrue_0 = false;
-{isConditionTrue_0 = (runtimeScene.getScene().getVariables().getFromIndex(10).getChild("weather").getChild(0).getChild("main").getAsString() == "Clear");
+{isConditionTrue_0 = (runtimeScene.getScene().getVariables().getFromIndex(11).getChild("weather").getChild(0).getChild("main").getAsString() == "Clear");
 }
 if (isConditionTrue_0) {
 isConditionTrue_0 = false;
@@ -233,7 +268,7 @@ let isConditionTrue_0 = false;
 if (!elseEventsChainSatisfied) {
 gdjs.copyArray(runtimeScene.getObjects("sky"), gdjs.Level1Code.GDskyObjects6);
 {for(var i = 0, len = gdjs.Level1Code.GDskyObjects6.length ;i < len;++i) {
-    gdjs.Level1Code.GDskyObjects6[i].getBehavior("Animation").setAnimationName(runtimeScene.getScene().getVariables().getFromIndex(10).getChild("weather").getChild(0).getChild("main").getAsString());
+    gdjs.Level1Code.GDskyObjects6[i].getBehavior("Animation").setAnimationName(runtimeScene.getScene().getVariables().getFromIndex(11).getChild("weather").getChild(0).getChild("main").getAsString());
 }
 }
 elseEventsChainSatisfied = true;
@@ -251,14 +286,14 @@ isConditionTrue_0 = false;
 {let isConditionTrue_1 = false;
 isConditionTrue_0 = false;
 {
-{isConditionTrue_1 = (runtimeScene.getScene().getVariables().getFromIndex(10).getChild("weather").getChild(0).getChild("main").getAsString() == "Rain");
+{isConditionTrue_1 = (runtimeScene.getScene().getVariables().getFromIndex(11).getChild("weather").getChild(0).getChild("main").getAsString() == "Rain");
 }
 if(isConditionTrue_1) {
     isConditionTrue_0 = true;
 }
 }
 {
-{isConditionTrue_1 = (runtimeScene.getScene().getVariables().getFromIndex(10).getChild("weather").getChild(0).getChild("main").getAsString() == "Drizzle");
+{isConditionTrue_1 = (runtimeScene.getScene().getVariables().getFromIndex(11).getChild("weather").getChild(0).getChild("main").getAsString() == "Drizzle");
 }
 if(isConditionTrue_1) {
     isConditionTrue_0 = true;
@@ -268,7 +303,7 @@ if(isConditionTrue_1) {
 }
 }
 if (isConditionTrue_0) {
-{runtimeScene.getScene().getVariables().getFromIndex(5).setString("rain");
+{runtimeScene.getScene().getVariables().getFromIndex(6).setString("rain");
 }
 }
 
@@ -280,10 +315,10 @@ if (isConditionTrue_0) {
 
 let isConditionTrue_0 = false;
 isConditionTrue_0 = false;
-{isConditionTrue_0 = (runtimeScene.getScene().getVariables().getFromIndex(10).getChild("weather").getChild(0).getChild("main").getAsString() == "Clouds");
+{isConditionTrue_0 = (runtimeScene.getScene().getVariables().getFromIndex(11).getChild("weather").getChild(0).getChild("main").getAsString() == "Clouds");
 }
 if (isConditionTrue_0) {
-{runtimeScene.getScene().getVariables().getFromIndex(5).setString("cloud");
+{runtimeScene.getScene().getVariables().getFromIndex(6).setString("cloud");
 }
 }
 
@@ -295,10 +330,10 @@ if (isConditionTrue_0) {
 
 let isConditionTrue_0 = false;
 isConditionTrue_0 = false;
-{isConditionTrue_0 = (runtimeScene.getScene().getVariables().getFromIndex(10).getChild("weather").getChild(0).getChild("main").getAsString() == "Clear");
+{isConditionTrue_0 = (runtimeScene.getScene().getVariables().getFromIndex(11).getChild("weather").getChild(0).getChild("main").getAsString() == "Clear");
 }
 if (isConditionTrue_0) {
-{runtimeScene.getScene().getVariables().getFromIndex(5).setString("clear");
+{runtimeScene.getScene().getVariables().getFromIndex(6).setString("clear");
 }
 }
 
@@ -306,14 +341,14 @@ if (isConditionTrue_0) {
 
 }
 
-};gdjs.Level1Code.asyncCallback21513044 = function (runtimeScene, asyncObjectsList) {
+};gdjs.Level1Code.asyncCallback31594372 = function (runtimeScene, asyncObjectsList) {
 asyncObjectsList.restoreLocalVariablesContainers(gdjs.Level1Code.localVariables);
 
 { //Subevents
 gdjs.Level1Code.eventsList0(runtimeScene, asyncObjectsList);} //End of subevents
 gdjs.Level1Code.localVariables.length = 0;
 }
-gdjs.Level1Code.idToCallbackMap.set(21513044, gdjs.Level1Code.asyncCallback21513044);
+gdjs.Level1Code.idToCallbackMap.set(31594372, gdjs.Level1Code.asyncCallback31594372);
 gdjs.Level1Code.eventsList1 = function(runtimeScene, asyncObjectsList) {
 
 {
@@ -324,21 +359,21 @@ const parentAsyncObjectsList = asyncObjectsList;
 {
 const asyncObjectsList = gdjs.LongLivedObjectsList.from(parentAsyncObjectsList);
 asyncObjectsList.backupLocalVariablesContainers(gdjs.Level1Code.localVariables);
-runtimeScene.getAsyncTasksManager().addTask(gdjs.evtsExt__AdvancedHTTP__ReadResponseJSON.func(runtimeScene, runtimeScene.getScene().getVariables().getFromIndex(9), runtimeScene.getScene().getVariables().getFromIndex(10), null), (runtimeScene) => (gdjs.Level1Code.asyncCallback21513044(runtimeScene, asyncObjectsList)), 21513044, asyncObjectsList);
+runtimeScene.getAsyncTasksManager().addTask(gdjs.evtsExt__AdvancedHTTP__ReadResponseJSON.func(runtimeScene, runtimeScene.getScene().getVariables().getFromIndex(10), runtimeScene.getScene().getVariables().getFromIndex(11), null), (runtimeScene) => (gdjs.Level1Code.asyncCallback31594372(runtimeScene, asyncObjectsList)), 31594372, asyncObjectsList);
 }
 }
 
 }
 
 
-};gdjs.Level1Code.asyncCallback21512020 = function (runtimeScene, asyncObjectsList) {
+};gdjs.Level1Code.asyncCallback31596580 = function (runtimeScene, asyncObjectsList) {
 asyncObjectsList.restoreLocalVariablesContainers(gdjs.Level1Code.localVariables);
 
 { //Subevents
 gdjs.Level1Code.eventsList1(runtimeScene, asyncObjectsList);} //End of subevents
 gdjs.Level1Code.localVariables.length = 0;
 }
-gdjs.Level1Code.idToCallbackMap.set(21512020, gdjs.Level1Code.asyncCallback21512020);
+gdjs.Level1Code.idToCallbackMap.set(31596580, gdjs.Level1Code.asyncCallback31596580);
 gdjs.Level1Code.eventsList2 = function(runtimeScene) {
 
 {
@@ -348,7 +383,7 @@ gdjs.Level1Code.eventsList2 = function(runtimeScene) {
 {
 const asyncObjectsList = new gdjs.LongLivedObjectsList();
 asyncObjectsList.backupLocalVariablesContainers(gdjs.Level1Code.localVariables);
-runtimeScene.getAsyncTasksManager().addTask(gdjs.evtsExt__AdvancedHTTP__ExecuteRequest.func(runtimeScene, "meteo", runtimeScene.getScene().getVariables().getFromIndex(9), null), (runtimeScene) => (gdjs.Level1Code.asyncCallback21512020(runtimeScene, asyncObjectsList)), 21512020, asyncObjectsList);
+runtimeScene.getAsyncTasksManager().addTask(gdjs.evtsExt__AdvancedHTTP__ExecuteRequest.func(runtimeScene, "meteo", runtimeScene.getScene().getVariables().getFromIndex(10), null), (runtimeScene) => (gdjs.Level1Code.asyncCallback31596580(runtimeScene, asyncObjectsList)), 31596580, asyncObjectsList);
 }
 }
 
@@ -420,7 +455,7 @@ let isConditionTrue_0 = false;
 gdjs.copyArray(runtimeScene.getObjects("DebugTextWeather"), gdjs.Level1Code.GDDebugTextWeatherObjects3);
 gdjs.copyArray(runtimeScene.getObjects("sky"), gdjs.Level1Code.GDskyObjects3);
 {for(var i = 0, len = gdjs.Level1Code.GDDebugTextWeatherObjects3.length ;i < len;++i) {
-    gdjs.Level1Code.GDDebugTextWeatherObjects3[i].getBehavior("Text").setText("Hour: " + gdjs.evtTools.common.toString(gdjs.evtTools.runtimeScene.getTime(runtimeScene, "hour")) + gdjs.evtTools.string.newLine() + "Weather State: " + runtimeScene.getScene().getVariables().getFromIndex(5).getAsString() + gdjs.evtTools.string.newLine() + "Animation: " + (( gdjs.Level1Code.GDskyObjects3.length === 0 ) ? "" :gdjs.Level1Code.GDskyObjects3[0].getBehavior("Animation").getAnimationName()));
+    gdjs.Level1Code.GDDebugTextWeatherObjects3[i].getBehavior("Text").setText("Hour: " + gdjs.evtTools.common.toString(gdjs.evtTools.runtimeScene.getTime(runtimeScene, "hour")) + gdjs.evtTools.string.newLine() + "Weather State: " + runtimeScene.getScene().getVariables().getFromIndex(6).getAsString() + gdjs.evtTools.string.newLine() + "Animation: " + (( gdjs.Level1Code.GDskyObjects3.length === 0 ) ? "" :gdjs.Level1Code.GDskyObjects3[0].getBehavior("Animation").getAnimationName()));
 }
 }
 }
@@ -459,7 +494,7 @@ gdjs.copyArray(runtimeScene.getObjects("sky"), gdjs.Level1Code.GDskyObjects3);
     gdjs.Level1Code.GDskyObjects3[i].getBehavior("Animation").setAnimationName("Night");
 }
 }
-{runtimeScene.getScene().getVariables().getFromIndex(5).setString("night");
+{runtimeScene.getScene().getVariables().getFromIndex(6).setString("night");
 }
 elseEventsChainSatisfied = true;
 }
@@ -473,7 +508,7 @@ elseEventsChainSatisfied = true;
 if (!elseEventsChainSatisfied) {
 let isConditionTrue_0 = false;
 isConditionTrue_0 = false;
-{isConditionTrue_0 = (runtimeScene.getScene().getVariables().getFromIndex(5).getAsString() == "rain");
+{isConditionTrue_0 = (runtimeScene.getScene().getVariables().getFromIndex(6).getAsString() == "rain");
 }
 if (!elseEventsChainSatisfied && isConditionTrue_0) {
 gdjs.copyArray(runtimeScene.getObjects("sky"), gdjs.Level1Code.GDskyObjects3);
@@ -494,7 +529,7 @@ elseEventsChainSatisfied = true;
 if (!elseEventsChainSatisfied) {
 let isConditionTrue_0 = false;
 isConditionTrue_0 = false;
-{isConditionTrue_0 = (runtimeScene.getScene().getVariables().getFromIndex(5).getAsString() == "cloud");
+{isConditionTrue_0 = (runtimeScene.getScene().getVariables().getFromIndex(6).getAsString() == "cloud");
 }
 if (!elseEventsChainSatisfied && isConditionTrue_0) {
 gdjs.copyArray(runtimeScene.getObjects("cloud1"), gdjs.Level1Code.GDcloud1Objects3);
@@ -567,11 +602,20 @@ let isConditionTrue_0 = false;
 isConditionTrue_0 = false;
 isConditionTrue_0 = gdjs.evtTools.runtimeScene.sceneJustBegins(runtimeScene);
 if (isConditionTrue_0) {
+isConditionTrue_0 = false;
+{isConditionTrue_0 = runtimeScene.getOnceTriggers().triggerOnce(31682084);
+}
+}
+if (isConditionTrue_0) {
+gdjs.copyArray(runtimeScene.getObjects("ballon"), gdjs.Level1Code.GDballonObjects1);
 gdjs.copyArray(runtimeScene.getObjects("cloud1"), gdjs.Level1Code.GDcloud1Objects1);
+gdjs.copyArray(runtimeScene.getObjects("sky"), gdjs.Level1Code.GDskyObjects1);
 gdjs.copyArray(runtimeScene.getObjects("video_clear_sky"), gdjs.Level1Code.GDvideo_9595clear_9595skyObjects1);
 gdjs.copyArray(runtimeScene.getObjects("video_cloud_sky"), gdjs.Level1Code.GDvideo_9595cloud_9595skyObjects1);
 gdjs.copyArray(runtimeScene.getObjects("video_rain_sky"), gdjs.Level1Code.GDvideo_9595rain_9595skyObjects1);
 gdjs.copyArray(runtimeScene.getObjects("video_sky_night"), gdjs.Level1Code.GDvideo_9595sky_9595nightObjects1);
+{gdjs.evtTools.runtimeScene.resetTimer(runtimeScene, "debut de scene");
+}
 {gdjs.evtTools.camera.hideLayer(runtimeScene, "layer video sky clear");
 }
 {gdjs.evtTools.camera.hideLayer(runtimeScene, "layer video sky cloud");
@@ -581,6 +625,8 @@ gdjs.copyArray(runtimeScene.getObjects("video_sky_night"), gdjs.Level1Code.GDvid
 {gdjs.evtTools.camera.hideLayer(runtimeScene, "layer video sky night");
 }
 {gdjs.evtTools.camera.hideLayer(runtimeScene, "Obstacle");
+}
+{gdjs.evtTools.camera.hideLayer(runtimeScene, "invisible");
 }
 {for(var i = 0, len = gdjs.Level1Code.GDvideo_9595clear_9595skyObjects1.length ;i < len;++i) {
     gdjs.Level1Code.GDvideo_9595clear_9595skyObjects1[i].pause();
@@ -604,6 +650,18 @@ gdjs.copyArray(runtimeScene.getObjects("video_sky_night"), gdjs.Level1Code.GDvid
     gdjs.Level1Code.GDcloud1Objects1[i].getBehavior("Effect").enableEffect("nb", false);
 }
 }
+{for(var i = 0, len = gdjs.Level1Code.GDballonObjects1.length ;i < len;++i) {
+    gdjs.Level1Code.GDballonObjects1[i].getBehavior("Effect").enableEffect("nb", false);
+}
+}
+{for(var i = 0, len = gdjs.Level1Code.GDballonObjects1.length ;i < len;++i) {
+    gdjs.Level1Code.GDballonObjects1[i].addForce(1, -(90), 1);
+}
+}
+{for(var i = 0, len = gdjs.Level1Code.GDskyObjects1.length ;i < len;++i) {
+    gdjs.Level1Code.GDskyObjects1[i].activateBehavior("SmoothCamera", false);
+}
+}
 }
 
 }
@@ -625,12 +683,385 @@ gdjs.Level1Code.eventsList4(runtimeScene);
 }
 
 
-};gdjs.Level1Code.asyncCallback21527900 = function (runtimeScene, asyncObjectsList) {
+};gdjs.Level1Code.mapOfGDgdjs_9546Level1Code_9546GDballonObjects2Objects = Hashtable.newFrom({"ballon": gdjs.Level1Code.GDballonObjects2});
+gdjs.Level1Code.asyncCallback31685884 = function (runtimeScene, asyncObjectsList) {
 asyncObjectsList.restoreLocalVariablesContainers(gdjs.Level1Code.localVariables);
+gdjs.copyArray(asyncObjectsList.getObjects("ballon"), gdjs.Level1Code.GDballonObjects3);
+
+gdjs.copyArray(runtimeScene.getObjects("cloud1"), gdjs.Level1Code.GDcloud1Objects3);
+gdjs.copyArray(runtimeScene.getObjects("sky"), gdjs.Level1Code.GDskyObjects3);
+gdjs.copyArray(runtimeScene.getObjects("video_clear_sky"), gdjs.Level1Code.GDvideo_9595clear_9595skyObjects3);
+gdjs.copyArray(runtimeScene.getObjects("video_cloud_sky"), gdjs.Level1Code.GDvideo_9595cloud_9595skyObjects3);
+gdjs.copyArray(runtimeScene.getObjects("video_rain_sky"), gdjs.Level1Code.GDvideo_9595rain_9595skyObjects3);
+gdjs.copyArray(runtimeScene.getObjects("video_sky_night"), gdjs.Level1Code.GDvideo_9595sky_9595nightObjects3);
+{for(var i = 0, len = gdjs.Level1Code.GDcloud1Objects3.length ;i < len;++i) {
+    gdjs.Level1Code.GDcloud1Objects3[i].addForce(0, -(90), 1);
+}
+}
+{for(var i = 0, len = gdjs.Level1Code.GDballonObjects3.length ;i < len;++i) {
+    gdjs.Level1Code.GDballonObjects3[i].clearForces();
+}
+}
+{for(var i = 0, len = gdjs.Level1Code.GDballonObjects3.length ;i < len;++i) {
+    gdjs.Level1Code.GDballonObjects3[i].addForce(0.3, 70, 1);
+}
+}
+{for(var i = 0, len = gdjs.Level1Code.GDvideo_9595rain_9595skyObjects3.length ;i < len;++i) {
+    gdjs.Level1Code.GDvideo_9595rain_9595skyObjects3[i].hide();
+}
+}
+{for(var i = 0, len = gdjs.Level1Code.GDvideo_9595cloud_9595skyObjects3.length ;i < len;++i) {
+    gdjs.Level1Code.GDvideo_9595cloud_9595skyObjects3[i].hide();
+}
+}
+{for(var i = 0, len = gdjs.Level1Code.GDvideo_9595clear_9595skyObjects3.length ;i < len;++i) {
+    gdjs.Level1Code.GDvideo_9595clear_9595skyObjects3[i].hide();
+}
+}
+{for(var i = 0, len = gdjs.Level1Code.GDvideo_9595sky_9595nightObjects3.length ;i < len;++i) {
+    gdjs.Level1Code.GDvideo_9595sky_9595nightObjects3[i].hide();
+}
+}
+{for(var i = 0, len = gdjs.Level1Code.GDskyObjects3.length ;i < len;++i) {
+    gdjs.Level1Code.GDskyObjects3[i].activateBehavior("SmoothCamera", true);
+}
+}
 gdjs.Level1Code.localVariables.length = 0;
 }
-gdjs.Level1Code.idToCallbackMap.set(21527900, gdjs.Level1Code.asyncCallback21527900);
-gdjs.Level1Code.eventsList6 = function(runtimeScene, asyncObjectsList) {
+gdjs.Level1Code.idToCallbackMap.set(31685884, gdjs.Level1Code.asyncCallback31685884);
+gdjs.Level1Code.eventsList6 = function(runtimeScene) {
+
+{
+
+
+{
+{
+const asyncObjectsList = new gdjs.LongLivedObjectsList();
+asyncObjectsList.backupLocalVariablesContainers(gdjs.Level1Code.localVariables);
+for (const obj of gdjs.Level1Code.GDballonObjects2) asyncObjectsList.addObject("ballon", obj);
+runtimeScene.getAsyncTasksManager().addTask(gdjs.evtTools.runtimeScene.wait(1), (runtimeScene) => (gdjs.Level1Code.asyncCallback31685884(runtimeScene, asyncObjectsList)), 31685884, asyncObjectsList);
+}
+}
+
+}
+
+
+};gdjs.Level1Code.eventsList7 = function(runtimeScene) {
+
+{
+
+gdjs.copyArray(runtimeScene.getObjects("ballon"), gdjs.Level1Code.GDballonObjects2);
+
+let isConditionTrue_0 = false;
+isConditionTrue_0 = false;
+isConditionTrue_0 = gdjs.evtTools.input.isMouseButtonPressed(runtimeScene, "Left");
+if (isConditionTrue_0) {
+isConditionTrue_0 = false;
+isConditionTrue_0 = gdjs.evtTools.input.hasAnyTouchOrMouseStarted(runtimeScene);
+if (isConditionTrue_0) {
+isConditionTrue_0 = false;
+isConditionTrue_0 = gdjs.evtTools.input.cursorOnObject(gdjs.Level1Code.mapOfGDgdjs_9546Level1Code_9546GDballonObjects2Objects, runtimeScene, true, false);
+}
+}
+if (isConditionTrue_0) {
+
+{ //Subevents
+gdjs.Level1Code.eventsList6(runtimeScene);} //End of subevents
+}
+
+}
+
+
+};gdjs.Level1Code.mapOfGDgdjs_9546Level1Code_9546GDlink_95959595archive2_95959595layer_95959595sky_95959595cloudObjects2Objects = Hashtable.newFrom({"link_archive2_layer_sky_cloud": gdjs.Level1Code.GDlink_9595archive2_9595layer_9595sky_9595cloudObjects2});
+gdjs.Level1Code.mapOfGDgdjs_9546Level1Code_9546GDlink_95959595archive2_95959595layer_95959595sky_95959595cloudObjects2Objects = Hashtable.newFrom({"link_archive2_layer_sky_cloud": gdjs.Level1Code.GDlink_9595archive2_9595layer_9595sky_9595cloudObjects2});
+gdjs.Level1Code.eventsList8 = function(runtimeScene) {
+
+{
+
+/* Reuse gdjs.Level1Code.GDlink_9595archive2_9595layer_9595sky_9595cloudObjects2 */
+
+let isConditionTrue_0 = false;
+isConditionTrue_0 = false;
+isConditionTrue_0 = gdjs.evtTools.input.isMouseButtonPressed(runtimeScene, "Left");
+if (isConditionTrue_0) {
+isConditionTrue_0 = false;
+isConditionTrue_0 = gdjs.evtTools.input.hasAnyTouchOrMouseStarted(runtimeScene);
+if (isConditionTrue_0) {
+isConditionTrue_0 = false;
+isConditionTrue_0 = gdjs.evtTools.input.cursorOnObject(gdjs.Level1Code.mapOfGDgdjs_9546Level1Code_9546GDlink_95959595archive2_95959595layer_95959595sky_95959595cloudObjects2Objects, runtimeScene, true, false);
+}
+}
+if (isConditionTrue_0) {
+{gdjs.evtTools.window.openURL("https://zelda-like-my-life-archive2.vercel.app", runtimeScene);
+}
+}
+
+}
+
+
+};gdjs.Level1Code.mapOfGDgdjs_9546Level1Code_9546GDlink_95959595archive2_95959595layer_95959595sky_95959595clearObjects2Objects = Hashtable.newFrom({"link_archive2_layer_sky_clear": gdjs.Level1Code.GDlink_9595archive2_9595layer_9595sky_9595clearObjects2});
+gdjs.Level1Code.mapOfGDgdjs_9546Level1Code_9546GDlink_95959595archive2_95959595layer_95959595sky_95959595clearObjects2Objects = Hashtable.newFrom({"link_archive2_layer_sky_clear": gdjs.Level1Code.GDlink_9595archive2_9595layer_9595sky_9595clearObjects2});
+gdjs.Level1Code.eventsList9 = function(runtimeScene) {
+
+{
+
+/* Reuse gdjs.Level1Code.GDlink_9595archive2_9595layer_9595sky_9595clearObjects2 */
+
+let isConditionTrue_0 = false;
+isConditionTrue_0 = false;
+isConditionTrue_0 = gdjs.evtTools.input.isMouseButtonPressed(runtimeScene, "Left");
+if (isConditionTrue_0) {
+isConditionTrue_0 = false;
+isConditionTrue_0 = gdjs.evtTools.input.hasAnyTouchOrMouseStarted(runtimeScene);
+if (isConditionTrue_0) {
+isConditionTrue_0 = false;
+isConditionTrue_0 = gdjs.evtTools.input.cursorOnObject(gdjs.Level1Code.mapOfGDgdjs_9546Level1Code_9546GDlink_95959595archive2_95959595layer_95959595sky_95959595clearObjects2Objects, runtimeScene, true, false);
+}
+}
+if (isConditionTrue_0) {
+{gdjs.evtTools.window.openURL("https://zelda-like-my-life-archive2.vercel.app", runtimeScene);
+}
+}
+
+}
+
+
+};gdjs.Level1Code.mapOfGDgdjs_9546Level1Code_9546GDlink_95959595archive2_95959595layer_95959595sky_95959595nightObjects2Objects = Hashtable.newFrom({"link_archive2_layer_sky_night": gdjs.Level1Code.GDlink_9595archive2_9595layer_9595sky_9595nightObjects2});
+gdjs.Level1Code.mapOfGDgdjs_9546Level1Code_9546GDlink_95959595archive2_95959595layer_95959595sky_95959595nightObjects2Objects = Hashtable.newFrom({"link_archive2_layer_sky_night": gdjs.Level1Code.GDlink_9595archive2_9595layer_9595sky_9595nightObjects2});
+gdjs.Level1Code.eventsList10 = function(runtimeScene) {
+
+{
+
+/* Reuse gdjs.Level1Code.GDlink_9595archive2_9595layer_9595sky_9595nightObjects2 */
+
+let isConditionTrue_0 = false;
+isConditionTrue_0 = false;
+isConditionTrue_0 = gdjs.evtTools.input.isMouseButtonPressed(runtimeScene, "Left");
+if (isConditionTrue_0) {
+isConditionTrue_0 = false;
+isConditionTrue_0 = gdjs.evtTools.input.hasAnyTouchOrMouseStarted(runtimeScene);
+if (isConditionTrue_0) {
+isConditionTrue_0 = false;
+isConditionTrue_0 = gdjs.evtTools.input.cursorOnObject(gdjs.Level1Code.mapOfGDgdjs_9546Level1Code_9546GDlink_95959595archive2_95959595layer_95959595sky_95959595nightObjects2Objects, runtimeScene, true, false);
+}
+}
+if (isConditionTrue_0) {
+{gdjs.evtTools.window.openURL("https://zelda-like-my-life-archive2.vercel.app", runtimeScene);
+}
+}
+
+}
+
+
+};gdjs.Level1Code.mapOfGDgdjs_9546Level1Code_9546GDlink_95959595archive2_95959595layer_95959595sky_95959595rainObjects1Objects = Hashtable.newFrom({"link_archive2_layer_sky_rain": gdjs.Level1Code.GDlink_9595archive2_9595layer_9595sky_9595rainObjects1});
+gdjs.Level1Code.mapOfGDgdjs_9546Level1Code_9546GDlink_95959595archive2_95959595layer_95959595sky_95959595rainObjects1Objects = Hashtable.newFrom({"link_archive2_layer_sky_rain": gdjs.Level1Code.GDlink_9595archive2_9595layer_9595sky_9595rainObjects1});
+gdjs.Level1Code.eventsList11 = function(runtimeScene) {
+
+{
+
+/* Reuse gdjs.Level1Code.GDlink_9595archive2_9595layer_9595sky_9595rainObjects1 */
+
+let isConditionTrue_0 = false;
+isConditionTrue_0 = false;
+isConditionTrue_0 = gdjs.evtTools.input.isMouseButtonPressed(runtimeScene, "Left");
+if (isConditionTrue_0) {
+isConditionTrue_0 = false;
+isConditionTrue_0 = gdjs.evtTools.input.hasAnyTouchOrMouseStarted(runtimeScene);
+if (isConditionTrue_0) {
+isConditionTrue_0 = false;
+isConditionTrue_0 = gdjs.evtTools.input.cursorOnObject(gdjs.Level1Code.mapOfGDgdjs_9546Level1Code_9546GDlink_95959595archive2_95959595layer_95959595sky_95959595rainObjects1Objects, runtimeScene, true, false);
+}
+}
+if (isConditionTrue_0) {
+{gdjs.evtTools.window.openURL("https://zelda-like-my-life-archive2.vercel.app", runtimeScene);
+}
+}
+
+}
+
+
+};gdjs.Level1Code.eventsList12 = function(runtimeScene) {
+
+{
+
+gdjs.copyArray(runtimeScene.getObjects("sky"), gdjs.Level1Code.GDskyObjects2);
+gdjs.copyArray(runtimeScene.getObjects("video_cloud_sky"), gdjs.Level1Code.GDvideo_9595cloud_9595skyObjects2);
+
+let isConditionTrue_0 = false;
+isConditionTrue_0 = false;
+for (var i = 0, k = 0, l = gdjs.Level1Code.GDskyObjects2.length;i<l;++i) {
+    if ( gdjs.Level1Code.GDskyObjects2[i].getBehavior("Animation").getAnimationName() == "Clouds" ) {
+        isConditionTrue_0 = true;
+        gdjs.Level1Code.GDskyObjects2[k] = gdjs.Level1Code.GDskyObjects2[i];
+        ++k;
+    }
+}
+gdjs.Level1Code.GDskyObjects2.length = k;
+if (isConditionTrue_0) {
+isConditionTrue_0 = false;
+{isConditionTrue_0 = runtimeScene.getScene().getVariables().getFromIndex(14).getAsBoolean();
+}
+if (isConditionTrue_0) {
+isConditionTrue_0 = false;
+for (var i = 0, k = 0, l = gdjs.Level1Code.GDvideo_9595cloud_9595skyObjects2.length;i<l;++i) {
+    if ( gdjs.Level1Code.GDvideo_9595cloud_9595skyObjects2[i].isEnded() ) {
+        isConditionTrue_0 = true;
+        gdjs.Level1Code.GDvideo_9595cloud_9595skyObjects2[k] = gdjs.Level1Code.GDvideo_9595cloud_9595skyObjects2[i];
+        ++k;
+    }
+}
+gdjs.Level1Code.GDvideo_9595cloud_9595skyObjects2.length = k;
+}
+}
+if (isConditionTrue_0) {
+gdjs.Level1Code.GDlink_9595archive2_9595layer_9595sky_9595cloudObjects2.length = 0;
+
+{gdjs.evtTools.object.createObjectOnScene(runtimeScene, gdjs.Level1Code.mapOfGDgdjs_9546Level1Code_9546GDlink_95959595archive2_95959595layer_95959595sky_95959595cloudObjects2Objects, 1030, 430, "invisible");
+}
+
+{ //Subevents
+gdjs.Level1Code.eventsList8(runtimeScene);} //End of subevents
+}
+
+}
+
+
+{
+
+gdjs.copyArray(runtimeScene.getObjects("sky"), gdjs.Level1Code.GDskyObjects2);
+gdjs.copyArray(runtimeScene.getObjects("video_clear_sky"), gdjs.Level1Code.GDvideo_9595clear_9595skyObjects2);
+
+let isConditionTrue_0 = false;
+isConditionTrue_0 = false;
+for (var i = 0, k = 0, l = gdjs.Level1Code.GDskyObjects2.length;i<l;++i) {
+    if ( gdjs.Level1Code.GDskyObjects2[i].getBehavior("Animation").getAnimationName() == "Clear" ) {
+        isConditionTrue_0 = true;
+        gdjs.Level1Code.GDskyObjects2[k] = gdjs.Level1Code.GDskyObjects2[i];
+        ++k;
+    }
+}
+gdjs.Level1Code.GDskyObjects2.length = k;
+if (isConditionTrue_0) {
+isConditionTrue_0 = false;
+{isConditionTrue_0 = runtimeScene.getScene().getVariables().getFromIndex(13).getAsBoolean();
+}
+if (isConditionTrue_0) {
+isConditionTrue_0 = false;
+for (var i = 0, k = 0, l = gdjs.Level1Code.GDvideo_9595clear_9595skyObjects2.length;i<l;++i) {
+    if ( gdjs.Level1Code.GDvideo_9595clear_9595skyObjects2[i].isEnded() ) {
+        isConditionTrue_0 = true;
+        gdjs.Level1Code.GDvideo_9595clear_9595skyObjects2[k] = gdjs.Level1Code.GDvideo_9595clear_9595skyObjects2[i];
+        ++k;
+    }
+}
+gdjs.Level1Code.GDvideo_9595clear_9595skyObjects2.length = k;
+}
+}
+if (isConditionTrue_0) {
+gdjs.Level1Code.GDlink_9595archive2_9595layer_9595sky_9595clearObjects2.length = 0;
+
+{gdjs.evtTools.object.createObjectOnScene(runtimeScene, gdjs.Level1Code.mapOfGDgdjs_9546Level1Code_9546GDlink_95959595archive2_95959595layer_95959595sky_95959595clearObjects2Objects, 896, 356, "invisible");
+}
+
+{ //Subevents
+gdjs.Level1Code.eventsList9(runtimeScene);} //End of subevents
+}
+
+}
+
+
+{
+
+gdjs.copyArray(runtimeScene.getObjects("sky"), gdjs.Level1Code.GDskyObjects2);
+
+let isConditionTrue_0 = false;
+isConditionTrue_0 = false;
+for (var i = 0, k = 0, l = gdjs.Level1Code.GDskyObjects2.length;i<l;++i) {
+    if ( gdjs.Level1Code.GDskyObjects2[i].getBehavior("Animation").getAnimationName() == "Night" ) {
+        isConditionTrue_0 = true;
+        gdjs.Level1Code.GDskyObjects2[k] = gdjs.Level1Code.GDskyObjects2[i];
+        ++k;
+    }
+}
+gdjs.Level1Code.GDskyObjects2.length = k;
+if (isConditionTrue_0) {
+isConditionTrue_0 = false;
+{isConditionTrue_0 = runtimeScene.getScene().getVariables().getFromIndex(15).getAsBoolean();
+}
+}
+if (isConditionTrue_0) {
+gdjs.Level1Code.GDlink_9595archive2_9595layer_9595sky_9595nightObjects2.length = 0;
+
+{gdjs.evtTools.object.createObjectOnScene(runtimeScene, gdjs.Level1Code.mapOfGDgdjs_9546Level1Code_9546GDlink_95959595archive2_95959595layer_95959595sky_95959595nightObjects2Objects, 1005, 280, "invisible");
+}
+
+{ //Subevents
+gdjs.Level1Code.eventsList10(runtimeScene);} //End of subevents
+}
+
+}
+
+
+{
+
+gdjs.copyArray(runtimeScene.getObjects("sky"), gdjs.Level1Code.GDskyObjects1);
+
+let isConditionTrue_0 = false;
+isConditionTrue_0 = false;
+for (var i = 0, k = 0, l = gdjs.Level1Code.GDskyObjects1.length;i<l;++i) {
+    if ( gdjs.Level1Code.GDskyObjects1[i].getBehavior("Animation").getAnimationName() == "rain2" ) {
+        isConditionTrue_0 = true;
+        gdjs.Level1Code.GDskyObjects1[k] = gdjs.Level1Code.GDskyObjects1[i];
+        ++k;
+    }
+}
+gdjs.Level1Code.GDskyObjects1.length = k;
+if (isConditionTrue_0) {
+isConditionTrue_0 = false;
+{isConditionTrue_0 = runtimeScene.getScene().getVariables().getFromIndex(16).getAsBoolean();
+}
+}
+if (isConditionTrue_0) {
+gdjs.Level1Code.GDlink_9595archive2_9595layer_9595sky_9595rainObjects1.length = 0;
+
+{gdjs.evtTools.object.createObjectOnScene(runtimeScene, gdjs.Level1Code.mapOfGDgdjs_9546Level1Code_9546GDlink_95959595archive2_95959595layer_95959595sky_95959595rainObjects1Objects, 941, 306, "invisible");
+}
+
+{ //Subevents
+gdjs.Level1Code.eventsList11(runtimeScene);} //End of subevents
+}
+
+}
+
+
+};gdjs.Level1Code.eventsList13 = function(runtimeScene) {
+
+{
+
+
+gdjs.Level1Code.eventsList7(runtimeScene);
+}
+
+
+{
+
+
+gdjs.Level1Code.eventsList12(runtimeScene);
+}
+
+
+};gdjs.Level1Code.asyncCallback31698876 = function (runtimeScene, asyncObjectsList) {
+asyncObjectsList.restoreLocalVariablesContainers(gdjs.Level1Code.localVariables);
+gdjs.copyArray(asyncObjectsList.getObjects("video_clear_sky"), gdjs.Level1Code.GDvideo_9595clear_9595skyObjects5);
+
+{for(var i = 0, len = gdjs.Level1Code.GDvideo_9595clear_9595skyObjects5.length ;i < len;++i) {
+    gdjs.Level1Code.GDvideo_9595clear_9595skyObjects5[i].getBehavior("Tween").addObjectOpacityTween2("FadeOutClear", 0, "linear", 1.3, false);
+}
+}
+gdjs.Level1Code.localVariables.length = 0;
+}
+gdjs.Level1Code.idToCallbackMap.set(31698876, gdjs.Level1Code.asyncCallback31698876);
+gdjs.Level1Code.eventsList14 = function(runtimeScene, asyncObjectsList) {
 
 {
 
@@ -640,16 +1071,19 @@ const parentAsyncObjectsList = asyncObjectsList;
 {
 const asyncObjectsList = gdjs.LongLivedObjectsList.from(parentAsyncObjectsList);
 asyncObjectsList.backupLocalVariablesContainers(gdjs.Level1Code.localVariables);
-runtimeScene.getAsyncTasksManager().addTask(gdjs.evtTools.runtimeScene.wait(4.6), (runtimeScene) => (gdjs.Level1Code.asyncCallback21527900(runtimeScene, asyncObjectsList)), 21527900, asyncObjectsList);
+for (const obj of gdjs.Level1Code.GDvideo_9595clear_9595skyObjects4) asyncObjectsList.addObject("video_clear_sky", obj);
+runtimeScene.getAsyncTasksManager().addTask(gdjs.evtTools.runtimeScene.wait(6.9), (runtimeScene) => (gdjs.Level1Code.asyncCallback31698876(runtimeScene, asyncObjectsList)), 31698876, asyncObjectsList);
 }
 }
 
 }
 
 
-};gdjs.Level1Code.asyncCallback21527268 = function (runtimeScene, asyncObjectsList) {
+};gdjs.Level1Code.asyncCallback31698052 = function (runtimeScene, asyncObjectsList) {
 asyncObjectsList.restoreLocalVariablesContainers(gdjs.Level1Code.localVariables);
 gdjs.copyArray(runtimeScene.getObjects("video_clear_sky"), gdjs.Level1Code.GDvideo_9595clear_9595skyObjects4);
+{runtimeScene.getScene().getVariables().getFromIndex(13).setBoolean(true);
+}
 {gdjs.evtTools.camera.showLayer(runtimeScene, "layer video sky clear");
 }
 {for(var i = 0, len = gdjs.Level1Code.GDvideo_9595clear_9595skyObjects4.length ;i < len;++i) {
@@ -662,11 +1096,11 @@ gdjs.copyArray(runtimeScene.getObjects("video_clear_sky"), gdjs.Level1Code.GDvid
 }
 
 { //Subevents
-gdjs.Level1Code.eventsList6(runtimeScene, asyncObjectsList);} //End of subevents
+gdjs.Level1Code.eventsList14(runtimeScene, asyncObjectsList);} //End of subevents
 gdjs.Level1Code.localVariables.length = 0;
 }
-gdjs.Level1Code.idToCallbackMap.set(21527268, gdjs.Level1Code.asyncCallback21527268);
-gdjs.Level1Code.eventsList7 = function(runtimeScene) {
+gdjs.Level1Code.idToCallbackMap.set(31698052, gdjs.Level1Code.asyncCallback31698052);
+gdjs.Level1Code.eventsList15 = function(runtimeScene) {
 
 {
 
@@ -675,38 +1109,18 @@ gdjs.Level1Code.eventsList7 = function(runtimeScene) {
 {
 const asyncObjectsList = new gdjs.LongLivedObjectsList();
 asyncObjectsList.backupLocalVariablesContainers(gdjs.Level1Code.localVariables);
-runtimeScene.getAsyncTasksManager().addTask(gdjs.evtTools.runtimeScene.wait(7), (runtimeScene) => (gdjs.Level1Code.asyncCallback21527268(runtimeScene, asyncObjectsList)), 21527268, asyncObjectsList);
+runtimeScene.getAsyncTasksManager().addTask(gdjs.evtTools.runtimeScene.wait(7), (runtimeScene) => (gdjs.Level1Code.asyncCallback31698052(runtimeScene, asyncObjectsList)), 31698052, asyncObjectsList);
 }
 }
 
 }
 
 
-};gdjs.Level1Code.asyncCallback21530276 = function (runtimeScene, asyncObjectsList) {
-asyncObjectsList.restoreLocalVariablesContainers(gdjs.Level1Code.localVariables);
-gdjs.Level1Code.localVariables.length = 0;
-}
-gdjs.Level1Code.idToCallbackMap.set(21530276, gdjs.Level1Code.asyncCallback21530276);
-gdjs.Level1Code.eventsList8 = function(runtimeScene, asyncObjectsList) {
-
-{
-
-
-{
-const parentAsyncObjectsList = asyncObjectsList;
-{
-const asyncObjectsList = gdjs.LongLivedObjectsList.from(parentAsyncObjectsList);
-asyncObjectsList.backupLocalVariablesContainers(gdjs.Level1Code.localVariables);
-runtimeScene.getAsyncTasksManager().addTask(gdjs.evtTools.runtimeScene.wait(4.6), (runtimeScene) => (gdjs.Level1Code.asyncCallback21530276(runtimeScene, asyncObjectsList)), 21530276, asyncObjectsList);
-}
-}
-
-}
-
-
-};gdjs.Level1Code.asyncCallback21529644 = function (runtimeScene, asyncObjectsList) {
+};gdjs.Level1Code.asyncCallback31700260 = function (runtimeScene, asyncObjectsList) {
 asyncObjectsList.restoreLocalVariablesContainers(gdjs.Level1Code.localVariables);
 gdjs.copyArray(runtimeScene.getObjects("video_cloud_sky"), gdjs.Level1Code.GDvideo_9595cloud_9595skyObjects4);
+{runtimeScene.getScene().getVariables().getFromIndex(14).setBoolean(true);
+}
 {gdjs.evtTools.camera.showLayer(runtimeScene, "layer video sky cloud");
 }
 {for(var i = 0, len = gdjs.Level1Code.GDvideo_9595cloud_9595skyObjects4.length ;i < len;++i) {
@@ -714,16 +1128,13 @@ gdjs.copyArray(runtimeScene.getObjects("video_cloud_sky"), gdjs.Level1Code.GDvid
 }
 }
 {for(var i = 0, len = gdjs.Level1Code.GDvideo_9595cloud_9595skyObjects4.length ;i < len;++i) {
-    gdjs.Level1Code.GDvideo_9595cloud_9595skyObjects4[i].setPlaybackSpeed(-(1.3));
+    gdjs.Level1Code.GDvideo_9595cloud_9595skyObjects4[i].setPlaybackSpeed(-(1));
 }
 }
-
-{ //Subevents
-gdjs.Level1Code.eventsList8(runtimeScene, asyncObjectsList);} //End of subevents
 gdjs.Level1Code.localVariables.length = 0;
 }
-gdjs.Level1Code.idToCallbackMap.set(21529644, gdjs.Level1Code.asyncCallback21529644);
-gdjs.Level1Code.eventsList9 = function(runtimeScene) {
+gdjs.Level1Code.idToCallbackMap.set(31700260, gdjs.Level1Code.asyncCallback31700260);
+gdjs.Level1Code.eventsList16 = function(runtimeScene) {
 
 {
 
@@ -732,19 +1143,25 @@ gdjs.Level1Code.eventsList9 = function(runtimeScene) {
 {
 const asyncObjectsList = new gdjs.LongLivedObjectsList();
 asyncObjectsList.backupLocalVariablesContainers(gdjs.Level1Code.localVariables);
-runtimeScene.getAsyncTasksManager().addTask(gdjs.evtTools.runtimeScene.wait(7), (runtimeScene) => (gdjs.Level1Code.asyncCallback21529644(runtimeScene, asyncObjectsList)), 21529644, asyncObjectsList);
+runtimeScene.getAsyncTasksManager().addTask(gdjs.evtTools.runtimeScene.wait(7), (runtimeScene) => (gdjs.Level1Code.asyncCallback31700260(runtimeScene, asyncObjectsList)), 31700260, asyncObjectsList);
 }
 }
 
 }
 
 
-};gdjs.Level1Code.asyncCallback21532604 = function (runtimeScene, asyncObjectsList) {
+};gdjs.Level1Code.asyncCallback31703524 = function (runtimeScene, asyncObjectsList) {
 asyncObjectsList.restoreLocalVariablesContainers(gdjs.Level1Code.localVariables);
+gdjs.copyArray(asyncObjectsList.getObjects("sky"), gdjs.Level1Code.GDskyObjects5);
+
+{for(var i = 0, len = gdjs.Level1Code.GDskyObjects5.length ;i < len;++i) {
+    gdjs.Level1Code.GDskyObjects5[i].getBehavior("Animation").setAnimationName("Rain");
+}
+}
 gdjs.Level1Code.localVariables.length = 0;
 }
-gdjs.Level1Code.idToCallbackMap.set(21532604, gdjs.Level1Code.asyncCallback21532604);
-gdjs.Level1Code.eventsList10 = function(runtimeScene, asyncObjectsList) {
+gdjs.Level1Code.idToCallbackMap.set(31703524, gdjs.Level1Code.asyncCallback31703524);
+gdjs.Level1Code.eventsList17 = function(runtimeScene, asyncObjectsList) {
 
 {
 
@@ -754,33 +1171,37 @@ const parentAsyncObjectsList = asyncObjectsList;
 {
 const asyncObjectsList = gdjs.LongLivedObjectsList.from(parentAsyncObjectsList);
 asyncObjectsList.backupLocalVariablesContainers(gdjs.Level1Code.localVariables);
-runtimeScene.getAsyncTasksManager().addTask(gdjs.evtTools.runtimeScene.wait(4.6), (runtimeScene) => (gdjs.Level1Code.asyncCallback21532604(runtimeScene, asyncObjectsList)), 21532604, asyncObjectsList);
+for (const obj of gdjs.Level1Code.GDskyObjects4) asyncObjectsList.addObject("sky", obj);
+runtimeScene.getAsyncTasksManager().addTask(gdjs.evtTools.runtimeScene.wait(15), (runtimeScene) => (gdjs.Level1Code.asyncCallback31703524(runtimeScene, asyncObjectsList)), 31703524, asyncObjectsList);
 }
 }
 
 }
 
 
-};gdjs.Level1Code.asyncCallback21531996 = function (runtimeScene, asyncObjectsList) {
+};gdjs.Level1Code.asyncCallback31702652 = function (runtimeScene, asyncObjectsList) {
 asyncObjectsList.restoreLocalVariablesContainers(gdjs.Level1Code.localVariables);
-gdjs.copyArray(runtimeScene.getObjects("video_rain_sky"), gdjs.Level1Code.GDvideo_9595rain_9595skyObjects4);
-{gdjs.evtTools.camera.showLayer(runtimeScene, "layer video sky rain");
-}
+gdjs.copyArray(asyncObjectsList.getObjects("sky"), gdjs.Level1Code.GDskyObjects4);
+
+gdjs.copyArray(asyncObjectsList.getObjects("video_rain_sky"), gdjs.Level1Code.GDvideo_9595rain_9595skyObjects4);
+
 {for(var i = 0, len = gdjs.Level1Code.GDvideo_9595rain_9595skyObjects4.length ;i < len;++i) {
-    gdjs.Level1Code.GDvideo_9595rain_9595skyObjects4[i].play();
+    gdjs.Level1Code.GDvideo_9595rain_9595skyObjects4[i].getBehavior("Tween").addObjectOpacityTween2("FadeOutRain", 0, "linear", 1.3, true);
 }
 }
-{for(var i = 0, len = gdjs.Level1Code.GDvideo_9595rain_9595skyObjects4.length ;i < len;++i) {
-    gdjs.Level1Code.GDvideo_9595rain_9595skyObjects4[i].setPlaybackSpeed(-(1.3));
+{for(var i = 0, len = gdjs.Level1Code.GDskyObjects4.length ;i < len;++i) {
+    gdjs.Level1Code.GDskyObjects4[i].getBehavior("Animation").setAnimationName("rain2");
 }
+}
+{runtimeScene.getScene().getVariables().getFromIndex(16).setBoolean(true);
 }
 
 { //Subevents
-gdjs.Level1Code.eventsList10(runtimeScene, asyncObjectsList);} //End of subevents
+gdjs.Level1Code.eventsList17(runtimeScene, asyncObjectsList);} //End of subevents
 gdjs.Level1Code.localVariables.length = 0;
 }
-gdjs.Level1Code.idToCallbackMap.set(21531996, gdjs.Level1Code.asyncCallback21531996);
-gdjs.Level1Code.eventsList11 = function(runtimeScene) {
+gdjs.Level1Code.idToCallbackMap.set(31702652, gdjs.Level1Code.asyncCallback31702652);
+gdjs.Level1Code.eventsList18 = function(runtimeScene) {
 
 {
 
@@ -789,55 +1210,23 @@ gdjs.Level1Code.eventsList11 = function(runtimeScene) {
 {
 const asyncObjectsList = new gdjs.LongLivedObjectsList();
 asyncObjectsList.backupLocalVariablesContainers(gdjs.Level1Code.localVariables);
-runtimeScene.getAsyncTasksManager().addTask(gdjs.evtTools.runtimeScene.wait(7), (runtimeScene) => (gdjs.Level1Code.asyncCallback21531996(runtimeScene, asyncObjectsList)), 21531996, asyncObjectsList);
+for (const obj of gdjs.Level1Code.GDskyObjects3) asyncObjectsList.addObject("sky", obj);
+for (const obj of gdjs.Level1Code.GDvideo_9595rain_9595skyObjects3) asyncObjectsList.addObject("video_rain_sky", obj);
+runtimeScene.getAsyncTasksManager().addTask(gdjs.evtTools.runtimeScene.wait(11), (runtimeScene) => (gdjs.Level1Code.asyncCallback31702652(runtimeScene, asyncObjectsList)), 31702652, asyncObjectsList);
 }
 }
 
 }
 
 
-};gdjs.Level1Code.asyncCallback21534948 = function (runtimeScene, asyncObjectsList) {
+};gdjs.Level1Code.asyncCallback31704628 = function (runtimeScene, asyncObjectsList) {
 asyncObjectsList.restoreLocalVariablesContainers(gdjs.Level1Code.localVariables);
+{runtimeScene.getScene().getVariables().getFromIndex(15).setBoolean(true);
+}
 gdjs.Level1Code.localVariables.length = 0;
 }
-gdjs.Level1Code.idToCallbackMap.set(21534948, gdjs.Level1Code.asyncCallback21534948);
-gdjs.Level1Code.eventsList12 = function(runtimeScene, asyncObjectsList) {
-
-{
-
-
-{
-const parentAsyncObjectsList = asyncObjectsList;
-{
-const asyncObjectsList = gdjs.LongLivedObjectsList.from(parentAsyncObjectsList);
-asyncObjectsList.backupLocalVariablesContainers(gdjs.Level1Code.localVariables);
-runtimeScene.getAsyncTasksManager().addTask(gdjs.evtTools.runtimeScene.wait(4.6), (runtimeScene) => (gdjs.Level1Code.asyncCallback21534948(runtimeScene, asyncObjectsList)), 21534948, asyncObjectsList);
-}
-}
-
-}
-
-
-};gdjs.Level1Code.asyncCallback21534340 = function (runtimeScene, asyncObjectsList) {
-asyncObjectsList.restoreLocalVariablesContainers(gdjs.Level1Code.localVariables);
-gdjs.copyArray(runtimeScene.getObjects("video_sky_night"), gdjs.Level1Code.GDvideo_9595sky_9595nightObjects4);
-{gdjs.evtTools.camera.showLayer(runtimeScene, "layer video sky night");
-}
-{for(var i = 0, len = gdjs.Level1Code.GDvideo_9595sky_9595nightObjects4.length ;i < len;++i) {
-    gdjs.Level1Code.GDvideo_9595sky_9595nightObjects4[i].play();
-}
-}
-{for(var i = 0, len = gdjs.Level1Code.GDvideo_9595sky_9595nightObjects4.length ;i < len;++i) {
-    gdjs.Level1Code.GDvideo_9595sky_9595nightObjects4[i].setPlaybackSpeed(-(1.3));
-}
-}
-
-{ //Subevents
-gdjs.Level1Code.eventsList12(runtimeScene, asyncObjectsList);} //End of subevents
-gdjs.Level1Code.localVariables.length = 0;
-}
-gdjs.Level1Code.idToCallbackMap.set(21534340, gdjs.Level1Code.asyncCallback21534340);
-gdjs.Level1Code.eventsList13 = function(runtimeScene) {
+gdjs.Level1Code.idToCallbackMap.set(31704628, gdjs.Level1Code.asyncCallback31704628);
+gdjs.Level1Code.eventsList19 = function(runtimeScene) {
 
 {
 
@@ -846,14 +1235,14 @@ gdjs.Level1Code.eventsList13 = function(runtimeScene) {
 {
 const asyncObjectsList = new gdjs.LongLivedObjectsList();
 asyncObjectsList.backupLocalVariablesContainers(gdjs.Level1Code.localVariables);
-runtimeScene.getAsyncTasksManager().addTask(gdjs.evtTools.runtimeScene.wait(7), (runtimeScene) => (gdjs.Level1Code.asyncCallback21534340(runtimeScene, asyncObjectsList)), 21534340, asyncObjectsList);
+runtimeScene.getAsyncTasksManager().addTask(gdjs.evtTools.runtimeScene.wait(7), (runtimeScene) => (gdjs.Level1Code.asyncCallback31704628(runtimeScene, asyncObjectsList)), 31704628, asyncObjectsList);
 }
 }
 
 }
 
 
-};gdjs.Level1Code.eventsList14 = function(runtimeScene) {
+};gdjs.Level1Code.eventsList20 = function(runtimeScene) {
 
 {
 
@@ -871,43 +1260,13 @@ for (var i = 0, k = 0, l = gdjs.Level1Code.GDskyObjects3.length;i<l;++i) {
 gdjs.Level1Code.GDskyObjects3.length = k;
 if (isConditionTrue_0) {
 isConditionTrue_0 = false;
-{isConditionTrue_0 = runtimeScene.getOnceTriggers().triggerOnce(21114564);
-}
-if (isConditionTrue_0) {
-isConditionTrue_0 = false;
-{isConditionTrue_0 = runtimeScene.getOnceTriggers().triggerOnce(21526940);
-}
+{isConditionTrue_0 = runtimeScene.getOnceTriggers().triggerOnce(31697724);
 }
 }
 if (isConditionTrue_0) {
 
 { //Subevents
-gdjs.Level1Code.eventsList7(runtimeScene);} //End of subevents
-}
-
-}
-
-
-{
-
-gdjs.copyArray(runtimeScene.getObjects("video_clear_sky"), gdjs.Level1Code.GDvideo_9595clear_9595skyObjects3);
-
-let isConditionTrue_0 = false;
-isConditionTrue_0 = false;
-for (var i = 0, k = 0, l = gdjs.Level1Code.GDvideo_9595clear_9595skyObjects3.length;i<l;++i) {
-    if ( gdjs.Level1Code.GDvideo_9595clear_9595skyObjects3[i].isEnded() ) {
-        isConditionTrue_0 = true;
-        gdjs.Level1Code.GDvideo_9595clear_9595skyObjects3[k] = gdjs.Level1Code.GDvideo_9595clear_9595skyObjects3[i];
-        ++k;
-    }
-}
-gdjs.Level1Code.GDvideo_9595clear_9595skyObjects3.length = k;
-if (isConditionTrue_0) {
-/* Reuse gdjs.Level1Code.GDvideo_9595clear_9595skyObjects3 */
-{for(var i = 0, len = gdjs.Level1Code.GDvideo_9595clear_9595skyObjects3.length ;i < len;++i) {
-    gdjs.Level1Code.GDvideo_9595clear_9595skyObjects3[i].getBehavior("Tween").addObjectOpacityTween2("FadeOutSkyClear", 0, "linear", 1.3, false);
-}
-}
+gdjs.Level1Code.eventsList15(runtimeScene);} //End of subevents
 }
 
 }
@@ -929,38 +1288,18 @@ for (var i = 0, k = 0, l = gdjs.Level1Code.GDskyObjects3.length;i<l;++i) {
 gdjs.Level1Code.GDskyObjects3.length = k;
 if (isConditionTrue_0) {
 isConditionTrue_0 = false;
-{isConditionTrue_0 = runtimeScene.getOnceTriggers().triggerOnce(21528932);
+{isConditionTrue_0 = runtimeScene.getOnceTriggers().triggerOnce(31699852);
 }
 }
 if (isConditionTrue_0) {
+gdjs.copyArray(runtimeScene.getObjects("video_clear_sky"), gdjs.Level1Code.GDvideo_9595clear_9595skyObjects3);
+{for(var i = 0, len = gdjs.Level1Code.GDvideo_9595clear_9595skyObjects3.length ;i < len;++i) {
+    gdjs.Level1Code.GDvideo_9595clear_9595skyObjects3[i].hide();
+}
+}
 
 { //Subevents
-gdjs.Level1Code.eventsList9(runtimeScene);} //End of subevents
-}
-
-}
-
-
-{
-
-gdjs.copyArray(runtimeScene.getObjects("video_cloud_sky"), gdjs.Level1Code.GDvideo_9595cloud_9595skyObjects3);
-
-let isConditionTrue_0 = false;
-isConditionTrue_0 = false;
-for (var i = 0, k = 0, l = gdjs.Level1Code.GDvideo_9595cloud_9595skyObjects3.length;i<l;++i) {
-    if ( gdjs.Level1Code.GDvideo_9595cloud_9595skyObjects3[i].isEnded() ) {
-        isConditionTrue_0 = true;
-        gdjs.Level1Code.GDvideo_9595cloud_9595skyObjects3[k] = gdjs.Level1Code.GDvideo_9595cloud_9595skyObjects3[i];
-        ++k;
-    }
-}
-gdjs.Level1Code.GDvideo_9595cloud_9595skyObjects3.length = k;
-if (isConditionTrue_0) {
-/* Reuse gdjs.Level1Code.GDvideo_9595cloud_9595skyObjects3 */
-{for(var i = 0, len = gdjs.Level1Code.GDvideo_9595cloud_9595skyObjects3.length ;i < len;++i) {
-    gdjs.Level1Code.GDvideo_9595cloud_9595skyObjects3[i].getBehavior("Tween").addObjectOpacityTween2("FadeOutSkyCloud", 0, "linear", 1.3, false);
-}
-}
+gdjs.Level1Code.eventsList16(runtimeScene);} //End of subevents
 }
 
 }
@@ -982,97 +1321,32 @@ for (var i = 0, k = 0, l = gdjs.Level1Code.GDskyObjects3.length;i<l;++i) {
 gdjs.Level1Code.GDskyObjects3.length = k;
 if (isConditionTrue_0) {
 isConditionTrue_0 = false;
-{isConditionTrue_0 = runtimeScene.getOnceTriggers().triggerOnce(21531668);
+{isConditionTrue_0 = runtimeScene.getOnceTriggers().triggerOnce(31701508);
 }
 }
 if (isConditionTrue_0) {
-
-{ //Subevents
-gdjs.Level1Code.eventsList11(runtimeScene);} //End of subevents
-}
-
-}
-
-
-{
-
 gdjs.copyArray(runtimeScene.getObjects("video_rain_sky"), gdjs.Level1Code.GDvideo_9595rain_9595skyObjects3);
-
-let isConditionTrue_0 = false;
-isConditionTrue_0 = false;
-for (var i = 0, k = 0, l = gdjs.Level1Code.GDvideo_9595rain_9595skyObjects3.length;i<l;++i) {
-    if ( gdjs.Level1Code.GDvideo_9595rain_9595skyObjects3[i].isEnded() ) {
-        isConditionTrue_0 = true;
-        gdjs.Level1Code.GDvideo_9595rain_9595skyObjects3[k] = gdjs.Level1Code.GDvideo_9595rain_9595skyObjects3[i];
-        ++k;
-    }
+{gdjs.evtTools.camera.showLayer(runtimeScene, "layer video sky rain");
 }
-gdjs.Level1Code.GDvideo_9595rain_9595skyObjects3.length = k;
-if (isConditionTrue_0) {
-/* Reuse gdjs.Level1Code.GDvideo_9595rain_9595skyObjects3 */
 {for(var i = 0, len = gdjs.Level1Code.GDvideo_9595rain_9595skyObjects3.length ;i < len;++i) {
-    gdjs.Level1Code.GDvideo_9595rain_9595skyObjects3[i].getBehavior("Tween").addObjectOpacityTween2("FadeOutSkyRain", 0, "linear", 1.3, false);
+    gdjs.Level1Code.GDvideo_9595rain_9595skyObjects3[i].setPlaybackSpeed(5);
 }
 }
-}
-
-}
-
-
-{
-
-gdjs.copyArray(runtimeScene.getObjects("sky"), gdjs.Level1Code.GDskyObjects3);
-
-let isConditionTrue_0 = false;
-isConditionTrue_0 = false;
-for (var i = 0, k = 0, l = gdjs.Level1Code.GDskyObjects3.length;i<l;++i) {
-    if ( gdjs.Level1Code.GDskyObjects3[i].getBehavior("Animation").getAnimationName() == "Night" ) {
-        isConditionTrue_0 = true;
-        gdjs.Level1Code.GDskyObjects3[k] = gdjs.Level1Code.GDskyObjects3[i];
-        ++k;
-    }
-}
-gdjs.Level1Code.GDskyObjects3.length = k;
-if (isConditionTrue_0) {
-isConditionTrue_0 = false;
-{isConditionTrue_0 = runtimeScene.getOnceTriggers().triggerOnce(21534012);
+{for(var i = 0, len = gdjs.Level1Code.GDvideo_9595rain_9595skyObjects3.length ;i < len;++i) {
+    gdjs.Level1Code.GDvideo_9595rain_9595skyObjects3[i].setLoop(true);
 }
 }
-if (isConditionTrue_0) {
+{for(var i = 0, len = gdjs.Level1Code.GDvideo_9595rain_9595skyObjects3.length ;i < len;++i) {
+    gdjs.Level1Code.GDvideo_9595rain_9595skyObjects3[i].play();
+}
+}
 
 { //Subevents
-gdjs.Level1Code.eventsList13(runtimeScene);} //End of subevents
+gdjs.Level1Code.eventsList18(runtimeScene);} //End of subevents
 }
 
 }
 
-
-{
-
-gdjs.copyArray(runtimeScene.getObjects("video_sky_night"), gdjs.Level1Code.GDvideo_9595sky_9595nightObjects2);
-
-let isConditionTrue_0 = false;
-isConditionTrue_0 = false;
-for (var i = 0, k = 0, l = gdjs.Level1Code.GDvideo_9595sky_9595nightObjects2.length;i<l;++i) {
-    if ( gdjs.Level1Code.GDvideo_9595sky_9595nightObjects2[i].isEnded() ) {
-        isConditionTrue_0 = true;
-        gdjs.Level1Code.GDvideo_9595sky_9595nightObjects2[k] = gdjs.Level1Code.GDvideo_9595sky_9595nightObjects2[i];
-        ++k;
-    }
-}
-gdjs.Level1Code.GDvideo_9595sky_9595nightObjects2.length = k;
-if (isConditionTrue_0) {
-/* Reuse gdjs.Level1Code.GDvideo_9595sky_9595nightObjects2 */
-{for(var i = 0, len = gdjs.Level1Code.GDvideo_9595sky_9595nightObjects2.length ;i < len;++i) {
-    gdjs.Level1Code.GDvideo_9595sky_9595nightObjects2[i].getBehavior("Tween").addObjectOpacityTween2("FadeOutSkyNight", 0, "linear", 1.3, false);
-}
-}
-}
-
-}
-
-
-};gdjs.Level1Code.eventsList15 = function(runtimeScene) {
 
 {
 
@@ -1089,6 +1363,37 @@ for (var i = 0, k = 0, l = gdjs.Level1Code.GDskyObjects2.length;i<l;++i) {
 }
 gdjs.Level1Code.GDskyObjects2.length = k;
 if (isConditionTrue_0) {
+isConditionTrue_0 = false;
+{isConditionTrue_0 = runtimeScene.getOnceTriggers().triggerOnce(31704300);
+}
+}
+if (isConditionTrue_0) {
+
+{ //Subevents
+gdjs.Level1Code.eventsList19(runtimeScene);} //End of subevents
+}
+
+}
+
+
+};gdjs.Level1Code.eventsList21 = function(runtimeScene) {
+
+{
+
+gdjs.copyArray(runtimeScene.getObjects("sky"), gdjs.Level1Code.GDskyObjects2);
+
+let isConditionTrue_0 = false;
+isConditionTrue_0 = false;
+for (var i = 0, k = 0, l = gdjs.Level1Code.GDskyObjects2.length;i<l;++i) {
+    if ( gdjs.Level1Code.GDskyObjects2[i].getBehavior("Animation").getAnimationName() == "Night" ) {
+        isConditionTrue_0 = true;
+        gdjs.Level1Code.GDskyObjects2[k] = gdjs.Level1Code.GDskyObjects2[i];
+        ++k;
+    }
+}
+gdjs.Level1Code.GDskyObjects2.length = k;
+if (isConditionTrue_0) {
+gdjs.copyArray(runtimeScene.getObjects("ballon"), gdjs.Level1Code.GDballonObjects2);
 gdjs.copyArray(runtimeScene.getObjects("cloud1"), gdjs.Level1Code.GDcloud1Objects2);
 {for(var i = 0, len = gdjs.Level1Code.GDcloud1Objects2.length ;i < len;++i) {
     gdjs.Level1Code.GDcloud1Objects2[i].getBehavior("Opacity").setOpacity(200);
@@ -1096,6 +1401,10 @@ gdjs.copyArray(runtimeScene.getObjects("cloud1"), gdjs.Level1Code.GDcloud1Object
 }
 {for(var i = 0, len = gdjs.Level1Code.GDcloud1Objects2.length ;i < len;++i) {
     gdjs.Level1Code.GDcloud1Objects2[i].getBehavior("Effect").enableEffect("nb", false);
+}
+}
+{for(var i = 0, len = gdjs.Level1Code.GDballonObjects2.length ;i < len;++i) {
+    gdjs.Level1Code.GDballonObjects2[i].getBehavior("Opacity").setOpacity(230);
 }
 }
 }
@@ -1118,6 +1427,7 @@ for (var i = 0, k = 0, l = gdjs.Level1Code.GDskyObjects1.length;i<l;++i) {
 }
 gdjs.Level1Code.GDskyObjects1.length = k;
 if (isConditionTrue_0) {
+gdjs.copyArray(runtimeScene.getObjects("ballon"), gdjs.Level1Code.GDballonObjects1);
 gdjs.copyArray(runtimeScene.getObjects("cloud1"), gdjs.Level1Code.GDcloud1Objects1);
 {for(var i = 0, len = gdjs.Level1Code.GDcloud1Objects1.length ;i < len;++i) {
     gdjs.Level1Code.GDcloud1Objects1[i].getBehavior("Opacity").setOpacity(150);
@@ -1127,33 +1437,41 @@ gdjs.copyArray(runtimeScene.getObjects("cloud1"), gdjs.Level1Code.GDcloud1Object
     gdjs.Level1Code.GDcloud1Objects1[i].getBehavior("Effect").enableEffect("nb", true);
 }
 }
+{for(var i = 0, len = gdjs.Level1Code.GDballonObjects1.length ;i < len;++i) {
+    gdjs.Level1Code.GDballonObjects1[i].getBehavior("Opacity").setOpacity(180);
+}
+}
+{for(var i = 0, len = gdjs.Level1Code.GDballonObjects1.length ;i < len;++i) {
+    gdjs.Level1Code.GDballonObjects1[i].getBehavior("Effect").enableEffect("nb", true);
+}
+}
 }
 
 }
 
 
-};gdjs.Level1Code.eventsList16 = function(runtimeScene) {
+};gdjs.Level1Code.eventsList22 = function(runtimeScene) {
 
 {
 
 
-gdjs.Level1Code.eventsList14(runtimeScene);
+gdjs.Level1Code.eventsList20(runtimeScene);
 }
 
 
 {
 
 
-gdjs.Level1Code.eventsList15(runtimeScene);
+gdjs.Level1Code.eventsList21(runtimeScene);
 }
 
 
-};gdjs.Level1Code.mapOfGDgdjs_9546Level1Code_9546GDcloud1Objects1Objects = Hashtable.newFrom({"cloud1": gdjs.Level1Code.GDcloud1Objects1});
-gdjs.Level1Code.eventsList17 = function(runtimeScene) {
+};gdjs.Level1Code.mapOfGDgdjs_9546Level1Code_9546GDcloud1Objects2Objects = Hashtable.newFrom({"cloud1": gdjs.Level1Code.GDcloud1Objects2});
+gdjs.Level1Code.eventsList23 = function(runtimeScene) {
 
 {
 
-gdjs.copyArray(runtimeScene.getObjects("cloud1"), gdjs.Level1Code.GDcloud1Objects1);
+gdjs.copyArray(runtimeScene.getObjects("cloud1"), gdjs.Level1Code.GDcloud1Objects2);
 
 let isConditionTrue_0 = false;
 isConditionTrue_0 = false;
@@ -1176,12 +1494,7 @@ if(isConditionTrue_1) {
 }
 if (isConditionTrue_0) {
 isConditionTrue_0 = false;
-isConditionTrue_0 = gdjs.evtTools.input.cursorOnObject(gdjs.Level1Code.mapOfGDgdjs_9546Level1Code_9546GDcloud1Objects1Objects, runtimeScene, true, false);
-if (isConditionTrue_0) {
-isConditionTrue_0 = false;
-{isConditionTrue_0 = runtimeScene.getOnceTriggers().triggerOnce(21107204);
-}
-}
+isConditionTrue_0 = gdjs.evtTools.input.cursorOnObject(gdjs.Level1Code.mapOfGDgdjs_9546Level1Code_9546GDcloud1Objects2Objects, runtimeScene, true, false);
 }
 if (isConditionTrue_0) {
 {gdjs.evtTools.window.openURL("https://zelda-like-my-life-archive1.vercel.app", runtimeScene);
@@ -1191,7 +1504,7 @@ if (isConditionTrue_0) {
 }
 
 
-};gdjs.Level1Code.eventsList18 = function(runtimeScene) {
+};gdjs.Level1Code.eventsList24 = function(runtimeScene) {
 
 {
 
@@ -1203,24 +1516,21 @@ gdjs.Level1Code.eventsList5(runtimeScene);
 {
 
 
-gdjs.Level1Code.eventsList16(runtimeScene);
+gdjs.Level1Code.eventsList13(runtimeScene);
 }
 
 
 {
 
 
-gdjs.Level1Code.eventsList17(runtimeScene);
+gdjs.Level1Code.eventsList22(runtimeScene);
 }
 
 
 {
 
 
-let isConditionTrue_0 = false;
-{
-}
-
+gdjs.Level1Code.eventsList23(runtimeScene);
 }
 
 
@@ -1404,8 +1714,43 @@ gdjs.Level1Code.GDvideo_9595sky_9595nightObjects4.length = 0;
 gdjs.Level1Code.GDvideo_9595sky_9595nightObjects5.length = 0;
 gdjs.Level1Code.GDvideo_9595sky_9595nightObjects6.length = 0;
 gdjs.Level1Code.GDvideo_9595sky_9595nightObjects7.length = 0;
+gdjs.Level1Code.GDlink_9595archive2_9595layer_9595sky_9595cloudObjects1.length = 0;
+gdjs.Level1Code.GDlink_9595archive2_9595layer_9595sky_9595cloudObjects2.length = 0;
+gdjs.Level1Code.GDlink_9595archive2_9595layer_9595sky_9595cloudObjects3.length = 0;
+gdjs.Level1Code.GDlink_9595archive2_9595layer_9595sky_9595cloudObjects4.length = 0;
+gdjs.Level1Code.GDlink_9595archive2_9595layer_9595sky_9595cloudObjects5.length = 0;
+gdjs.Level1Code.GDlink_9595archive2_9595layer_9595sky_9595cloudObjects6.length = 0;
+gdjs.Level1Code.GDlink_9595archive2_9595layer_9595sky_9595cloudObjects7.length = 0;
+gdjs.Level1Code.GDlink_9595archive2_9595layer_9595sky_9595clearObjects1.length = 0;
+gdjs.Level1Code.GDlink_9595archive2_9595layer_9595sky_9595clearObjects2.length = 0;
+gdjs.Level1Code.GDlink_9595archive2_9595layer_9595sky_9595clearObjects3.length = 0;
+gdjs.Level1Code.GDlink_9595archive2_9595layer_9595sky_9595clearObjects4.length = 0;
+gdjs.Level1Code.GDlink_9595archive2_9595layer_9595sky_9595clearObjects5.length = 0;
+gdjs.Level1Code.GDlink_9595archive2_9595layer_9595sky_9595clearObjects6.length = 0;
+gdjs.Level1Code.GDlink_9595archive2_9595layer_9595sky_9595clearObjects7.length = 0;
+gdjs.Level1Code.GDlink_9595archive2_9595layer_9595sky_9595nightObjects1.length = 0;
+gdjs.Level1Code.GDlink_9595archive2_9595layer_9595sky_9595nightObjects2.length = 0;
+gdjs.Level1Code.GDlink_9595archive2_9595layer_9595sky_9595nightObjects3.length = 0;
+gdjs.Level1Code.GDlink_9595archive2_9595layer_9595sky_9595nightObjects4.length = 0;
+gdjs.Level1Code.GDlink_9595archive2_9595layer_9595sky_9595nightObjects5.length = 0;
+gdjs.Level1Code.GDlink_9595archive2_9595layer_9595sky_9595nightObjects6.length = 0;
+gdjs.Level1Code.GDlink_9595archive2_9595layer_9595sky_9595nightObjects7.length = 0;
+gdjs.Level1Code.GDlink_9595archive2_9595layer_9595sky_9595rainObjects1.length = 0;
+gdjs.Level1Code.GDlink_9595archive2_9595layer_9595sky_9595rainObjects2.length = 0;
+gdjs.Level1Code.GDlink_9595archive2_9595layer_9595sky_9595rainObjects3.length = 0;
+gdjs.Level1Code.GDlink_9595archive2_9595layer_9595sky_9595rainObjects4.length = 0;
+gdjs.Level1Code.GDlink_9595archive2_9595layer_9595sky_9595rainObjects5.length = 0;
+gdjs.Level1Code.GDlink_9595archive2_9595layer_9595sky_9595rainObjects6.length = 0;
+gdjs.Level1Code.GDlink_9595archive2_9595layer_9595sky_9595rainObjects7.length = 0;
+gdjs.Level1Code.GDballonObjects1.length = 0;
+gdjs.Level1Code.GDballonObjects2.length = 0;
+gdjs.Level1Code.GDballonObjects3.length = 0;
+gdjs.Level1Code.GDballonObjects4.length = 0;
+gdjs.Level1Code.GDballonObjects5.length = 0;
+gdjs.Level1Code.GDballonObjects6.length = 0;
+gdjs.Level1Code.GDballonObjects7.length = 0;
 
-gdjs.Level1Code.eventsList18(runtimeScene);
+gdjs.Level1Code.eventsList24(runtimeScene);
 gdjs.Level1Code.GDMindyObjects1.length = 0;
 gdjs.Level1Code.GDMindyObjects2.length = 0;
 gdjs.Level1Code.GDMindyObjects3.length = 0;
@@ -1581,6 +1926,41 @@ gdjs.Level1Code.GDvideo_9595sky_9595nightObjects4.length = 0;
 gdjs.Level1Code.GDvideo_9595sky_9595nightObjects5.length = 0;
 gdjs.Level1Code.GDvideo_9595sky_9595nightObjects6.length = 0;
 gdjs.Level1Code.GDvideo_9595sky_9595nightObjects7.length = 0;
+gdjs.Level1Code.GDlink_9595archive2_9595layer_9595sky_9595cloudObjects1.length = 0;
+gdjs.Level1Code.GDlink_9595archive2_9595layer_9595sky_9595cloudObjects2.length = 0;
+gdjs.Level1Code.GDlink_9595archive2_9595layer_9595sky_9595cloudObjects3.length = 0;
+gdjs.Level1Code.GDlink_9595archive2_9595layer_9595sky_9595cloudObjects4.length = 0;
+gdjs.Level1Code.GDlink_9595archive2_9595layer_9595sky_9595cloudObjects5.length = 0;
+gdjs.Level1Code.GDlink_9595archive2_9595layer_9595sky_9595cloudObjects6.length = 0;
+gdjs.Level1Code.GDlink_9595archive2_9595layer_9595sky_9595cloudObjects7.length = 0;
+gdjs.Level1Code.GDlink_9595archive2_9595layer_9595sky_9595clearObjects1.length = 0;
+gdjs.Level1Code.GDlink_9595archive2_9595layer_9595sky_9595clearObjects2.length = 0;
+gdjs.Level1Code.GDlink_9595archive2_9595layer_9595sky_9595clearObjects3.length = 0;
+gdjs.Level1Code.GDlink_9595archive2_9595layer_9595sky_9595clearObjects4.length = 0;
+gdjs.Level1Code.GDlink_9595archive2_9595layer_9595sky_9595clearObjects5.length = 0;
+gdjs.Level1Code.GDlink_9595archive2_9595layer_9595sky_9595clearObjects6.length = 0;
+gdjs.Level1Code.GDlink_9595archive2_9595layer_9595sky_9595clearObjects7.length = 0;
+gdjs.Level1Code.GDlink_9595archive2_9595layer_9595sky_9595nightObjects1.length = 0;
+gdjs.Level1Code.GDlink_9595archive2_9595layer_9595sky_9595nightObjects2.length = 0;
+gdjs.Level1Code.GDlink_9595archive2_9595layer_9595sky_9595nightObjects3.length = 0;
+gdjs.Level1Code.GDlink_9595archive2_9595layer_9595sky_9595nightObjects4.length = 0;
+gdjs.Level1Code.GDlink_9595archive2_9595layer_9595sky_9595nightObjects5.length = 0;
+gdjs.Level1Code.GDlink_9595archive2_9595layer_9595sky_9595nightObjects6.length = 0;
+gdjs.Level1Code.GDlink_9595archive2_9595layer_9595sky_9595nightObjects7.length = 0;
+gdjs.Level1Code.GDlink_9595archive2_9595layer_9595sky_9595rainObjects1.length = 0;
+gdjs.Level1Code.GDlink_9595archive2_9595layer_9595sky_9595rainObjects2.length = 0;
+gdjs.Level1Code.GDlink_9595archive2_9595layer_9595sky_9595rainObjects3.length = 0;
+gdjs.Level1Code.GDlink_9595archive2_9595layer_9595sky_9595rainObjects4.length = 0;
+gdjs.Level1Code.GDlink_9595archive2_9595layer_9595sky_9595rainObjects5.length = 0;
+gdjs.Level1Code.GDlink_9595archive2_9595layer_9595sky_9595rainObjects6.length = 0;
+gdjs.Level1Code.GDlink_9595archive2_9595layer_9595sky_9595rainObjects7.length = 0;
+gdjs.Level1Code.GDballonObjects1.length = 0;
+gdjs.Level1Code.GDballonObjects2.length = 0;
+gdjs.Level1Code.GDballonObjects3.length = 0;
+gdjs.Level1Code.GDballonObjects4.length = 0;
+gdjs.Level1Code.GDballonObjects5.length = 0;
+gdjs.Level1Code.GDballonObjects6.length = 0;
+gdjs.Level1Code.GDballonObjects7.length = 0;
 
 
 return;
